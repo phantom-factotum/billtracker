@@ -1,0 +1,24 @@
+TO DO
+_ _ _ _ _ _ _
+
+- Save expenses to file and load it when "logging" in
+- allow user to import expense files
+- cloud storage of expense file
+- when in landscape mode, the expense list is barely visible
+- Make custom button component
+- When add expense button is pressed, the new expense should go into focus
+- let user set/take profile photo
+- remove border from Drawer
+- Add Common Expenses Button and Reorder List Switch goes in same row
+- Add more complex calculation settings
+- Tweak color scheme
+  - update delete border color
+- DARK MODE
+- TEXT SHADOWS
+
+
+- DraxList needs to expose FlatList refs
+- react-native-swipeable gives Animated.event warning
+- better empty list component
+- Home screen needs more
+- Allow donations to be made

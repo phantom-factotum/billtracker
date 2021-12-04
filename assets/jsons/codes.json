@@ -1,0 +1,6414 @@
+{
+  "capital federal": {
+    "countryCode": "AR",
+    "provinceCode": "00"
+  },
+  "buenos aires": {
+    "countryCode": "AR",
+    "provinceCode": "01"
+  },
+  "catamarca": {
+    "countryCode": "AR",
+    "provinceCode": "02"
+  },
+  "cordoba": {
+    "countryCode": "ES",
+    "provinceCode": "14"
+  },
+  "corrientes": {
+    "countryCode": "AR",
+    "provinceCode": "04"
+  },
+  "entre rios": {
+    "countryCode": "AR",
+    "provinceCode": "05"
+  },
+  "jujuy": {
+    "countryCode": "AR",
+    "provinceCode": "06"
+  },
+  "mendoza": {
+    "countryCode": "AR",
+    "provinceCode": "07"
+  },
+  "la rioja": {
+    "countryCode": "ES",
+    "provinceCode": "26"
+  },
+  "salta": {
+    "countryCode": "AR",
+    "provinceCode": "09"
+  },
+  "san juan": {
+    "countryCode": "AR",
+    "provinceCode": "10"
+  },
+  "san luis": {
+    "countryCode": "AR",
+    "provinceCode": "11"
+  },
+  "santa fe": {
+    "countryCode": "AR",
+    "provinceCode": "12"
+  },
+  "santiago del estero": {
+    "countryCode": "AR",
+    "provinceCode": "13"
+  },
+  "tucuman": {
+    "countryCode": "AR",
+    "provinceCode": "14"
+  },
+  "chaco": {
+    "countryCode": "AR",
+    "provinceCode": "16"
+  },
+  "chubut": {
+    "countryCode": "AR",
+    "provinceCode": "17"
+  },
+  "formosa": {
+    "countryCode": "AR",
+    "provinceCode": "18"
+  },
+  "misiones": {
+    "countryCode": "AR",
+    "provinceCode": "19"
+  },
+  "neuquen": {
+    "countryCode": "AR",
+    "provinceCode": "20"
+  },
+  "la pampa": {
+    "countryCode": "AR",
+    "provinceCode": "21"
+  },
+  "rio negro": {
+    "countryCode": "AR",
+    "provinceCode": "22"
+  },
+  "santa cruz": {
+    "countryCode": "AR",
+    "provinceCode": "23"
+  },
+  "tierra de fuego": {
+    "countryCode": "AR",
+    "provinceCode": "24"
+  },
+  "burgenland": {
+    "countryCode": "AT",
+    "provinceCode": "B"
+  },
+  "carinthia": {
+    "countryCode": "AT",
+    "provinceCode": "K"
+  },
+  "lower austria": {
+    "countryCode": "AT",
+    "provinceCode": "NÖ"
+  },
+  "upper austria": {
+    "countryCode": "AT",
+    "provinceCode": "OÖ"
+  },
+  "salzburg": {
+    "countryCode": "AT",
+    "provinceCode": "S"
+  },
+  "styria": {
+    "countryCode": "AT",
+    "provinceCode": "ST"
+  },
+  "tyrol": {
+    "countryCode": "AT",
+    "provinceCode": "T"
+  },
+  "vorarlberg": {
+    "countryCode": "AT",
+    "provinceCode": "V"
+  },
+  "vienna": {
+    "countryCode": "AT",
+    "provinceCode": "W"
+  },
+  "aust capital terr": {
+    "countryCode": "AU",
+    "provinceCode": "ACT"
+  },
+  "new south wales": {
+    "countryCode": "AU",
+    "provinceCode": "NSW"
+  },
+  "northern territory": {
+    "countryCode": "AU",
+    "provinceCode": "NT"
+  },
+  "queensland": {
+    "countryCode": "AU",
+    "provinceCode": "QLD"
+  },
+  "south australia": {
+    "countryCode": "AU",
+    "provinceCode": "SA"
+  },
+  "tasmania": {
+    "countryCode": "AU",
+    "provinceCode": "TAS"
+  },
+  "victoria": {
+    "countryCode": "AU",
+    "provinceCode": "VIC"
+  },
+  "western australia": {
+    "countryCode": "AU",
+    "provinceCode": "WA"
+  },
+  "antwerp": {
+    "countryCode": "BE",
+    "provinceCode": "01"
+  },
+  "brabant (flemish)": {
+    "countryCode": "BE",
+    "provinceCode": "02"
+  },
+  "hainaut": {
+    "countryCode": "BE",
+    "provinceCode": "03"
+  },
+  "liege": {
+    "countryCode": "BE",
+    "provinceCode": "04"
+  },
+  "limburg": {
+    "countryCode": "NL",
+    "provinceCode": "06"
+  },
+  "luxembourg": {
+    "countryCode": "BE",
+    "provinceCode": "06"
+  },
+  "namur": {
+    "countryCode": "BE",
+    "provinceCode": "07"
+  },
+  "oost-vlaanderen": {
+    "countryCode": "BE",
+    "provinceCode": "08"
+  },
+  "west-vlaanderen": {
+    "countryCode": "BE",
+    "provinceCode": "09"
+  },
+  "brabant (walloon)": {
+    "countryCode": "BE",
+    "provinceCode": "10"
+  },
+  "brussels (capital)": {
+    "countryCode": "BE",
+    "provinceCode": "11"
+  },
+  "burgas": {
+    "countryCode": "BG",
+    "provinceCode": "01"
+  },
+  "grad sofiya": {
+    "countryCode": "BG",
+    "provinceCode": "02"
+  },
+  "khaskovo": {
+    "countryCode": "BG",
+    "provinceCode": "03"
+  },
+  "lovech": {
+    "countryCode": "BG",
+    "provinceCode": "04"
+  },
+  "montana": {
+    "countryCode": "US",
+    "provinceCode": "MT"
+  },
+  "plovdiv": {
+    "countryCode": "BG",
+    "provinceCode": "06"
+  },
+  "ruse": {
+    "countryCode": "SI",
+    "provinceCode": "44"
+  },
+  "sofiya": {
+    "countryCode": "BG",
+    "provinceCode": "08"
+  },
+  "varna": {
+    "countryCode": "BG",
+    "provinceCode": "09"
+  },
+  "acre": {
+    "countryCode": "BR",
+    "provinceCode": "AC"
+  },
+  "alagoas": {
+    "countryCode": "BR",
+    "provinceCode": "AL"
+  },
+  "amazon": {
+    "countryCode": "VE",
+    "provinceCode": "AMA"
+  },
+  "amapa": {
+    "countryCode": "BR",
+    "provinceCode": "AP"
+  },
+  "bahia": {
+    "countryCode": "BR",
+    "provinceCode": "BA"
+  },
+  "ceara": {
+    "countryCode": "BR",
+    "provinceCode": "CE"
+  },
+  "brasilia": {
+    "countryCode": "BR",
+    "provinceCode": "DF"
+  },
+  "espirito santo": {
+    "countryCode": "BR",
+    "provinceCode": "ES"
+  },
+  "goias": {
+    "countryCode": "BR",
+    "provinceCode": "GO"
+  },
+  "maranhao": {
+    "countryCode": "BR",
+    "provinceCode": "MA"
+  },
+  "minas gerais": {
+    "countryCode": "BR",
+    "provinceCode": "MG"
+  },
+  "mato grosso do sul": {
+    "countryCode": "BR",
+    "provinceCode": "MS"
+  },
+  "mato grosso": {
+    "countryCode": "BR",
+    "provinceCode": "MT"
+  },
+  "para": {
+    "countryCode": "BR",
+    "provinceCode": "PA"
+  },
+  "paraiba": {
+    "countryCode": "BR",
+    "provinceCode": "PB"
+  },
+  "pernambuco": {
+    "countryCode": "BR",
+    "provinceCode": "PE"
+  },
+  "piaui": {
+    "countryCode": "BR",
+    "provinceCode": "PI"
+  },
+  "parana": {
+    "countryCode": "BR",
+    "provinceCode": "PR"
+  },
+  "rio de janeiro": {
+    "countryCode": "BR",
+    "provinceCode": "RJ"
+  },
+  "rio grande do norte": {
+    "countryCode": "BR",
+    "provinceCode": "RN"
+  },
+  "rondonia": {
+    "countryCode": "BR",
+    "provinceCode": "RO"
+  },
+  "roraima": {
+    "countryCode": "BR",
+    "provinceCode": "RR"
+  },
+  "rio grande do sul": {
+    "countryCode": "BR",
+    "provinceCode": "RS"
+  },
+  "santa catarina": {
+    "countryCode": "BR",
+    "provinceCode": "SC"
+  },
+  "sergipe": {
+    "countryCode": "BR",
+    "provinceCode": "SE"
+  },
+  "sao paulo": {
+    "countryCode": "BR",
+    "provinceCode": "SP"
+  },
+  "tocantins": {
+    "countryCode": "BR",
+    "provinceCode": "TO"
+  },
+  "belize": {
+    "countryCode": "BZ",
+    "provinceCode": "BZ"
+  },
+  "cayo": {
+    "countryCode": "BZ",
+    "provinceCode": "CY"
+  },
+  "corozal": {
+    "countryCode": "BZ",
+    "provinceCode": "CZ"
+  },
+  "orange walk": {
+    "countryCode": "BZ",
+    "provinceCode": "OW"
+  },
+  "stann creek": {
+    "countryCode": "BZ",
+    "provinceCode": "SC"
+  },
+  "toledo": {
+    "countryCode": "ES",
+    "provinceCode": "45"
+  },
+  "alberta": {
+    "countryCode": "CA",
+    "provinceCode": "AB"
+  },
+  "british columbia": {
+    "countryCode": "CA",
+    "provinceCode": "BC"
+  },
+  "manitoba": {
+    "countryCode": "CA",
+    "provinceCode": "MB"
+  },
+  "new brunswick": {
+    "countryCode": "CA",
+    "provinceCode": "NB"
+  },
+  "acs legacy": {
+    "countryCode": "CA",
+    "provinceCode": "PQ"
+  },
+  "newfoundland (old)": {
+    "countryCode": "CA",
+    "provinceCode": "NF"
+  },
+  "newfoundland & labr.": {
+    "countryCode": "CA",
+    "provinceCode": "NL"
+  },
+  "nova scotia": {
+    "countryCode": "CA",
+    "provinceCode": "NS"
+  },
+  "northwest terr.": {
+    "countryCode": "CA",
+    "provinceCode": "NT"
+  },
+  "nunavut": {
+    "countryCode": "CA",
+    "provinceCode": "NU"
+  },
+  "ontario": {
+    "countryCode": "CA",
+    "provinceCode": "ON"
+  },
+  "prince edward island": {
+    "countryCode": "CA",
+    "provinceCode": "PE"
+  },
+  "quebec": {
+    "countryCode": "CA",
+    "provinceCode": "QC"
+  },
+  "saskatchewan": {
+    "countryCode": "CA",
+    "provinceCode": "SK"
+  },
+  "yukon territory": {
+    "countryCode": "CA",
+    "provinceCode": "YT"
+  },
+  "aargau": {
+    "countryCode": "CH",
+    "provinceCode": "AG"
+  },
+  "inner-rhoden": {
+    "countryCode": "CH",
+    "provinceCode": "AI"
+  },
+  "ausser-rhoden": {
+    "countryCode": "CH",
+    "provinceCode": "AR"
+  },
+  "bern": {
+    "countryCode": "CH",
+    "provinceCode": "BE"
+  },
+  "basel land": {
+    "countryCode": "CH",
+    "provinceCode": "BL"
+  },
+  "basel stadt": {
+    "countryCode": "CH",
+    "provinceCode": "BS"
+  },
+  "fribourg": {
+    "countryCode": "CH",
+    "provinceCode": "FR"
+  },
+  "geneva": {
+    "countryCode": "CH",
+    "provinceCode": "GE"
+  },
+  "glarus": {
+    "countryCode": "CH",
+    "provinceCode": "GL"
+  },
+  "graubuenden": {
+    "countryCode": "CH",
+    "provinceCode": "GR"
+  },
+  "jura": {
+    "countryCode": "FR",
+    "provinceCode": "39"
+  },
+  "lucerne": {
+    "countryCode": "CH",
+    "provinceCode": "LU"
+  },
+  "neuchatel": {
+    "countryCode": "CH",
+    "provinceCode": "NE"
+  },
+  "nidwalden": {
+    "countryCode": "CH",
+    "provinceCode": "NW"
+  },
+  "obwalden": {
+    "countryCode": "CH",
+    "provinceCode": "OW"
+  },
+  "st. gallen": {
+    "countryCode": "CH",
+    "provinceCode": "SG"
+  },
+  "schaffhausen": {
+    "countryCode": "CH",
+    "provinceCode": "SH"
+  },
+  "solothurn": {
+    "countryCode": "CH",
+    "provinceCode": "SO"
+  },
+  "schwyz": {
+    "countryCode": "CH",
+    "provinceCode": "SZ"
+  },
+  "thurgau": {
+    "countryCode": "CH",
+    "provinceCode": "TG"
+  },
+  "ticino": {
+    "countryCode": "CH",
+    "provinceCode": "TI"
+  },
+  "uri": {
+    "countryCode": "CH",
+    "provinceCode": "UR"
+  },
+  "vaud": {
+    "countryCode": "CH",
+    "provinceCode": "VD"
+  },
+  "valais": {
+    "countryCode": "CH",
+    "provinceCode": "VS"
+  },
+  "zug": {
+    "countryCode": "CH",
+    "provinceCode": "ZG"
+  },
+  "zurich": {
+    "countryCode": "CH",
+    "provinceCode": "ZH"
+  },
+  "i - iquique": {
+    "countryCode": "CL",
+    "provinceCode": "01"
+  },
+  "ii - antofagasta": {
+    "countryCode": "CL",
+    "provinceCode": "02"
+  },
+  "iii - copiapo": {
+    "countryCode": "CL",
+    "provinceCode": "03"
+  },
+  "iv - la serena": {
+    "countryCode": "CL",
+    "provinceCode": "04"
+  },
+  "v - valparaiso": {
+    "countryCode": "CL",
+    "provinceCode": "05"
+  },
+  "vi - rancagua": {
+    "countryCode": "CL",
+    "provinceCode": "06"
+  },
+  "vii - talca": {
+    "countryCode": "CL",
+    "provinceCode": "07"
+  },
+  "viii - concepcion": {
+    "countryCode": "CL",
+    "provinceCode": "08"
+  },
+  "ix - temuco": {
+    "countryCode": "CL",
+    "provinceCode": "09"
+  },
+  "x - puerto montt": {
+    "countryCode": "CL",
+    "provinceCode": "10"
+  },
+  "xi - coyhaique": {
+    "countryCode": "CL",
+    "provinceCode": "11"
+  },
+  "xii - punta arenas": {
+    "countryCode": "CL",
+    "provinceCode": "12"
+  },
+  "rm - santiago": {
+    "countryCode": "CL",
+    "provinceCode": "13"
+  },
+  "beijing": {
+    "countryCode": "CN",
+    "provinceCode": "010"
+  },
+  "shanghai": {
+    "countryCode": "CN",
+    "provinceCode": "020"
+  },
+  "tianjin": {
+    "countryCode": "CN",
+    "provinceCode": "030"
+  },
+  "nei mongol": {
+    "countryCode": "CN",
+    "provinceCode": "040"
+  },
+  "shanxi": {
+    "countryCode": "CN",
+    "provinceCode": "050"
+  },
+  "hebei": {
+    "countryCode": "CN",
+    "provinceCode": "060"
+  },
+  "liaoning": {
+    "countryCode": "CN",
+    "provinceCode": "070"
+  },
+  "jilin": {
+    "countryCode": "CN",
+    "provinceCode": "080"
+  },
+  "heilongjiang": {
+    "countryCode": "CN",
+    "provinceCode": "090"
+  },
+  "jiangsu": {
+    "countryCode": "CN",
+    "provinceCode": "100"
+  },
+  "anhui": {
+    "countryCode": "CN",
+    "provinceCode": "110"
+  },
+  "shandong": {
+    "countryCode": "CN",
+    "provinceCode": "120"
+  },
+  "zhejiang": {
+    "countryCode": "CN",
+    "provinceCode": "130"
+  },
+  "jiangxi": {
+    "countryCode": "CN",
+    "provinceCode": "140"
+  },
+  "fujian": {
+    "countryCode": "CN",
+    "provinceCode": "150"
+  },
+  "hunan": {
+    "countryCode": "CN",
+    "provinceCode": "160"
+  },
+  "hubei": {
+    "countryCode": "CN",
+    "provinceCode": "170"
+  },
+  "henan": {
+    "countryCode": "CN",
+    "provinceCode": "180"
+  },
+  "guangdong": {
+    "countryCode": "CN",
+    "provinceCode": "190"
+  },
+  "hainan": {
+    "countryCode": "CN",
+    "provinceCode": "200"
+  },
+  "guangxi": {
+    "countryCode": "CN",
+    "provinceCode": "210"
+  },
+  "guizhou": {
+    "countryCode": "CN",
+    "provinceCode": "220"
+  },
+  "sichuan": {
+    "countryCode": "CN",
+    "provinceCode": "230"
+  },
+  "yunnan": {
+    "countryCode": "CN",
+    "provinceCode": "240"
+  },
+  "shaanxi": {
+    "countryCode": "CN",
+    "provinceCode": "250"
+  },
+  "gansu": {
+    "countryCode": "CN",
+    "provinceCode": "260"
+  },
+  "ningxia": {
+    "countryCode": "CN",
+    "provinceCode": "270"
+  },
+  "qinghai": {
+    "countryCode": "CN",
+    "provinceCode": "280"
+  },
+  "xinjiang": {
+    "countryCode": "CN",
+    "provinceCode": "290"
+  },
+  "xizang": {
+    "countryCode": "CN",
+    "provinceCode": "300"
+  },
+  "taiwan": {
+    "countryCode": "TW",
+    "provinceCode": "TWN"
+  },
+  "antioquia": {
+    "countryCode": "CO",
+    "provinceCode": "05"
+  },
+  "atlantico": {
+    "countryCode": "CO",
+    "provinceCode": "08"
+  },
+  "bogota": {
+    "countryCode": "CO",
+    "provinceCode": "11"
+  },
+  "bolivar": {
+    "countryCode": "VE",
+    "provinceCode": "BOL"
+  },
+  "boyaca": {
+    "countryCode": "CO",
+    "provinceCode": "15"
+  },
+  "caldas": {
+    "countryCode": "CO",
+    "provinceCode": "17"
+  },
+  "caqueta": {
+    "countryCode": "CO",
+    "provinceCode": "18"
+  },
+  "cauca": {
+    "countryCode": "CO",
+    "provinceCode": "19"
+  },
+  "cesar": {
+    "countryCode": "CO",
+    "provinceCode": "20"
+  },
+  "cundinamarca": {
+    "countryCode": "CO",
+    "provinceCode": "25"
+  },
+  "choco": {
+    "countryCode": "CO",
+    "provinceCode": "27"
+  },
+  "huila": {
+    "countryCode": "CO",
+    "provinceCode": "41"
+  },
+  "la guajira": {
+    "countryCode": "CO",
+    "provinceCode": "44"
+  },
+  "magdalena": {
+    "countryCode": "CO",
+    "provinceCode": "47"
+  },
+  "meta": {
+    "countryCode": "CO",
+    "provinceCode": "50"
+  },
+  "narino": {
+    "countryCode": "CO",
+    "provinceCode": "52"
+  },
+  "norte santander": {
+    "countryCode": "CO",
+    "provinceCode": "54"
+  },
+  "quindio": {
+    "countryCode": "CO",
+    "provinceCode": "63"
+  },
+  "risaralda": {
+    "countryCode": "CO",
+    "provinceCode": "66"
+  },
+  "santander": {
+    "countryCode": "CO",
+    "provinceCode": "68"
+  },
+  "sucre": {
+    "countryCode": "VE",
+    "provinceCode": "SUC"
+  },
+  "tolima": {
+    "countryCode": "CO",
+    "provinceCode": "73"
+  },
+  "valle": {
+    "countryCode": "HN",
+    "provinceCode": "VA"
+  },
+  "arauca": {
+    "countryCode": "CO",
+    "provinceCode": "81"
+  },
+  "casanare": {
+    "countryCode": "CO",
+    "provinceCode": "85"
+  },
+  "putumayo": {
+    "countryCode": "CO",
+    "provinceCode": "86"
+  },
+  "san andres": {
+    "countryCode": "CO",
+    "provinceCode": "88"
+  },
+  "amazonas": {
+    "countryCode": "CO",
+    "provinceCode": "91"
+  },
+  "guainia": {
+    "countryCode": "CO",
+    "provinceCode": "94"
+  },
+  "guaviare": {
+    "countryCode": "CO",
+    "provinceCode": "95"
+  },
+  "vaupes": {
+    "countryCode": "CO",
+    "provinceCode": "97"
+  },
+  "vichada": {
+    "countryCode": "CO",
+    "provinceCode": "99"
+  },
+  "jihocesky": {
+    "countryCode": "CZ",
+    "provinceCode": "01"
+  },
+  "jihomoravsky": {
+    "countryCode": "CZ",
+    "provinceCode": "02"
+  },
+  "praha": {
+    "countryCode": "CZ",
+    "provinceCode": "03"
+  },
+  "severocesky": {
+    "countryCode": "CZ",
+    "provinceCode": "04"
+  },
+  "severomoravsky": {
+    "countryCode": "CZ",
+    "provinceCode": "05"
+  },
+  "stredocesky": {
+    "countryCode": "CZ",
+    "provinceCode": "06"
+  },
+  "vychodocesky": {
+    "countryCode": "CZ",
+    "provinceCode": "07"
+  },
+  "zapadocesky": {
+    "countryCode": "CZ",
+    "provinceCode": "08"
+  },
+  "schleswig-holstein": {
+    "countryCode": "DE",
+    "provinceCode": "01"
+  },
+  "hamburg": {
+    "countryCode": "DE",
+    "provinceCode": "02"
+  },
+  "lower saxony": {
+    "countryCode": "DE",
+    "provinceCode": "03"
+  },
+  "bremen": {
+    "countryCode": "DE",
+    "provinceCode": "04"
+  },
+  "nrth rhine westfalia": {
+    "countryCode": "DE",
+    "provinceCode": "05"
+  },
+  "hesse": {
+    "countryCode": "DE",
+    "provinceCode": "06"
+  },
+  "rhineland palatinate": {
+    "countryCode": "DE",
+    "provinceCode": "07"
+  },
+  "baden-wurttemberg": {
+    "countryCode": "DE",
+    "provinceCode": "08"
+  },
+  "bavaria": {
+    "countryCode": "DE",
+    "provinceCode": "09"
+  },
+  "saarland": {
+    "countryCode": "DE",
+    "provinceCode": "10"
+  },
+  "berlin": {
+    "countryCode": "DE",
+    "provinceCode": "11"
+  },
+  "brandenburg": {
+    "countryCode": "DE",
+    "provinceCode": "12"
+  },
+  "mecklenburg-vorpomm.": {
+    "countryCode": "DE",
+    "provinceCode": "13"
+  },
+  "saxony": {
+    "countryCode": "DE",
+    "provinceCode": "14"
+  },
+  "saxony-anhalt": {
+    "countryCode": "DE",
+    "provinceCode": "15"
+  },
+  "thuringia": {
+    "countryCode": "DE",
+    "provinceCode": "16"
+  },
+  "copenhagen": {
+    "countryCode": "DK",
+    "provinceCode": "001"
+  },
+  "arhus amt": {
+    "countryCode": "DK",
+    "provinceCode": "002"
+  },
+  "bornholm amt": {
+    "countryCode": "DK",
+    "provinceCode": "003"
+  },
+  "frederiksborg amt": {
+    "countryCode": "DK",
+    "provinceCode": "004"
+  },
+  "fyn amt": {
+    "countryCode": "DK",
+    "provinceCode": "005"
+  },
+  "københavn amt": {
+    "countryCode": "DK",
+    "provinceCode": "006"
+  },
+  "nordjylland amt": {
+    "countryCode": "DK",
+    "provinceCode": "007"
+  },
+  "ribe amt": {
+    "countryCode": "DK",
+    "provinceCode": "008"
+  },
+  "ringkøbing amt": {
+    "countryCode": "DK",
+    "provinceCode": "009"
+  },
+  "roskilde amt": {
+    "countryCode": "DK",
+    "provinceCode": "010"
+  },
+  "sønderjylland amt": {
+    "countryCode": "DK",
+    "provinceCode": "011"
+  },
+  "storstrøm amt": {
+    "countryCode": "DK",
+    "provinceCode": "012"
+  },
+  "vejle amt": {
+    "countryCode": "DK",
+    "provinceCode": "013"
+  },
+  "vestsjælland amt": {
+    "countryCode": "DK",
+    "provinceCode": "014"
+  },
+  "viborg amt": {
+    "countryCode": "DK",
+    "provinceCode": "015"
+  },
+  "grønlands amt": {
+    "countryCode": "DK",
+    "provinceCode": "016"
+  },
+  "alava": {
+    "countryCode": "ES",
+    "provinceCode": "01"
+  },
+  "albacete": {
+    "countryCode": "ES",
+    "provinceCode": "02"
+  },
+  "alicante": {
+    "countryCode": "ES",
+    "provinceCode": "03"
+  },
+  "almeria": {
+    "countryCode": "ES",
+    "provinceCode": "04"
+  },
+  "avila": {
+    "countryCode": "ES",
+    "provinceCode": "05"
+  },
+  "badajoz": {
+    "countryCode": "ES",
+    "provinceCode": "06"
+  },
+  "baleares": {
+    "countryCode": "ES",
+    "provinceCode": "07"
+  },
+  "barcelona": {
+    "countryCode": "ES",
+    "provinceCode": "08"
+  },
+  "burgos": {
+    "countryCode": "ES",
+    "provinceCode": "09"
+  },
+  "caceres": {
+    "countryCode": "ES",
+    "provinceCode": "10"
+  },
+  "cadiz": {
+    "countryCode": "ES",
+    "provinceCode": "11"
+  },
+  "castellon": {
+    "countryCode": "ES",
+    "provinceCode": "12"
+  },
+  "ciudad real": {
+    "countryCode": "ES",
+    "provinceCode": "13"
+  },
+  "la coruna": {
+    "countryCode": "ES",
+    "provinceCode": "15"
+  },
+  "cuenca": {
+    "countryCode": "ES",
+    "provinceCode": "16"
+  },
+  "gerona": {
+    "countryCode": "ES",
+    "provinceCode": "17"
+  },
+  "granada": {
+    "countryCode": "ES",
+    "provinceCode": "18"
+  },
+  "guadalajara": {
+    "countryCode": "ES",
+    "provinceCode": "19"
+  },
+  "guipuzcoa": {
+    "countryCode": "ES",
+    "provinceCode": "20"
+  },
+  "huelva": {
+    "countryCode": "ES",
+    "provinceCode": "21"
+  },
+  "huesca": {
+    "countryCode": "ES",
+    "provinceCode": "22"
+  },
+  "jaen": {
+    "countryCode": "ES",
+    "provinceCode": "23"
+  },
+  "leon": {
+    "countryCode": "ES",
+    "provinceCode": "24"
+  },
+  "lerida": {
+    "countryCode": "ES",
+    "provinceCode": "25"
+  },
+  "lugo": {
+    "countryCode": "ES",
+    "provinceCode": "27"
+  },
+  "madrid": {
+    "countryCode": "ES",
+    "provinceCode": "28"
+  },
+  "malaga": {
+    "countryCode": "ES",
+    "provinceCode": "29"
+  },
+  "murcia": {
+    "countryCode": "ES",
+    "provinceCode": "30"
+  },
+  "navarra": {
+    "countryCode": "ES",
+    "provinceCode": "31"
+  },
+  "orense": {
+    "countryCode": "ES",
+    "provinceCode": "32"
+  },
+  "asturias": {
+    "countryCode": "ES",
+    "provinceCode": "33"
+  },
+  "palencia": {
+    "countryCode": "ES",
+    "provinceCode": "34"
+  },
+  "las palmas": {
+    "countryCode": "ES",
+    "provinceCode": "35"
+  },
+  "pontevedra": {
+    "countryCode": "ES",
+    "provinceCode": "36"
+  },
+  "salamanca": {
+    "countryCode": "ES",
+    "provinceCode": "37"
+  },
+  "sta. cruz tenerife": {
+    "countryCode": "ES",
+    "provinceCode": "38"
+  },
+  "cantabria": {
+    "countryCode": "ES",
+    "provinceCode": "39"
+  },
+  "segovia": {
+    "countryCode": "ES",
+    "provinceCode": "40"
+  },
+  "sevilla": {
+    "countryCode": "ES",
+    "provinceCode": "41"
+  },
+  "soria": {
+    "countryCode": "ES",
+    "provinceCode": "42"
+  },
+  "tarragona": {
+    "countryCode": "ES",
+    "provinceCode": "43"
+  },
+  "teruel": {
+    "countryCode": "ES",
+    "provinceCode": "44"
+  },
+  "valencia": {
+    "countryCode": "ES",
+    "provinceCode": "46"
+  },
+  "valladolid": {
+    "countryCode": "ES",
+    "provinceCode": "47"
+  },
+  "vizcaya": {
+    "countryCode": "ES",
+    "provinceCode": "48"
+  },
+  "zamora": {
+    "countryCode": "ES",
+    "provinceCode": "49"
+  },
+  "zaragoza": {
+    "countryCode": "ES",
+    "provinceCode": "50"
+  },
+  "ahvenanmaa": {
+    "countryCode": "FI",
+    "provinceCode": "001"
+  },
+  "etela-suomi": {
+    "countryCode": "FI",
+    "provinceCode": "002"
+  },
+  "ita-suomi": {
+    "countryCode": "FI",
+    "provinceCode": "003"
+  },
+  "lappi": {
+    "countryCode": "FI",
+    "provinceCode": "004"
+  },
+  "lansi-suomi": {
+    "countryCode": "FI",
+    "provinceCode": "005"
+  },
+  "oulu": {
+    "countryCode": "FI",
+    "provinceCode": "006"
+  },
+  "ain": {
+    "countryCode": "FR",
+    "provinceCode": "01"
+  },
+  "aisne": {
+    "countryCode": "FR",
+    "provinceCode": "02"
+  },
+  "allier": {
+    "countryCode": "FR",
+    "provinceCode": "03"
+  },
+  "alpes (hte-provence)": {
+    "countryCode": "FR",
+    "provinceCode": "04"
+  },
+  "alpes (hautes)": {
+    "countryCode": "FR",
+    "provinceCode": "05"
+  },
+  "alpes-maritimes": {
+    "countryCode": "FR",
+    "provinceCode": "06"
+  },
+  "ardeche": {
+    "countryCode": "FR",
+    "provinceCode": "07"
+  },
+  "ardennes": {
+    "countryCode": "FR",
+    "provinceCode": "08"
+  },
+  "ariege": {
+    "countryCode": "FR",
+    "provinceCode": "09"
+  },
+  "aube": {
+    "countryCode": "FR",
+    "provinceCode": "10"
+  },
+  "aude": {
+    "countryCode": "FR",
+    "provinceCode": "11"
+  },
+  "aveyron": {
+    "countryCode": "FR",
+    "provinceCode": "12"
+  },
+  "bouches-du-rhone": {
+    "countryCode": "FR",
+    "provinceCode": "13"
+  },
+  "calvados": {
+    "countryCode": "FR",
+    "provinceCode": "14"
+  },
+  "cantal": {
+    "countryCode": "FR",
+    "provinceCode": "15"
+  },
+  "charente": {
+    "countryCode": "FR",
+    "provinceCode": "16"
+  },
+  "charente-maritime": {
+    "countryCode": "FR",
+    "provinceCode": "17"
+  },
+  "cher": {
+    "countryCode": "FR",
+    "provinceCode": "18"
+  },
+  "correze": {
+    "countryCode": "FR",
+    "provinceCode": "19"
+  },
+  "cote-d'or": {
+    "countryCode": "FR",
+    "provinceCode": "21"
+  },
+  "cotes-d'armor": {
+    "countryCode": "FR",
+    "provinceCode": "22"
+  },
+  "creuse": {
+    "countryCode": "FR",
+    "provinceCode": "23"
+  },
+  "dordogne": {
+    "countryCode": "FR",
+    "provinceCode": "24"
+  },
+  "doubs": {
+    "countryCode": "FR",
+    "provinceCode": "25"
+  },
+  "drome": {
+    "countryCode": "FR",
+    "provinceCode": "26"
+  },
+  "eure": {
+    "countryCode": "FR",
+    "provinceCode": "27"
+  },
+  "eure-et-loir": {
+    "countryCode": "FR",
+    "provinceCode": "28"
+  },
+  "finistere": {
+    "countryCode": "FR",
+    "provinceCode": "29"
+  },
+  "corse-du-sud": {
+    "countryCode": "FR",
+    "provinceCode": "2A"
+  },
+  "corse-du-nord": {
+    "countryCode": "FR",
+    "provinceCode": "2B"
+  },
+  "gard": {
+    "countryCode": "FR",
+    "provinceCode": "30"
+  },
+  "garonne (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "31"
+  },
+  "gers": {
+    "countryCode": "FR",
+    "provinceCode": "32"
+  },
+  "gironde": {
+    "countryCode": "FR",
+    "provinceCode": "33"
+  },
+  "herault": {
+    "countryCode": "FR",
+    "provinceCode": "34"
+  },
+  "ille-et-vilaine": {
+    "countryCode": "FR",
+    "provinceCode": "35"
+  },
+  "indre": {
+    "countryCode": "FR",
+    "provinceCode": "36"
+  },
+  "indre-et-loire": {
+    "countryCode": "FR",
+    "provinceCode": "37"
+  },
+  "isere": {
+    "countryCode": "FR",
+    "provinceCode": "38"
+  },
+  "landes": {
+    "countryCode": "FR",
+    "provinceCode": "40"
+  },
+  "loir-et-cher": {
+    "countryCode": "FR",
+    "provinceCode": "41"
+  },
+  "loire": {
+    "countryCode": "FR",
+    "provinceCode": "42"
+  },
+  "loire (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "43"
+  },
+  "loire-atlantique": {
+    "countryCode": "FR",
+    "provinceCode": "44"
+  },
+  "loiret": {
+    "countryCode": "FR",
+    "provinceCode": "45"
+  },
+  "lot": {
+    "countryCode": "FR",
+    "provinceCode": "46"
+  },
+  "lot-et-garonne": {
+    "countryCode": "FR",
+    "provinceCode": "47"
+  },
+  "lozere": {
+    "countryCode": "FR",
+    "provinceCode": "48"
+  },
+  "maine-et-loire": {
+    "countryCode": "FR",
+    "provinceCode": "49"
+  },
+  "manche": {
+    "countryCode": "FR",
+    "provinceCode": "50"
+  },
+  "marne": {
+    "countryCode": "FR",
+    "provinceCode": "51"
+  },
+  "marne (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "52"
+  },
+  "mayenne": {
+    "countryCode": "FR",
+    "provinceCode": "53"
+  },
+  "meurthe-et-moselle": {
+    "countryCode": "FR",
+    "provinceCode": "54"
+  },
+  "meuse": {
+    "countryCode": "FR",
+    "provinceCode": "55"
+  },
+  "morbihan": {
+    "countryCode": "FR",
+    "provinceCode": "56"
+  },
+  "moselle": {
+    "countryCode": "FR",
+    "provinceCode": "57"
+  },
+  "nievre": {
+    "countryCode": "FR",
+    "provinceCode": "58"
+  },
+  "nord": {
+    "countryCode": "FR",
+    "provinceCode": "59"
+  },
+  "oise": {
+    "countryCode": "FR",
+    "provinceCode": "60"
+  },
+  "orne": {
+    "countryCode": "FR",
+    "provinceCode": "61"
+  },
+  "pas-de-calais": {
+    "countryCode": "FR",
+    "provinceCode": "62"
+  },
+  "puy-de-dome": {
+    "countryCode": "FR",
+    "provinceCode": "63"
+  },
+  "pyrenees-atlantiques": {
+    "countryCode": "FR",
+    "provinceCode": "64"
+  },
+  "pyrenees (hautes)": {
+    "countryCode": "FR",
+    "provinceCode": "65"
+  },
+  "pyrenees-orientales": {
+    "countryCode": "FR",
+    "provinceCode": "66"
+  },
+  "bas-rhin": {
+    "countryCode": "FR",
+    "provinceCode": "67"
+  },
+  "haut-rhin": {
+    "countryCode": "FR",
+    "provinceCode": "68"
+  },
+  "rhone": {
+    "countryCode": "FR",
+    "provinceCode": "69"
+  },
+  "saone (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "70"
+  },
+  "saone-et-loire": {
+    "countryCode": "FR",
+    "provinceCode": "71"
+  },
+  "sarthe": {
+    "countryCode": "FR",
+    "provinceCode": "72"
+  },
+  "savoie": {
+    "countryCode": "FR",
+    "provinceCode": "73"
+  },
+  "savoie (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "74"
+  },
+  "paris": {
+    "countryCode": "FR",
+    "provinceCode": "75"
+  },
+  "seine-maritime": {
+    "countryCode": "FR",
+    "provinceCode": "76"
+  },
+  "seine-et-marne": {
+    "countryCode": "FR",
+    "provinceCode": "77"
+  },
+  "yvelines": {
+    "countryCode": "FR",
+    "provinceCode": "78"
+  },
+  "sevres (deux)": {
+    "countryCode": "FR",
+    "provinceCode": "79"
+  },
+  "somme": {
+    "countryCode": "FR",
+    "provinceCode": "80"
+  },
+  "tarn": {
+    "countryCode": "FR",
+    "provinceCode": "81"
+  },
+  "tarn-et-garonne": {
+    "countryCode": "FR",
+    "provinceCode": "82"
+  },
+  "var": {
+    "countryCode": "FR",
+    "provinceCode": "83"
+  },
+  "vaucluse": {
+    "countryCode": "FR",
+    "provinceCode": "84"
+  },
+  "vendee": {
+    "countryCode": "FR",
+    "provinceCode": "85"
+  },
+  "vienne": {
+    "countryCode": "FR",
+    "provinceCode": "86"
+  },
+  "vienne (haute)": {
+    "countryCode": "FR",
+    "provinceCode": "87"
+  },
+  "vosges": {
+    "countryCode": "FR",
+    "provinceCode": "88"
+  },
+  "yonne": {
+    "countryCode": "FR",
+    "provinceCode": "89"
+  },
+  "territ.-de-belfort": {
+    "countryCode": "FR",
+    "provinceCode": "90"
+  },
+  "essonne": {
+    "countryCode": "FR",
+    "provinceCode": "91"
+  },
+  "hauts-de-seine": {
+    "countryCode": "FR",
+    "provinceCode": "92"
+  },
+  "seine-saint-denis": {
+    "countryCode": "FR",
+    "provinceCode": "93"
+  },
+  "val-de-marne": {
+    "countryCode": "FR",
+    "provinceCode": "94"
+  },
+  "val-d'oise": {
+    "countryCode": "FR",
+    "provinceCode": "95"
+  },
+  "d.o.m.-t.o.m.": {
+    "countryCode": "FR",
+    "provinceCode": "97"
+  },
+  "guadeloupe": {
+    "countryCode": "FR",
+    "provinceCode": "971"
+  },
+  "martinique": {
+    "countryCode": "FR",
+    "provinceCode": "972"
+  },
+  "guyane": {
+    "countryCode": "FR",
+    "provinceCode": "973"
+  },
+  "reunion": {
+    "countryCode": "FR",
+    "provinceCode": "974"
+  },
+  "saint-pierre-et-miq.": {
+    "countryCode": "FR",
+    "provinceCode": "975"
+  },
+  "wallis-et-futuna": {
+    "countryCode": "FR",
+    "provinceCode": "976"
+  },
+  "hors-france": {
+    "countryCode": "FR",
+    "provinceCode": "99"
+  },
+  "armagh": {
+    "countryCode": "GB",
+    "provinceCode": "AM"
+  },
+  "ards": {
+    "countryCode": "GB",
+    "provinceCode": "AR"
+  },
+  "antrim": {
+    "countryCode": "GB",
+    "provinceCode": "AT"
+  },
+  "ballymena": {
+    "countryCode": "GB",
+    "provinceCode": "BA"
+  },
+  "blackburn": {
+    "countryCode": "GB",
+    "provinceCode": "BB"
+  },
+  "bedfordshire": {
+    "countryCode": "GB",
+    "provinceCode": "BE"
+  },
+  "bracknell forest": {
+    "countryCode": "GB",
+    "provinceCode": "BF"
+  },
+  "brighton & hove": {
+    "countryCode": "GB",
+    "provinceCode": "BH"
+  },
+  "berkshire": {
+    "countryCode": "GB",
+    "provinceCode": "BK"
+  },
+  "belfast": {
+    "countryCode": "GB",
+    "provinceCode": "BL"
+  },
+  "bournemouth": {
+    "countryCode": "GB",
+    "provinceCode": "BM"
+  },
+  "banbridge": {
+    "countryCode": "GB",
+    "provinceCode": "BN"
+  },
+  "borders": {
+    "countryCode": "GB",
+    "provinceCode": "BO"
+  },
+  "blackpool": {
+    "countryCode": "GB",
+    "provinceCode": "BP"
+  },
+  "bristol": {
+    "countryCode": "GB",
+    "provinceCode": "BR"
+  },
+  "bath&nthestsomerset": {
+    "countryCode": "GB",
+    "provinceCode": "BS"
+  },
+  "buckinghamshire": {
+    "countryCode": "GB",
+    "provinceCode": "BU"
+  },
+  "ballymoney": {
+    "countryCode": "GB",
+    "provinceCode": "BY"
+  },
+  "cambridgeshire": {
+    "countryCode": "GB",
+    "provinceCode": "CA"
+  },
+  "central": {
+    "countryCode": "IL",
+    "provinceCode": "01"
+  },
+  "craigavon": {
+    "countryCode": "GB",
+    "provinceCode": "CG"
+  },
+  "cheshire": {
+    "countryCode": "GB",
+    "provinceCode": "CH"
+  },
+  "coleraine": {
+    "countryCode": "GB",
+    "provinceCode": "CI"
+  },
+  "cookstown": {
+    "countryCode": "GB",
+    "provinceCode": "CK"
+  },
+  "clwyd": {
+    "countryCode": "GB",
+    "provinceCode": "CL"
+  },
+  "cornwall": {
+    "countryCode": "GB",
+    "provinceCode": "CO"
+  },
+  "carrickfergus": {
+    "countryCode": "GB",
+    "provinceCode": "CR"
+  },
+  "castlereagh": {
+    "countryCode": "GB",
+    "provinceCode": "CS"
+  },
+  "cumbria": {
+    "countryCode": "GB",
+    "provinceCode": "CU"
+  },
+  "cleveland": {
+    "countryCode": "GB",
+    "provinceCode": "CV"
+  },
+  "derbyshire": {
+    "countryCode": "GB",
+    "provinceCode": "DB"
+  },
+  "dumfries a. galloway": {
+    "countryCode": "GB",
+    "provinceCode": "DF"
+  },
+  "dungannon": {
+    "countryCode": "GB",
+    "provinceCode": "DG"
+  },
+  "darlington": {
+    "countryCode": "GB",
+    "provinceCode": "DL"
+  },
+  "down": {
+    "countryCode": "GB",
+    "provinceCode": "DN"
+  },
+  "dorset": {
+    "countryCode": "GB",
+    "provinceCode": "DO"
+  },
+  "durham": {
+    "countryCode": "GB",
+    "provinceCode": "DU"
+  },
+  "devon": {
+    "countryCode": "GB",
+    "provinceCode": "DV"
+  },
+  "dyfed": {
+    "countryCode": "GB",
+    "provinceCode": "DY"
+  },
+  "east riding": {
+    "countryCode": "GB",
+    "provinceCode": "ER"
+  },
+  "essex": {
+    "countryCode": "GB",
+    "provinceCode": "ES"
+  },
+  "fife": {
+    "countryCode": "GB",
+    "provinceCode": "FI"
+  },
+  "fermanagh": {
+    "countryCode": "GB",
+    "provinceCode": "FM"
+  },
+  "gloucestershire": {
+    "countryCode": "GB",
+    "provinceCode": "GL"
+  },
+  "greater manchester": {
+    "countryCode": "GB",
+    "provinceCode": "GM"
+  },
+  "grampian": {
+    "countryCode": "GB",
+    "provinceCode": "GR"
+  },
+  "sth. gloucestershire": {
+    "countryCode": "GB",
+    "provinceCode": "GS"
+  },
+  "gwent": {
+    "countryCode": "GB",
+    "provinceCode": "GW"
+  },
+  "gwynedd": {
+    "countryCode": "GB",
+    "provinceCode": "GY"
+  },
+  "hampshire": {
+    "countryCode": "GB",
+    "provinceCode": "HA"
+  },
+  "highland": {
+    "countryCode": "GB",
+    "provinceCode": "HI"
+  },
+  "halton": {
+    "countryCode": "GB",
+    "provinceCode": "HL"
+  },
+  "hartlepool": {
+    "countryCode": "GB",
+    "provinceCode": "HR"
+  },
+  "hertfordshire": {
+    "countryCode": "GB",
+    "provinceCode": "HT"
+  },
+  "hereford and worcs.": {
+    "countryCode": "GB",
+    "provinceCode": "HW"
+  },
+  "isle of wight": {
+    "countryCode": "GB",
+    "provinceCode": "IW"
+  },
+  "kent": {
+    "countryCode": "GB",
+    "provinceCode": "KE"
+  },
+  "kingston-upon-hull": {
+    "countryCode": "GB",
+    "provinceCode": "KH"
+  },
+  "lancashire": {
+    "countryCode": "GB",
+    "provinceCode": "LA"
+  },
+  "leicester city": {
+    "countryCode": "GB",
+    "provinceCode": "LC"
+  },
+  "londonderry": {
+    "countryCode": "GB",
+    "provinceCode": "LD"
+  },
+  "leicestershire": {
+    "countryCode": "GB",
+    "provinceCode": "LE"
+  },
+  "lincolnshire": {
+    "countryCode": "GB",
+    "provinceCode": "LI"
+  },
+  "limavady": {
+    "countryCode": "GB",
+    "provinceCode": "LM"
+  },
+  "greater london": {
+    "countryCode": "GB",
+    "provinceCode": "LO"
+  },
+  "larne": {
+    "countryCode": "GB",
+    "provinceCode": "LR"
+  },
+  "lisburn": {
+    "countryCode": "GB",
+    "provinceCode": "LS"
+  },
+  "lothian": {
+    "countryCode": "GB",
+    "provinceCode": "LT"
+  },
+  "luton": {
+    "countryCode": "GB",
+    "provinceCode": "LU"
+  },
+  "magherafelt": {
+    "countryCode": "GB",
+    "provinceCode": "MA"
+  },
+  "mid glamorgan": {
+    "countryCode": "GB",
+    "provinceCode": "MG"
+  },
+  "middlesbrough": {
+    "countryCode": "GB",
+    "provinceCode": "MI"
+  },
+  "milton keynes": {
+    "countryCode": "GB",
+    "provinceCode": "MK"
+  },
+  "moyle": {
+    "countryCode": "GB",
+    "provinceCode": "MO"
+  },
+  "merseyside": {
+    "countryCode": "GB",
+    "provinceCode": "MY"
+  },
+  "newtownabbey": {
+    "countryCode": "GB",
+    "provinceCode": "NA"
+  },
+  "newbury": {
+    "countryCode": "GB",
+    "provinceCode": "NB"
+  },
+  "nottingham city": {
+    "countryCode": "GB",
+    "provinceCode": "NC"
+  },
+  "north down": {
+    "countryCode": "GB",
+    "provinceCode": "ND"
+  },
+  "ntheast lincolnshire": {
+    "countryCode": "GB",
+    "provinceCode": "NE"
+  },
+  "northamptonshire": {
+    "countryCode": "GB",
+    "provinceCode": "NH"
+  },
+  "norfolk": {
+    "countryCode": "GB",
+    "provinceCode": "NK"
+  },
+  "north lincolnshire": {
+    "countryCode": "GB",
+    "provinceCode": "NL"
+  },
+  "newry and mourne": {
+    "countryCode": "GB",
+    "provinceCode": "NM"
+  },
+  "north somerset": {
+    "countryCode": "GB",
+    "provinceCode": "NS"
+  },
+  "nottinghamshire": {
+    "countryCode": "GB",
+    "provinceCode": "NT"
+  },
+  "northumberland": {
+    "countryCode": "GB",
+    "provinceCode": "NU"
+  },
+  "omagh": {
+    "countryCode": "GB",
+    "provinceCode": "OM"
+  },
+  "orkney": {
+    "countryCode": "GB",
+    "provinceCode": "OR"
+  },
+  "oxfordshire": {
+    "countryCode": "GB",
+    "provinceCode": "OX"
+  },
+  "peterborough": {
+    "countryCode": "GB",
+    "provinceCode": "PB"
+  },
+  "poole": {
+    "countryCode": "GB",
+    "provinceCode": "PL"
+  },
+  "portsmouth": {
+    "countryCode": "GB",
+    "provinceCode": "PM"
+  },
+  "powys": {
+    "countryCode": "GB",
+    "provinceCode": "PO"
+  },
+  "plymouth": {
+    "countryCode": "GB",
+    "provinceCode": "PY"
+  },
+  "redcar and cleveland": {
+    "countryCode": "GB",
+    "provinceCode": "RD"
+  },
+  "reading": {
+    "countryCode": "GB",
+    "provinceCode": "RE"
+  },
+  "rochester up. medway": {
+    "countryCode": "GB",
+    "provinceCode": "RM"
+  },
+  "rutland": {
+    "countryCode": "GB",
+    "provinceCode": "RU"
+  },
+  "strathclyde": {
+    "countryCode": "GB",
+    "provinceCode": "SC"
+  },
+  "southend": {
+    "countryCode": "GB",
+    "provinceCode": "SD"
+  },
+  "east sussex": {
+    "countryCode": "GB",
+    "provinceCode": "SE"
+  },
+  "south glamorgan": {
+    "countryCode": "GB",
+    "provinceCode": "SG"
+  },
+  "shropshire": {
+    "countryCode": "GB",
+    "provinceCode": "SH"
+  },
+  "suffolk": {
+    "countryCode": "GB",
+    "provinceCode": "SK"
+  },
+  "shetland": {
+    "countryCode": "GB",
+    "provinceCode": "SL"
+  },
+  "stockton-on-tees": {
+    "countryCode": "GB",
+    "provinceCode": "SN"
+  },
+  "somerset": {
+    "countryCode": "GB",
+    "provinceCode": "SO"
+  },
+  "southampton": {
+    "countryCode": "GB",
+    "provinceCode": "SP"
+  },
+  "strabane": {
+    "countryCode": "GB",
+    "provinceCode": "SR"
+  },
+  "staffordshire": {
+    "countryCode": "GB",
+    "provinceCode": "ST"
+  },
+  "slough": {
+    "countryCode": "GB",
+    "provinceCode": "SU"
+  },
+  "west sussex": {
+    "countryCode": "GB",
+    "provinceCode": "SW"
+  },
+  "surrey": {
+    "countryCode": "GB",
+    "provinceCode": "SY"
+  },
+  "tayside": {
+    "countryCode": "GB",
+    "provinceCode": "TA"
+  },
+  "thamesdown": {
+    "countryCode": "GB",
+    "provinceCode": "TD"
+  },
+  "thurrock": {
+    "countryCode": "GB",
+    "provinceCode": "TH"
+  },
+  "torbay": {
+    "countryCode": "GB",
+    "provinceCode": "TO"
+  },
+  "tyne and wear": {
+    "countryCode": "GB",
+    "provinceCode": "TW"
+  },
+  "warwickshire": {
+    "countryCode": "GB",
+    "provinceCode": "WA"
+  },
+  "windsor & maidenhead": {
+    "countryCode": "GB",
+    "provinceCode": "WD"
+  },
+  "west glamorgan": {
+    "countryCode": "GB",
+    "provinceCode": "WG"
+  },
+  "wiltshire": {
+    "countryCode": "GB",
+    "provinceCode": "WI"
+  },
+  "western isles": {
+    "countryCode": "GB",
+    "provinceCode": "WL"
+  },
+  "west midlands": {
+    "countryCode": "GB",
+    "provinceCode": "WM"
+  },
+  "wokingham": {
+    "countryCode": "GB",
+    "provinceCode": "WO"
+  },
+  "wrekin": {
+    "countryCode": "GB",
+    "provinceCode": "WR"
+  },
+  "warrington": {
+    "countryCode": "GB",
+    "provinceCode": "WT"
+  },
+  "york": {
+    "countryCode": "GB",
+    "provinceCode": "YK"
+  },
+  "north yorkshire": {
+    "countryCode": "GB",
+    "provinceCode": "YN"
+  },
+  "south yorkshire": {
+    "countryCode": "GB",
+    "provinceCode": "YS"
+  },
+  "west yorkshire": {
+    "countryCode": "GB",
+    "provinceCode": "YW"
+  },
+  "aitolia kai akarnan.": {
+    "countryCode": "GR",
+    "provinceCode": "01"
+  },
+  "akhaia": {
+    "countryCode": "GR",
+    "provinceCode": "02"
+  },
+  "argolis": {
+    "countryCode": "GR",
+    "provinceCode": "03"
+  },
+  "arkadhia": {
+    "countryCode": "GR",
+    "provinceCode": "04"
+  },
+  "arta": {
+    "countryCode": "GR",
+    "provinceCode": "05"
+  },
+  "attiki": {
+    "countryCode": "GR",
+    "provinceCode": "06"
+  },
+  "dhodhekanisos": {
+    "countryCode": "GR",
+    "provinceCode": "07"
+  },
+  "dhrama": {
+    "countryCode": "GR",
+    "provinceCode": "08"
+  },
+  "evritania": {
+    "countryCode": "GR",
+    "provinceCode": "09"
+  },
+  "evros": {
+    "countryCode": "GR",
+    "provinceCode": "10"
+  },
+  "evvoia": {
+    "countryCode": "GR",
+    "provinceCode": "11"
+  },
+  "florina": {
+    "countryCode": "GR",
+    "provinceCode": "12"
+  },
+  "fokis": {
+    "countryCode": "GR",
+    "provinceCode": "13"
+  },
+  "fthiotis": {
+    "countryCode": "GR",
+    "provinceCode": "14"
+  },
+  "grevena": {
+    "countryCode": "GR",
+    "provinceCode": "15"
+  },
+  "ilia": {
+    "countryCode": "GR",
+    "provinceCode": "16"
+  },
+  "imathia": {
+    "countryCode": "GR",
+    "provinceCode": "17"
+  },
+  "ioannina": {
+    "countryCode": "GR",
+    "provinceCode": "18"
+  },
+  "iraklion": {
+    "countryCode": "GR",
+    "provinceCode": "19"
+  },
+  "kardhitsa": {
+    "countryCode": "GR",
+    "provinceCode": "20"
+  },
+  "kastoria": {
+    "countryCode": "GR",
+    "provinceCode": "21"
+  },
+  "kavala": {
+    "countryCode": "GR",
+    "provinceCode": "22"
+  },
+  "kefallinia": {
+    "countryCode": "GR",
+    "provinceCode": "23"
+  },
+  "kerkira": {
+    "countryCode": "GR",
+    "provinceCode": "24"
+  },
+  "khalkidhiki": {
+    "countryCode": "GR",
+    "provinceCode": "25"
+  },
+  "khania": {
+    "countryCode": "GR",
+    "provinceCode": "26"
+  },
+  "khios": {
+    "countryCode": "GR",
+    "provinceCode": "27"
+  },
+  "kikladhes": {
+    "countryCode": "GR",
+    "provinceCode": "28"
+  },
+  "kilkis": {
+    "countryCode": "GR",
+    "provinceCode": "29"
+  },
+  "korinthia": {
+    "countryCode": "GR",
+    "provinceCode": "30"
+  },
+  "kozani": {
+    "countryCode": "GR",
+    "provinceCode": "31"
+  },
+  "lakonia": {
+    "countryCode": "GR",
+    "provinceCode": "32"
+  },
+  "larisa": {
+    "countryCode": "GR",
+    "provinceCode": "33"
+  },
+  "lasithi": {
+    "countryCode": "GR",
+    "provinceCode": "34"
+  },
+  "lesvos": {
+    "countryCode": "GR",
+    "provinceCode": "35"
+  },
+  "levkas": {
+    "countryCode": "GR",
+    "provinceCode": "36"
+  },
+  "magnisia": {
+    "countryCode": "GR",
+    "provinceCode": "37"
+  },
+  "messinia": {
+    "countryCode": "GR",
+    "provinceCode": "38"
+  },
+  "pella": {
+    "countryCode": "GR",
+    "provinceCode": "39"
+  },
+  "pieria": {
+    "countryCode": "GR",
+    "provinceCode": "40"
+  },
+  "piraievs": {
+    "countryCode": "GR",
+    "provinceCode": "41"
+  },
+  "preveza": {
+    "countryCode": "GR",
+    "provinceCode": "42"
+  },
+  "rethimni": {
+    "countryCode": "GR",
+    "provinceCode": "43"
+  },
+  "rodhopi": {
+    "countryCode": "GR",
+    "provinceCode": "44"
+  },
+  "samos": {
+    "countryCode": "GR",
+    "provinceCode": "45"
+  },
+  "serrai": {
+    "countryCode": "GR",
+    "provinceCode": "46"
+  },
+  "thesprotia": {
+    "countryCode": "GR",
+    "provinceCode": "47"
+  },
+  "thessaloniki": {
+    "countryCode": "GR",
+    "provinceCode": "48"
+  },
+  "trikala": {
+    "countryCode": "GR",
+    "provinceCode": "49"
+  },
+  "voiotia": {
+    "countryCode": "GR",
+    "provinceCode": "50"
+  },
+  "xanthi": {
+    "countryCode": "GR",
+    "provinceCode": "51"
+  },
+  "zakinthos": {
+    "countryCode": "GR",
+    "provinceCode": "52"
+  },
+  "hong kong island": {
+    "countryCode": "HK",
+    "provinceCode": "HK"
+  },
+  "kowloon": {
+    "countryCode": "HK",
+    "provinceCode": "KLN"
+  },
+  "new territories": {
+    "countryCode": "HK",
+    "provinceCode": "NT"
+  },
+  "atlantida": {
+    "countryCode": "HN",
+    "provinceCode": "AT"
+  },
+  "choluteca": {
+    "countryCode": "HN",
+    "provinceCode": "CH"
+  },
+  "colon": {
+    "countryCode": "HN",
+    "provinceCode": "CL"
+  },
+  "comayagua": {
+    "countryCode": "HN",
+    "provinceCode": "CM"
+  },
+  "copan": {
+    "countryCode": "HN",
+    "provinceCode": "CP"
+  },
+  "cortes": {
+    "countryCode": "HN",
+    "provinceCode": "CR"
+  },
+  "el paraiso": {
+    "countryCode": "HN",
+    "provinceCode": "EP"
+  },
+  "francisco morazan": {
+    "countryCode": "HN",
+    "provinceCode": "FM"
+  },
+  "gracias a dios": {
+    "countryCode": "HN",
+    "provinceCode": "GD"
+  },
+  "islas de la bahia": {
+    "countryCode": "HN",
+    "provinceCode": "IB"
+  },
+  "intibuca": {
+    "countryCode": "HN",
+    "provinceCode": "IN"
+  },
+  "lempira": {
+    "countryCode": "HN",
+    "provinceCode": "LE"
+  },
+  "la paz": {
+    "countryCode": "HN",
+    "provinceCode": "LP"
+  },
+  "ocotepeque": {
+    "countryCode": "HN",
+    "provinceCode": "OC"
+  },
+  "olancho": {
+    "countryCode": "HN",
+    "provinceCode": "OL"
+  },
+  "santa barbara": {
+    "countryCode": "HN",
+    "provinceCode": "SB"
+  },
+  "yoro": {
+    "countryCode": "HN",
+    "provinceCode": "YO"
+  },
+  "bjelovar-bilogora": {
+    "countryCode": "HR",
+    "provinceCode": "01"
+  },
+  "stadt zagreb": {
+    "countryCode": "HR",
+    "provinceCode": "02"
+  },
+  "dubrovnik-neretva": {
+    "countryCode": "HR",
+    "provinceCode": "03"
+  },
+  "istra": {
+    "countryCode": "HR",
+    "provinceCode": "04"
+  },
+  "karlovac": {
+    "countryCode": "HR",
+    "provinceCode": "05"
+  },
+  "koprivnica-krizevci": {
+    "countryCode": "HR",
+    "provinceCode": "06"
+  },
+  "lika-senj": {
+    "countryCode": "HR",
+    "provinceCode": "07"
+  },
+  "medimurje": {
+    "countryCode": "HR",
+    "provinceCode": "08"
+  },
+  "osijek-baranja": {
+    "countryCode": "HR",
+    "provinceCode": "09"
+  },
+  "pozega-slavonija": {
+    "countryCode": "HR",
+    "provinceCode": "10"
+  },
+  "primorje-gorski kot.": {
+    "countryCode": "HR",
+    "provinceCode": "11"
+  },
+  "sibenik": {
+    "countryCode": "HR",
+    "provinceCode": "12"
+  },
+  "sisak-moslavina": {
+    "countryCode": "HR",
+    "provinceCode": "13"
+  },
+  "slavonski": {
+    "countryCode": "HR",
+    "provinceCode": "14"
+  },
+  "brod-posavina": {
+    "countryCode": "HR",
+    "provinceCode": "15"
+  },
+  "split-dalmatia": {
+    "countryCode": "HR",
+    "provinceCode": "16"
+  },
+  "varazdin": {
+    "countryCode": "HR",
+    "provinceCode": "17"
+  },
+  "virovitica-podravina": {
+    "countryCode": "HR",
+    "provinceCode": "18"
+  },
+  "vukovar-srijem": {
+    "countryCode": "HR",
+    "provinceCode": "19"
+  },
+  "zadar-knin": {
+    "countryCode": "HR",
+    "provinceCode": "20"
+  },
+  "zagreb": {
+    "countryCode": "HR",
+    "provinceCode": "21"
+  },
+  "bacs-kiskun": {
+    "countryCode": "HU",
+    "provinceCode": "01"
+  },
+  "baranya": {
+    "countryCode": "HU",
+    "provinceCode": "02"
+  },
+  "bekes": {
+    "countryCode": "HU",
+    "provinceCode": "03"
+  },
+  "bekescsaba": {
+    "countryCode": "HU",
+    "provinceCode": "04"
+  },
+  "borsod-abauj-zemplen": {
+    "countryCode": "HU",
+    "provinceCode": "05"
+  },
+  "budapest": {
+    "countryCode": "HU",
+    "provinceCode": "06"
+  },
+  "csongrad": {
+    "countryCode": "HU",
+    "provinceCode": "07"
+  },
+  "debrecen": {
+    "countryCode": "HU",
+    "provinceCode": "08"
+  },
+  "dunaujvaros": {
+    "countryCode": "HU",
+    "provinceCode": "09"
+  },
+  "eger": {
+    "countryCode": "HU",
+    "provinceCode": "10"
+  },
+  "fejer": {
+    "countryCode": "HU",
+    "provinceCode": "11"
+  },
+  "gyor": {
+    "countryCode": "HU",
+    "provinceCode": "12"
+  },
+  "gyor-moson-sopron": {
+    "countryCode": "HU",
+    "provinceCode": "13"
+  },
+  "hajdu-bihar": {
+    "countryCode": "HU",
+    "provinceCode": "14"
+  },
+  "heves": {
+    "countryCode": "HU",
+    "provinceCode": "15"
+  },
+  "hodmezovasarhely": {
+    "countryCode": "HU",
+    "provinceCode": "16"
+  },
+  "jasz-nagykun-szolnok": {
+    "countryCode": "HU",
+    "provinceCode": "17"
+  },
+  "kaposvar": {
+    "countryCode": "HU",
+    "provinceCode": "18"
+  },
+  "kecskemet": {
+    "countryCode": "HU",
+    "provinceCode": "19"
+  },
+  "komarom-esztergom": {
+    "countryCode": "HU",
+    "provinceCode": "20"
+  },
+  "miskolc": {
+    "countryCode": "HU",
+    "provinceCode": "21"
+  },
+  "nagykanizsa": {
+    "countryCode": "HU",
+    "provinceCode": "22"
+  },
+  "nograd": {
+    "countryCode": "HU",
+    "provinceCode": "23"
+  },
+  "nyiregyhaza": {
+    "countryCode": "HU",
+    "provinceCode": "24"
+  },
+  "pecs": {
+    "countryCode": "HU",
+    "provinceCode": "25"
+  },
+  "pest": {
+    "countryCode": "HU",
+    "provinceCode": "26"
+  },
+  "somogy": {
+    "countryCode": "HU",
+    "provinceCode": "27"
+  },
+  "sopron": {
+    "countryCode": "HU",
+    "provinceCode": "28"
+  },
+  "szabolcs-szat.-bereg": {
+    "countryCode": "HU",
+    "provinceCode": "29"
+  },
+  "szeged": {
+    "countryCode": "HU",
+    "provinceCode": "30"
+  },
+  "szekesfehervar": {
+    "countryCode": "HU",
+    "provinceCode": "31"
+  },
+  "szolnok": {
+    "countryCode": "HU",
+    "provinceCode": "32"
+  },
+  "szombathely": {
+    "countryCode": "HU",
+    "provinceCode": "33"
+  },
+  "tatabanya": {
+    "countryCode": "HU",
+    "provinceCode": "34"
+  },
+  "tolna": {
+    "countryCode": "HU",
+    "provinceCode": "35"
+  },
+  "vas": {
+    "countryCode": "HU",
+    "provinceCode": "36"
+  },
+  "veszprem": {
+    "countryCode": "HU",
+    "provinceCode": "37"
+  },
+  "zala": {
+    "countryCode": "HU",
+    "provinceCode": "38"
+  },
+  "zalaegerszeg": {
+    "countryCode": "HU",
+    "provinceCode": "39"
+  },
+  "dki jakarta jakarta": {
+    "countryCode": "ID",
+    "provinceCode": "01"
+  },
+  "jawa barat west java": {
+    "countryCode": "ID",
+    "provinceCode": "02"
+  },
+  "jawa tengah central": {
+    "countryCode": "ID",
+    "provinceCode": "03"
+  },
+  "jawa timur east java": {
+    "countryCode": "ID",
+    "provinceCode": "04"
+  },
+  "di yogyakarta yogyak": {
+    "countryCode": "ID",
+    "provinceCode": "05"
+  },
+  "di aceh aceh": {
+    "countryCode": "ID",
+    "provinceCode": "06"
+  },
+  "sumatera utara north": {
+    "countryCode": "ID",
+    "provinceCode": "07"
+  },
+  "sumatera barat west": {
+    "countryCode": "ID",
+    "provinceCode": "08"
+  },
+  "riau riau": {
+    "countryCode": "ID",
+    "provinceCode": "09"
+  },
+  "jambi jambi": {
+    "countryCode": "ID",
+    "provinceCode": "10"
+  },
+  "sumatera selatan sou": {
+    "countryCode": "ID",
+    "provinceCode": "11"
+  },
+  "bengkulu bengkulu": {
+    "countryCode": "ID",
+    "provinceCode": "12"
+  },
+  "lampung lampung": {
+    "countryCode": "ID",
+    "provinceCode": "13"
+  },
+  "kalimantan selatan s": {
+    "countryCode": "ID",
+    "provinceCode": "14"
+  },
+  "kalimantan barat wes": {
+    "countryCode": "ID",
+    "provinceCode": "15"
+  },
+  "kalimantan tengah ce": {
+    "countryCode": "ID",
+    "provinceCode": "16"
+  },
+  "kalimantan timur eas": {
+    "countryCode": "ID",
+    "provinceCode": "17"
+  },
+  "sulawesi selatan sou": {
+    "countryCode": "ID",
+    "provinceCode": "18"
+  },
+  "sulawesi tenggara so": {
+    "countryCode": "ID",
+    "provinceCode": "19"
+  },
+  "sulawesi tengah cent": {
+    "countryCode": "ID",
+    "provinceCode": "20"
+  },
+  "sulawesi utara north": {
+    "countryCode": "ID",
+    "provinceCode": "21"
+  },
+  "bali bali": {
+    "countryCode": "ID",
+    "provinceCode": "22"
+  },
+  "nusa tenggara barat": {
+    "countryCode": "ID",
+    "provinceCode": "23"
+  },
+  "nusa tenggara timur": {
+    "countryCode": "ID",
+    "provinceCode": "24"
+  },
+  "maluku maluku": {
+    "countryCode": "ID",
+    "provinceCode": "25"
+  },
+  "irian jaya irian jay": {
+    "countryCode": "ID",
+    "provinceCode": "26"
+  },
+  "timor timur east tim": {
+    "countryCode": "ID",
+    "provinceCode": "27"
+  },
+  "cork": {
+    "countryCode": "IE",
+    "provinceCode": "CK"
+  },
+  "clare": {
+    "countryCode": "IE",
+    "provinceCode": "CL"
+  },
+  "cavan": {
+    "countryCode": "IE",
+    "provinceCode": "CV"
+  },
+  "carlow": {
+    "countryCode": "IE",
+    "provinceCode": "CW"
+  },
+  "dublin": {
+    "countryCode": "IE",
+    "provinceCode": "DB"
+  },
+  "donegal": {
+    "countryCode": "IE",
+    "provinceCode": "DG"
+  },
+  "galway": {
+    "countryCode": "IE",
+    "provinceCode": "GW"
+  },
+  "kildare": {
+    "countryCode": "IE",
+    "provinceCode": "KD"
+  },
+  "kilkenny": {
+    "countryCode": "IE",
+    "provinceCode": "KK"
+  },
+  "kerry": {
+    "countryCode": "IE",
+    "provinceCode": "KY"
+  },
+  "longford": {
+    "countryCode": "IE",
+    "provinceCode": "LF"
+  },
+  "limerick": {
+    "countryCode": "IE",
+    "provinceCode": "LI"
+  },
+  "leitrim": {
+    "countryCode": "IE",
+    "provinceCode": "LM"
+  },
+  "laois": {
+    "countryCode": "IE",
+    "provinceCode": "LS"
+  },
+  "louth": {
+    "countryCode": "IE",
+    "provinceCode": "LT"
+  },
+  "monaghan": {
+    "countryCode": "IE",
+    "provinceCode": "MH"
+  },
+  "meath": {
+    "countryCode": "IE",
+    "provinceCode": "MT"
+  },
+  "mayo": {
+    "countryCode": "IE",
+    "provinceCode": "MY"
+  },
+  "offaly": {
+    "countryCode": "IE",
+    "provinceCode": "OF"
+  },
+  "rosscommon": {
+    "countryCode": "IE",
+    "provinceCode": "RC"
+  },
+  "sligo": {
+    "countryCode": "IE",
+    "provinceCode": "SG"
+  },
+  "tipperary": {
+    "countryCode": "IE",
+    "provinceCode": "TP"
+  },
+  "waterford": {
+    "countryCode": "IE",
+    "provinceCode": "WF"
+  },
+  "wicklow": {
+    "countryCode": "IE",
+    "provinceCode": "WK"
+  },
+  "westmeath": {
+    "countryCode": "IE",
+    "provinceCode": "WM"
+  },
+  "wexford": {
+    "countryCode": "IE",
+    "provinceCode": "WX"
+  },
+  "haifa": {
+    "countryCode": "IL",
+    "provinceCode": "02"
+  },
+  "jerusalem": {
+    "countryCode": "IL",
+    "provinceCode": "03"
+  },
+  "northern": {
+    "countryCode": "IL",
+    "provinceCode": "04"
+  },
+  "southern": {
+    "countryCode": "IL",
+    "provinceCode": "05"
+  },
+  "tel aviv": {
+    "countryCode": "IL",
+    "provinceCode": "06"
+  },
+  "andra pradesh": {
+    "countryCode": "IN",
+    "provinceCode": "01"
+  },
+  "arunachal pradesh": {
+    "countryCode": "IN",
+    "provinceCode": "02"
+  },
+  "assam": {
+    "countryCode": "IN",
+    "provinceCode": "03"
+  },
+  "bihar": {
+    "countryCode": "IN",
+    "provinceCode": "04"
+  },
+  "goa": {
+    "countryCode": "IN",
+    "provinceCode": "05"
+  },
+  "gujarat": {
+    "countryCode": "IN",
+    "provinceCode": "06"
+  },
+  "haryana": {
+    "countryCode": "IN",
+    "provinceCode": "07"
+  },
+  "himachal pradesh": {
+    "countryCode": "IN",
+    "provinceCode": "08"
+  },
+  "jammu und kashmir": {
+    "countryCode": "IN",
+    "provinceCode": "09"
+  },
+  "karnataka": {
+    "countryCode": "IN",
+    "provinceCode": "10"
+  },
+  "kerala": {
+    "countryCode": "IN",
+    "provinceCode": "11"
+  },
+  "madhya pradesh": {
+    "countryCode": "IN",
+    "provinceCode": "12"
+  },
+  "maharashtra": {
+    "countryCode": "IN",
+    "provinceCode": "13"
+  },
+  "manipur": {
+    "countryCode": "IN",
+    "provinceCode": "14"
+  },
+  "megalaya": {
+    "countryCode": "IN",
+    "provinceCode": "15"
+  },
+  "mizoram": {
+    "countryCode": "IN",
+    "provinceCode": "16"
+  },
+  "nagaland": {
+    "countryCode": "IN",
+    "provinceCode": "17"
+  },
+  "orissa": {
+    "countryCode": "IN",
+    "provinceCode": "18"
+  },
+  "punjab": {
+    "countryCode": "IN",
+    "provinceCode": "19"
+  },
+  "rajasthan": {
+    "countryCode": "IN",
+    "provinceCode": "20"
+  },
+  "sikkim": {
+    "countryCode": "IN",
+    "provinceCode": "21"
+  },
+  "tamil nadu": {
+    "countryCode": "IN",
+    "provinceCode": "22"
+  },
+  "tripura": {
+    "countryCode": "IN",
+    "provinceCode": "23"
+  },
+  "uttar pradesh": {
+    "countryCode": "IN",
+    "provinceCode": "24"
+  },
+  "west bengal": {
+    "countryCode": "IN",
+    "provinceCode": "25"
+  },
+  "andaman und nico.in.": {
+    "countryCode": "IN",
+    "provinceCode": "26"
+  },
+  "chandigarh": {
+    "countryCode": "IN",
+    "provinceCode": "27"
+  },
+  "dadra und nagar hav.": {
+    "countryCode": "IN",
+    "provinceCode": "28"
+  },
+  "daman und diu": {
+    "countryCode": "IN",
+    "provinceCode": "29"
+  },
+  "delhi": {
+    "countryCode": "IN",
+    "provinceCode": "30"
+  },
+  "lakshadweep": {
+    "countryCode": "IN",
+    "provinceCode": "31"
+  },
+  "pondicherry": {
+    "countryCode": "IN",
+    "provinceCode": "33"
+  },
+  "undefined": {
+    "countryCode": "IN",
+    "provinceCode": "35"
+  },
+  "agriento": {
+    "countryCode": "IT",
+    "provinceCode": "AG"
+  },
+  "alessandria": {
+    "countryCode": "IT",
+    "provinceCode": "AL"
+  },
+  "ancona": {
+    "countryCode": "IT",
+    "provinceCode": "AN"
+  },
+  "aosta": {
+    "countryCode": "IT",
+    "provinceCode": "AO"
+  },
+  "ascoli piceno": {
+    "countryCode": "IT",
+    "provinceCode": "AP"
+  },
+  "l'aquila": {
+    "countryCode": "IT",
+    "provinceCode": "AQ"
+  },
+  "arezzo": {
+    "countryCode": "IT",
+    "provinceCode": "AR"
+  },
+  "asti": {
+    "countryCode": "IT",
+    "provinceCode": "AT"
+  },
+  "avellino": {
+    "countryCode": "IT",
+    "provinceCode": "AV"
+  },
+  "bari": {
+    "countryCode": "IT",
+    "provinceCode": "BA"
+  },
+  "bergamo": {
+    "countryCode": "IT",
+    "provinceCode": "BG"
+  },
+  "biella": {
+    "countryCode": "IT",
+    "provinceCode": "BI"
+  },
+  "belluno": {
+    "countryCode": "IT",
+    "provinceCode": "BL"
+  },
+  "benevento": {
+    "countryCode": "IT",
+    "provinceCode": "BN"
+  },
+  "bologna": {
+    "countryCode": "IT",
+    "provinceCode": "BO"
+  },
+  "brindisi": {
+    "countryCode": "IT",
+    "provinceCode": "BR"
+  },
+  "brescia": {
+    "countryCode": "IT",
+    "provinceCode": "BS"
+  },
+  "bolzano": {
+    "countryCode": "IT",
+    "provinceCode": "BZ"
+  },
+  "cagliari": {
+    "countryCode": "IT",
+    "provinceCode": "CA"
+  },
+  "campobasso": {
+    "countryCode": "IT",
+    "provinceCode": "CB"
+  },
+  "caserta": {
+    "countryCode": "IT",
+    "provinceCode": "CE"
+  },
+  "chieti": {
+    "countryCode": "IT",
+    "provinceCode": "CH"
+  },
+  "caltanisetta": {
+    "countryCode": "IT",
+    "provinceCode": "CL"
+  },
+  "cuneo": {
+    "countryCode": "IT",
+    "provinceCode": "CN"
+  },
+  "como": {
+    "countryCode": "IT",
+    "provinceCode": "CO"
+  },
+  "cremona": {
+    "countryCode": "IT",
+    "provinceCode": "CR"
+  },
+  "cosenza": {
+    "countryCode": "IT",
+    "provinceCode": "CS"
+  },
+  "catania": {
+    "countryCode": "IT",
+    "provinceCode": "CT"
+  },
+  "catanzaro": {
+    "countryCode": "IT",
+    "provinceCode": "CZ"
+  },
+  "enna": {
+    "countryCode": "IT",
+    "provinceCode": "EN"
+  },
+  "ferrara": {
+    "countryCode": "IT",
+    "provinceCode": "FE"
+  },
+  "foggia": {
+    "countryCode": "IT",
+    "provinceCode": "FG"
+  },
+  "florence": {
+    "countryCode": "IT",
+    "provinceCode": "FI"
+  },
+  "forli": {
+    "countryCode": "IT",
+    "provinceCode": "FO"
+  },
+  "frosinone": {
+    "countryCode": "IT",
+    "provinceCode": "FR"
+  },
+  "genova": {
+    "countryCode": "IT",
+    "provinceCode": "GE"
+  },
+  "gorizia": {
+    "countryCode": "IT",
+    "provinceCode": "GO"
+  },
+  "grosseto": {
+    "countryCode": "IT",
+    "provinceCode": "GR"
+  },
+  "imperia": {
+    "countryCode": "IT",
+    "provinceCode": "IM"
+  },
+  "isernia": {
+    "countryCode": "IT",
+    "provinceCode": "IS"
+  },
+  "crotone": {
+    "countryCode": "IT",
+    "provinceCode": "KR"
+  },
+  "lecco": {
+    "countryCode": "IT",
+    "provinceCode": "LC"
+  },
+  "lecce": {
+    "countryCode": "IT",
+    "provinceCode": "LE"
+  },
+  "livorno": {
+    "countryCode": "IT",
+    "provinceCode": "LI"
+  },
+  "lodi": {
+    "countryCode": "IT",
+    "provinceCode": "LO"
+  },
+  "latina": {
+    "countryCode": "IT",
+    "provinceCode": "LT"
+  },
+  "lucca": {
+    "countryCode": "IT",
+    "provinceCode": "LU"
+  },
+  "macerata": {
+    "countryCode": "IT",
+    "provinceCode": "MC"
+  },
+  "messina": {
+    "countryCode": "IT",
+    "provinceCode": "ME"
+  },
+  "milan": {
+    "countryCode": "IT",
+    "provinceCode": "MI"
+  },
+  "mantova": {
+    "countryCode": "IT",
+    "provinceCode": "MN"
+  },
+  "modena": {
+    "countryCode": "IT",
+    "provinceCode": "MO"
+  },
+  "massa carrara": {
+    "countryCode": "IT",
+    "provinceCode": "MS"
+  },
+  "matera": {
+    "countryCode": "IT",
+    "provinceCode": "MT"
+  },
+  "naples": {
+    "countryCode": "IT",
+    "provinceCode": "NA"
+  },
+  "novara": {
+    "countryCode": "IT",
+    "provinceCode": "NO"
+  },
+  "nuoro": {
+    "countryCode": "IT",
+    "provinceCode": "NU"
+  },
+  "oristano": {
+    "countryCode": "IT",
+    "provinceCode": "OR"
+  },
+  "palermo": {
+    "countryCode": "IT",
+    "provinceCode": "PA"
+  },
+  "piacenza": {
+    "countryCode": "IT",
+    "provinceCode": "PC"
+  },
+  "padova": {
+    "countryCode": "IT",
+    "provinceCode": "PD"
+  },
+  "pescara": {
+    "countryCode": "IT",
+    "provinceCode": "PE"
+  },
+  "perugia": {
+    "countryCode": "IT",
+    "provinceCode": "PG"
+  },
+  "pisa": {
+    "countryCode": "IT",
+    "provinceCode": "PI"
+  },
+  "pordenone": {
+    "countryCode": "IT",
+    "provinceCode": "PN"
+  },
+  "prato": {
+    "countryCode": "IT",
+    "provinceCode": "PO"
+  },
+  "parma": {
+    "countryCode": "IT",
+    "provinceCode": "PR"
+  },
+  "pesaro": {
+    "countryCode": "IT",
+    "provinceCode": "PS"
+  },
+  "pistoia": {
+    "countryCode": "IT",
+    "provinceCode": "PT"
+  },
+  "pesaro-urbino": {
+    "countryCode": "IT",
+    "provinceCode": "PU"
+  },
+  "pavia": {
+    "countryCode": "IT",
+    "provinceCode": "PV"
+  },
+  "potenza": {
+    "countryCode": "IT",
+    "provinceCode": "PZ"
+  },
+  "ravenna": {
+    "countryCode": "IT",
+    "provinceCode": "RA"
+  },
+  "reggio calabria": {
+    "countryCode": "IT",
+    "provinceCode": "RC"
+  },
+  "reggio emilia": {
+    "countryCode": "IT",
+    "provinceCode": "RE"
+  },
+  "ragusa": {
+    "countryCode": "IT",
+    "provinceCode": "RG"
+  },
+  "rieti": {
+    "countryCode": "IT",
+    "provinceCode": "RI"
+  },
+  "rome": {
+    "countryCode": "IT",
+    "provinceCode": "RM"
+  },
+  "rimini": {
+    "countryCode": "IT",
+    "provinceCode": "RN"
+  },
+  "rovigo": {
+    "countryCode": "IT",
+    "provinceCode": "RV"
+  },
+  "salerno": {
+    "countryCode": "IT",
+    "provinceCode": "SA"
+  },
+  "siena": {
+    "countryCode": "IT",
+    "provinceCode": "SI"
+  },
+  "sondrio": {
+    "countryCode": "IT",
+    "provinceCode": "SO"
+  },
+  "la spezia": {
+    "countryCode": "IT",
+    "provinceCode": "SP"
+  },
+  "siracusa": {
+    "countryCode": "IT",
+    "provinceCode": "SR"
+  },
+  "sassari": {
+    "countryCode": "IT",
+    "provinceCode": "SS"
+  },
+  "savona": {
+    "countryCode": "IT",
+    "provinceCode": "SV"
+  },
+  "taranto": {
+    "countryCode": "IT",
+    "provinceCode": "TA"
+  },
+  "teramo": {
+    "countryCode": "IT",
+    "provinceCode": "TE"
+  },
+  "trento": {
+    "countryCode": "IT",
+    "provinceCode": "TN"
+  },
+  "turin": {
+    "countryCode": "IT",
+    "provinceCode": "TO"
+  },
+  "trapani": {
+    "countryCode": "IT",
+    "provinceCode": "TP"
+  },
+  "terni": {
+    "countryCode": "IT",
+    "provinceCode": "TR"
+  },
+  "trieste": {
+    "countryCode": "IT",
+    "provinceCode": "TS"
+  },
+  "treviso": {
+    "countryCode": "IT",
+    "provinceCode": "TV"
+  },
+  "udine": {
+    "countryCode": "IT",
+    "provinceCode": "UD"
+  },
+  "varese": {
+    "countryCode": "IT",
+    "provinceCode": "VA"
+  },
+  "vercelli": {
+    "countryCode": "IT",
+    "provinceCode": "VC"
+  },
+  "venice": {
+    "countryCode": "IT",
+    "provinceCode": "VE"
+  },
+  "vicenza": {
+    "countryCode": "IT",
+    "provinceCode": "VI"
+  },
+  "verona": {
+    "countryCode": "IT",
+    "provinceCode": "VR"
+  },
+  "viterbo": {
+    "countryCode": "IT",
+    "provinceCode": "VT"
+  },
+  "vibo valentia": {
+    "countryCode": "IT",
+    "provinceCode": "VV"
+  },
+  "hokkaido": {
+    "countryCode": "JP",
+    "provinceCode": "01"
+  },
+  "aomori": {
+    "countryCode": "JP",
+    "provinceCode": "02"
+  },
+  "iwate": {
+    "countryCode": "JP",
+    "provinceCode": "03"
+  },
+  "miyagi": {
+    "countryCode": "JP",
+    "provinceCode": "04"
+  },
+  "akita": {
+    "countryCode": "JP",
+    "provinceCode": "05"
+  },
+  "yamagata": {
+    "countryCode": "JP",
+    "provinceCode": "06"
+  },
+  "fukushima": {
+    "countryCode": "JP",
+    "provinceCode": "07"
+  },
+  "ibaraki": {
+    "countryCode": "JP",
+    "provinceCode": "08"
+  },
+  "tochigi": {
+    "countryCode": "JP",
+    "provinceCode": "09"
+  },
+  "gunma": {
+    "countryCode": "JP",
+    "provinceCode": "10"
+  },
+  "saitama": {
+    "countryCode": "JP",
+    "provinceCode": "11"
+  },
+  "chiba": {
+    "countryCode": "JP",
+    "provinceCode": "12"
+  },
+  "tokyo": {
+    "countryCode": "JP",
+    "provinceCode": "13"
+  },
+  "kanagawa": {
+    "countryCode": "JP",
+    "provinceCode": "14"
+  },
+  "niigata": {
+    "countryCode": "JP",
+    "provinceCode": "15"
+  },
+  "toyama": {
+    "countryCode": "JP",
+    "provinceCode": "16"
+  },
+  "ishikawa": {
+    "countryCode": "JP",
+    "provinceCode": "17"
+  },
+  "fukui": {
+    "countryCode": "JP",
+    "provinceCode": "18"
+  },
+  "yamanashi": {
+    "countryCode": "JP",
+    "provinceCode": "19"
+  },
+  "nagano": {
+    "countryCode": "JP",
+    "provinceCode": "20"
+  },
+  "gifu": {
+    "countryCode": "JP",
+    "provinceCode": "21"
+  },
+  "shizuoka": {
+    "countryCode": "JP",
+    "provinceCode": "22"
+  },
+  "aichi": {
+    "countryCode": "JP",
+    "provinceCode": "23"
+  },
+  "mie": {
+    "countryCode": "JP",
+    "provinceCode": "24"
+  },
+  "shiga": {
+    "countryCode": "JP",
+    "provinceCode": "25"
+  },
+  "kyoto": {
+    "countryCode": "JP",
+    "provinceCode": "26"
+  },
+  "osaka": {
+    "countryCode": "JP",
+    "provinceCode": "27"
+  },
+  "hyogo": {
+    "countryCode": "JP",
+    "provinceCode": "28"
+  },
+  "nara": {
+    "countryCode": "JP",
+    "provinceCode": "29"
+  },
+  "wakayama": {
+    "countryCode": "JP",
+    "provinceCode": "30"
+  },
+  "tottori": {
+    "countryCode": "JP",
+    "provinceCode": "31"
+  },
+  "shimane": {
+    "countryCode": "JP",
+    "provinceCode": "32"
+  },
+  "okayama": {
+    "countryCode": "JP",
+    "provinceCode": "33"
+  },
+  "hiroshima": {
+    "countryCode": "JP",
+    "provinceCode": "34"
+  },
+  "yamaguchi": {
+    "countryCode": "JP",
+    "provinceCode": "35"
+  },
+  "tokushima": {
+    "countryCode": "JP",
+    "provinceCode": "36"
+  },
+  "kagawa": {
+    "countryCode": "JP",
+    "provinceCode": "37"
+  },
+  "ehime": {
+    "countryCode": "JP",
+    "provinceCode": "38"
+  },
+  "kochi": {
+    "countryCode": "JP",
+    "provinceCode": "39"
+  },
+  "fukuoka": {
+    "countryCode": "JP",
+    "provinceCode": "40"
+  },
+  "saga": {
+    "countryCode": "JP",
+    "provinceCode": "41"
+  },
+  "nagasaki": {
+    "countryCode": "JP",
+    "provinceCode": "42"
+  },
+  "kumamoto": {
+    "countryCode": "JP",
+    "provinceCode": "43"
+  },
+  "oita": {
+    "countryCode": "JP",
+    "provinceCode": "44"
+  },
+  "miyazaki": {
+    "countryCode": "JP",
+    "provinceCode": "45"
+  },
+  "kagoshima": {
+    "countryCode": "JP",
+    "provinceCode": "46"
+  },
+  "okinawa": {
+    "countryCode": "JP",
+    "provinceCode": "47"
+  },
+  "cheju-do": {
+    "countryCode": "KR",
+    "provinceCode": "01"
+  },
+  "cholla-bukto": {
+    "countryCode": "KR",
+    "provinceCode": "02"
+  },
+  "cholla-namdo": {
+    "countryCode": "KR",
+    "provinceCode": "03"
+  },
+  "ch´ungch´ong-bukto": {
+    "countryCode": "KR",
+    "provinceCode": "04"
+  },
+  "ch´ungch´ong-namdo": {
+    "countryCode": "KR",
+    "provinceCode": "05"
+  },
+  "inch´on-jikhalsi": {
+    "countryCode": "KR",
+    "provinceCode": "06"
+  },
+  "kangwon-do": {
+    "countryCode": "KR",
+    "provinceCode": "07"
+  },
+  "kwangju-jikhalsi": {
+    "countryCode": "KR",
+    "provinceCode": "08"
+  },
+  "kyonggi-do": {
+    "countryCode": "KR",
+    "provinceCode": "09"
+  },
+  "kyongsang-bukto": {
+    "countryCode": "KR",
+    "provinceCode": "10"
+  },
+  "kyongsang-namdo": {
+    "countryCode": "KR",
+    "provinceCode": "11"
+  },
+  "pusan-jikhalsi": {
+    "countryCode": "KR",
+    "provinceCode": "12"
+  },
+  "soul-t´ukpyolsi": {
+    "countryCode": "KR",
+    "provinceCode": "13"
+  },
+  "taegu-jikhalsi": {
+    "countryCode": "KR",
+    "provinceCode": "14"
+  },
+  "taejon-jikhalsi": {
+    "countryCode": "KR",
+    "provinceCode": "15"
+  },
+  "almatynskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "00"
+  },
+  "kostanaiskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "01"
+  },
+  "severo-kazakhstansk": {
+    "countryCode": "KZ",
+    "provinceCode": "02"
+  },
+  "pavlodarskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "03"
+  },
+  "akmolinskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "04"
+  },
+  "aktubinskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "05"
+  },
+  "atyrauskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "06"
+  },
+  "zapadno-kazakhst": {
+    "countryCode": "KZ",
+    "provinceCode": "07"
+  },
+  "mangystayskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "08"
+  },
+  "karagandinskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "09"
+  },
+  "vostochno-kazakhstan": {
+    "countryCode": "KZ",
+    "provinceCode": "10"
+  },
+  "gambilskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "11"
+  },
+  "kyzilordinskaia": {
+    "countryCode": "KZ",
+    "provinceCode": "12"
+  },
+  "aguascalientes": {
+    "countryCode": "MX",
+    "provinceCode": "AGU"
+  },
+  "baja california (n)": {
+    "countryCode": "MX",
+    "provinceCode": "BCN"
+  },
+  "baja california sur": {
+    "countryCode": "MX",
+    "provinceCode": "BCS"
+  },
+  "campeche": {
+    "countryCode": "MX",
+    "provinceCode": "CMP"
+  },
+  "chihuahua": {
+    "countryCode": "MX",
+    "provinceCode": "CHI"
+  },
+  "chiapas": {
+    "countryCode": "MX",
+    "provinceCode": "CHS"
+  },
+  "coahuila": {
+    "countryCode": "MX",
+    "provinceCode": "COA"
+  },
+  "colima": {
+    "countryCode": "MX",
+    "provinceCode": "COL"
+  },
+  "distrito federal": {
+    "countryCode": "VE",
+    "provinceCode": "DF"
+  },
+  "durango": {
+    "countryCode": "MX",
+    "provinceCode": "DUR"
+  },
+  "guerrero": {
+    "countryCode": "MX",
+    "provinceCode": "GRO"
+  },
+  "guanajuato": {
+    "countryCode": "MX",
+    "provinceCode": "GUA"
+  },
+  "hidalgo": {
+    "countryCode": "MX",
+    "provinceCode": "HID"
+  },
+  "jalisco": {
+    "countryCode": "MX",
+    "provinceCode": "JAL"
+  },
+  "michoacan": {
+    "countryCode": "MX",
+    "provinceCode": "MIC"
+  },
+  "estado de mexico": {
+    "countryCode": "MX",
+    "provinceCode": "MEX"
+  },
+  "morelos": {
+    "countryCode": "MX",
+    "provinceCode": "MOR"
+  },
+  "nayarit": {
+    "countryCode": "MX",
+    "provinceCode": "NAY"
+  },
+  "nuevo leon": {
+    "countryCode": "MX",
+    "provinceCode": "NLE"
+  },
+  "oaxaca": {
+    "countryCode": "MX",
+    "provinceCode": "OAX"
+  },
+  "puebla": {
+    "countryCode": "MX",
+    "provinceCode": "PUE"
+  },
+  "quintana roo": {
+    "countryCode": "MX",
+    "provinceCode": "ROO"
+  },
+  "queretaro": {
+    "countryCode": "MX",
+    "provinceCode": "QUE"
+  },
+  "sinaloa": {
+    "countryCode": "MX",
+    "provinceCode": "SIN"
+  },
+  "san luis potosi": {
+    "countryCode": "MX",
+    "provinceCode": "SLP"
+  },
+  "sonora": {
+    "countryCode": "MX",
+    "provinceCode": "SON"
+  },
+  "tabasco": {
+    "countryCode": "MX",
+    "provinceCode": "TAB"
+  },
+  "tamaulipas": {
+    "countryCode": "MX",
+    "provinceCode": "TMS"
+  },
+  "tlaxcala": {
+    "countryCode": "MX",
+    "provinceCode": "TLX"
+  },
+  "veracruz": {
+    "countryCode": "MX",
+    "provinceCode": "VER"
+  },
+  "yucatan": {
+    "countryCode": "MX",
+    "provinceCode": "YUC"
+  },
+  "zacatecas": {
+    "countryCode": "MX",
+    "provinceCode": "ZAC"
+  },
+  "johor": {
+    "countryCode": "MY",
+    "provinceCode": "JOH"
+  },
+  "kedah": {
+    "countryCode": "MY",
+    "provinceCode": "KED"
+  },
+  "kelantan": {
+    "countryCode": "MY",
+    "provinceCode": "KEL"
+  },
+  "kuala lumpur": {
+    "countryCode": "MY",
+    "provinceCode": "KUL"
+  },
+  "labuan": {
+    "countryCode": "MY",
+    "provinceCode": "LAB"
+  },
+  "melaka": {
+    "countryCode": "MY",
+    "provinceCode": "MEL"
+  },
+  "pahang": {
+    "countryCode": "MY",
+    "provinceCode": "PAH"
+  },
+  "perlis": {
+    "countryCode": "MY",
+    "provinceCode": "PEL"
+  },
+  "perak": {
+    "countryCode": "MY",
+    "provinceCode": "PER"
+  },
+  "pulau pinang": {
+    "countryCode": "MY",
+    "provinceCode": "PIN"
+  },
+  "sabah": {
+    "countryCode": "MY",
+    "provinceCode": "SAB"
+  },
+  "sarawak": {
+    "countryCode": "MY",
+    "provinceCode": "SAR"
+  },
+  "selangor": {
+    "countryCode": "MY",
+    "provinceCode": "SEL"
+  },
+  "negeri sembilan": {
+    "countryCode": "MY",
+    "provinceCode": "SER"
+  },
+  "trengganu": {
+    "countryCode": "MY",
+    "provinceCode": "TRE"
+  },
+  "drenthe": {
+    "countryCode": "NL",
+    "provinceCode": "01"
+  },
+  "flevoland": {
+    "countryCode": "NL",
+    "provinceCode": "02"
+  },
+  "friesland": {
+    "countryCode": "NL",
+    "provinceCode": "03"
+  },
+  "gelderland": {
+    "countryCode": "NL",
+    "provinceCode": "04"
+  },
+  "groningen": {
+    "countryCode": "NL",
+    "provinceCode": "05"
+  },
+  "noord-brabant": {
+    "countryCode": "NL",
+    "provinceCode": "07"
+  },
+  "noord-holland": {
+    "countryCode": "NL",
+    "provinceCode": "08"
+  },
+  "overijssel": {
+    "countryCode": "NL",
+    "provinceCode": "09"
+  },
+  "utrecht": {
+    "countryCode": "NL",
+    "provinceCode": "10"
+  },
+  "zeeland": {
+    "countryCode": "NL",
+    "provinceCode": "11"
+  },
+  "zuid-holland": {
+    "countryCode": "NL",
+    "provinceCode": "12"
+  },
+  "østfold fylke": {
+    "countryCode": "NO",
+    "provinceCode": "01"
+  },
+  "akershus fylke": {
+    "countryCode": "NO",
+    "provinceCode": "02"
+  },
+  "oslo": {
+    "countryCode": "NO",
+    "provinceCode": "03"
+  },
+  "hedmark fylke": {
+    "countryCode": "NO",
+    "provinceCode": "04"
+  },
+  "oppland fylke": {
+    "countryCode": "NO",
+    "provinceCode": "05"
+  },
+  "buskerud fylke": {
+    "countryCode": "NO",
+    "provinceCode": "06"
+  },
+  "vestfold fylke": {
+    "countryCode": "NO",
+    "provinceCode": "07"
+  },
+  "telemark fylke": {
+    "countryCode": "NO",
+    "provinceCode": "08"
+  },
+  "aust-agder fylke": {
+    "countryCode": "NO",
+    "provinceCode": "09"
+  },
+  "vest-agder fylke": {
+    "countryCode": "NO",
+    "provinceCode": "10"
+  },
+  "rogaland fylke": {
+    "countryCode": "NO",
+    "provinceCode": "11"
+  },
+  "hordaland fylke": {
+    "countryCode": "NO",
+    "provinceCode": "12"
+  },
+  "sogn og fjordane f.": {
+    "countryCode": "NO",
+    "provinceCode": "14"
+  },
+  "møre og romsdal f.": {
+    "countryCode": "NO",
+    "provinceCode": "15"
+  },
+  "sør-trøndelag fylke": {
+    "countryCode": "NO",
+    "provinceCode": "16"
+  },
+  "nord-trøndelag fylke": {
+    "countryCode": "NO",
+    "provinceCode": "17"
+  },
+  "nordland fylke": {
+    "countryCode": "NO",
+    "provinceCode": "18"
+  },
+  "troms fylke": {
+    "countryCode": "NO",
+    "provinceCode": "19"
+  },
+  "finnmark fylke": {
+    "countryCode": "NO",
+    "provinceCode": "20"
+  },
+  "auckland": {
+    "countryCode": "NZ",
+    "provinceCode": "AKL"
+  },
+  "bay of plenty": {
+    "countryCode": "NZ",
+    "provinceCode": "BOP"
+  },
+  "canterbury": {
+    "countryCode": "NZ",
+    "provinceCode": "CAN"
+  },
+  "hawke´s bay": {
+    "countryCode": "NZ",
+    "provinceCode": "HAB"
+  },
+  "manawatu-wanganui": {
+    "countryCode": "NZ",
+    "provinceCode": "MAN"
+  },
+  "northland": {
+    "countryCode": "NZ",
+    "provinceCode": "NTL"
+  },
+  "otago": {
+    "countryCode": "NZ",
+    "provinceCode": "OTA"
+  },
+  "southland": {
+    "countryCode": "NZ",
+    "provinceCode": "STL"
+  },
+  "taranaki": {
+    "countryCode": "NZ",
+    "provinceCode": "TAR"
+  },
+  "waikato": {
+    "countryCode": "NZ",
+    "provinceCode": "WAI"
+  },
+  "west coast": {
+    "countryCode": "NZ",
+    "provinceCode": "WEC"
+  },
+  "wellington": {
+    "countryCode": "NZ",
+    "provinceCode": "WLG"
+  },
+  "tumbes": {
+    "countryCode": "PE",
+    "provinceCode": "01"
+  },
+  "piura": {
+    "countryCode": "PE",
+    "provinceCode": "02"
+  },
+  "lambayeque": {
+    "countryCode": "PE",
+    "provinceCode": "03"
+  },
+  "la libertad": {
+    "countryCode": "PE",
+    "provinceCode": "04"
+  },
+  "ancash": {
+    "countryCode": "PE",
+    "provinceCode": "05"
+  },
+  "lima y callao": {
+    "countryCode": "PE",
+    "provinceCode": "06"
+  },
+  "ica": {
+    "countryCode": "PE",
+    "provinceCode": "07"
+  },
+  "arequipa": {
+    "countryCode": "PE",
+    "provinceCode": "08"
+  },
+  "moquegua": {
+    "countryCode": "PE",
+    "provinceCode": "09"
+  },
+  "tacna": {
+    "countryCode": "PE",
+    "provinceCode": "10"
+  },
+  "cajamarca": {
+    "countryCode": "PE",
+    "provinceCode": "12"
+  },
+  "san martin": {
+    "countryCode": "PE",
+    "provinceCode": "13"
+  },
+  "huanuco": {
+    "countryCode": "PE",
+    "provinceCode": "14"
+  },
+  "pasco": {
+    "countryCode": "PE",
+    "provinceCode": "15"
+  },
+  "junin": {
+    "countryCode": "PE",
+    "provinceCode": "16"
+  },
+  "huancavelica": {
+    "countryCode": "PE",
+    "provinceCode": "17"
+  },
+  "ayacucho": {
+    "countryCode": "PE",
+    "provinceCode": "18"
+  },
+  "apurimac": {
+    "countryCode": "PE",
+    "provinceCode": "19"
+  },
+  "cuzco": {
+    "countryCode": "PE",
+    "provinceCode": "20"
+  },
+  "puno": {
+    "countryCode": "PE",
+    "provinceCode": "21"
+  },
+  "loreto": {
+    "countryCode": "PE",
+    "provinceCode": "22"
+  },
+  "ucayali": {
+    "countryCode": "PE",
+    "provinceCode": "23"
+  },
+  "madre de dios": {
+    "countryCode": "PE",
+    "provinceCode": "24"
+  },
+  "ilocos": {
+    "countryCode": "PH",
+    "provinceCode": "01"
+  },
+  "cagayan valley": {
+    "countryCode": "PH",
+    "provinceCode": "02"
+  },
+  "central luzon": {
+    "countryCode": "PH",
+    "provinceCode": "03"
+  },
+  "south luzon": {
+    "countryCode": "PH",
+    "provinceCode": "04"
+  },
+  "bicol": {
+    "countryCode": "PH",
+    "provinceCode": "05"
+  },
+  "west visayas": {
+    "countryCode": "PH",
+    "provinceCode": "06"
+  },
+  "central visayas": {
+    "countryCode": "PH",
+    "provinceCode": "07"
+  },
+  "eastern visayas": {
+    "countryCode": "PH",
+    "provinceCode": "08"
+  },
+  "western mindanao": {
+    "countryCode": "PH",
+    "provinceCode": "09"
+  },
+  "northern mindanao": {
+    "countryCode": "PH",
+    "provinceCode": "10"
+  },
+  "central mindanao": {
+    "countryCode": "PH",
+    "provinceCode": "11"
+  },
+  "south mindanao": {
+    "countryCode": "PH",
+    "provinceCode": "12"
+  },
+  "biala podlaska": {
+    "countryCode": "PL",
+    "provinceCode": "01"
+  },
+  "bialystok": {
+    "countryCode": "PL",
+    "provinceCode": "02"
+  },
+  "bielsko biala": {
+    "countryCode": "PL",
+    "provinceCode": "03"
+  },
+  "bydgoszcz": {
+    "countryCode": "PL",
+    "provinceCode": "04"
+  },
+  "chelm": {
+    "countryCode": "PL",
+    "provinceCode": "05"
+  },
+  "ciechanow": {
+    "countryCode": "PL",
+    "provinceCode": "06"
+  },
+  "czestochowa": {
+    "countryCode": "PL",
+    "provinceCode": "07"
+  },
+  "elblag": {
+    "countryCode": "PL",
+    "provinceCode": "08"
+  },
+  "gdansk": {
+    "countryCode": "PL",
+    "provinceCode": "09"
+  },
+  "gorzow": {
+    "countryCode": "PL",
+    "provinceCode": "10"
+  },
+  "jelenia gora": {
+    "countryCode": "PL",
+    "provinceCode": "11"
+  },
+  "kalisz": {
+    "countryCode": "PL",
+    "provinceCode": "12"
+  },
+  "katowice": {
+    "countryCode": "PL",
+    "provinceCode": "13"
+  },
+  "kielce": {
+    "countryCode": "PL",
+    "provinceCode": "14"
+  },
+  "konin": {
+    "countryCode": "PL",
+    "provinceCode": "15"
+  },
+  "koszalin": {
+    "countryCode": "PL",
+    "provinceCode": "16"
+  },
+  "krakow": {
+    "countryCode": "PL",
+    "provinceCode": "17"
+  },
+  "krosno": {
+    "countryCode": "PL",
+    "provinceCode": "18"
+  },
+  "legnica": {
+    "countryCode": "PL",
+    "provinceCode": "19"
+  },
+  "leszno": {
+    "countryCode": "PL",
+    "provinceCode": "20"
+  },
+  "lodz": {
+    "countryCode": "PL",
+    "provinceCode": "21"
+  },
+  "lomza": {
+    "countryCode": "PL",
+    "provinceCode": "22"
+  },
+  "lublin": {
+    "countryCode": "PL",
+    "provinceCode": "23"
+  },
+  "nowy sacz": {
+    "countryCode": "PL",
+    "provinceCode": "24"
+  },
+  "olsztyn": {
+    "countryCode": "PL",
+    "provinceCode": "25"
+  },
+  "opole": {
+    "countryCode": "PL",
+    "provinceCode": "26"
+  },
+  "ostroleka": {
+    "countryCode": "PL",
+    "provinceCode": "27"
+  },
+  "pila": {
+    "countryCode": "PL",
+    "provinceCode": "28"
+  },
+  "piotrkow": {
+    "countryCode": "PL",
+    "provinceCode": "29"
+  },
+  "plock": {
+    "countryCode": "PL",
+    "provinceCode": "30"
+  },
+  "poznan": {
+    "countryCode": "PL",
+    "provinceCode": "31"
+  },
+  "przemysl": {
+    "countryCode": "PL",
+    "provinceCode": "32"
+  },
+  "radom": {
+    "countryCode": "PL",
+    "provinceCode": "33"
+  },
+  "rzeszow": {
+    "countryCode": "PL",
+    "provinceCode": "34"
+  },
+  "siedlce": {
+    "countryCode": "PL",
+    "provinceCode": "35"
+  },
+  "sieradz": {
+    "countryCode": "PL",
+    "provinceCode": "36"
+  },
+  "skierniewice": {
+    "countryCode": "PL",
+    "provinceCode": "37"
+  },
+  "slupsk": {
+    "countryCode": "PL",
+    "provinceCode": "38"
+  },
+  "suwalki": {
+    "countryCode": "PL",
+    "provinceCode": "39"
+  },
+  "szczecin": {
+    "countryCode": "PL",
+    "provinceCode": "40"
+  },
+  "tarnobrzeg": {
+    "countryCode": "PL",
+    "provinceCode": "41"
+  },
+  "tarnow": {
+    "countryCode": "PL",
+    "provinceCode": "42"
+  },
+  "torun": {
+    "countryCode": "PL",
+    "provinceCode": "43"
+  },
+  "walbrzych": {
+    "countryCode": "PL",
+    "provinceCode": "44"
+  },
+  "warszawa": {
+    "countryCode": "PL",
+    "provinceCode": "45"
+  },
+  "wloclawek": {
+    "countryCode": "PL",
+    "provinceCode": "46"
+  },
+  "wroclaw": {
+    "countryCode": "PL",
+    "provinceCode": "47"
+  },
+  "zamosc": {
+    "countryCode": "PL",
+    "provinceCode": "48"
+  },
+  "zielona gora": {
+    "countryCode": "PL",
+    "provinceCode": "49"
+  },
+  "minho-lima": {
+    "countryCode": "PT",
+    "provinceCode": "10"
+  },
+  "cavado": {
+    "countryCode": "PT",
+    "provinceCode": "11"
+  },
+  "ave": {
+    "countryCode": "PT",
+    "provinceCode": "12"
+  },
+  "grande porto": {
+    "countryCode": "PT",
+    "provinceCode": "13"
+  },
+  "tamega": {
+    "countryCode": "PT",
+    "provinceCode": "14"
+  },
+  "entre douro e vouga": {
+    "countryCode": "PT",
+    "provinceCode": "15"
+  },
+  "douro": {
+    "countryCode": "PT",
+    "provinceCode": "16"
+  },
+  "alto tras-os-montes": {
+    "countryCode": "PT",
+    "provinceCode": "17"
+  },
+  "baixo vouga": {
+    "countryCode": "PT",
+    "provinceCode": "20"
+  },
+  "baixo mondego": {
+    "countryCode": "PT",
+    "provinceCode": "21"
+  },
+  "pinhal litoral": {
+    "countryCode": "PT",
+    "provinceCode": "22"
+  },
+  "pinhal interior n.": {
+    "countryCode": "PT",
+    "provinceCode": "23"
+  },
+  "pinhal interior sul": {
+    "countryCode": "PT",
+    "provinceCode": "24"
+  },
+  "dao-lafoes": {
+    "countryCode": "PT",
+    "provinceCode": "25"
+  },
+  "serra da estrela": {
+    "countryCode": "PT",
+    "provinceCode": "26"
+  },
+  "beira interior norte": {
+    "countryCode": "PT",
+    "provinceCode": "27"
+  },
+  "beira interior sul": {
+    "countryCode": "PT",
+    "provinceCode": "28"
+  },
+  "cova da beira": {
+    "countryCode": "PT",
+    "provinceCode": "29"
+  },
+  "oeste": {
+    "countryCode": "PT",
+    "provinceCode": "30"
+  },
+  "grande lisboa": {
+    "countryCode": "PT",
+    "provinceCode": "31"
+  },
+  "peninsula de setubal": {
+    "countryCode": "PT",
+    "provinceCode": "32"
+  },
+  "medio tejo": {
+    "countryCode": "PT",
+    "provinceCode": "33"
+  },
+  "leziria do tejo": {
+    "countryCode": "PT",
+    "provinceCode": "34"
+  },
+  "alentejo litoral": {
+    "countryCode": "PT",
+    "provinceCode": "40"
+  },
+  "alto alentejo": {
+    "countryCode": "PT",
+    "provinceCode": "41"
+  },
+  "alentejo central": {
+    "countryCode": "PT",
+    "provinceCode": "42"
+  },
+  "baixo alentejo": {
+    "countryCode": "PT",
+    "provinceCode": "43"
+  },
+  "algarve": {
+    "countryCode": "PT",
+    "provinceCode": "50"
+  },
+  "reg. aut. dos acores": {
+    "countryCode": "PT",
+    "provinceCode": "60"
+  },
+  "reg. aut. da madeira": {
+    "countryCode": "PT",
+    "provinceCode": "70"
+  },
+  "alba": {
+    "countryCode": "RO",
+    "provinceCode": "01"
+  },
+  "arad": {
+    "countryCode": "RO",
+    "provinceCode": "02"
+  },
+  "arges": {
+    "countryCode": "RO",
+    "provinceCode": "03"
+  },
+  "bacau": {
+    "countryCode": "RO",
+    "provinceCode": "04"
+  },
+  "bihor": {
+    "countryCode": "RO",
+    "provinceCode": "05"
+  },
+  "bistrita-nasaud": {
+    "countryCode": "RO",
+    "provinceCode": "06"
+  },
+  "botosani": {
+    "countryCode": "RO",
+    "provinceCode": "07"
+  },
+  "braila": {
+    "countryCode": "RO",
+    "provinceCode": "08"
+  },
+  "brasov": {
+    "countryCode": "RO",
+    "provinceCode": "09"
+  },
+  "bucuresti": {
+    "countryCode": "RO",
+    "provinceCode": "10"
+  },
+  "buzau": {
+    "countryCode": "RO",
+    "provinceCode": "11"
+  },
+  "calarasi": {
+    "countryCode": "RO",
+    "provinceCode": "12"
+  },
+  "caras-severin": {
+    "countryCode": "RO",
+    "provinceCode": "13"
+  },
+  "cluj": {
+    "countryCode": "RO",
+    "provinceCode": "14"
+  },
+  "constanta": {
+    "countryCode": "RO",
+    "provinceCode": "15"
+  },
+  "covasna": {
+    "countryCode": "RO",
+    "provinceCode": "16"
+  },
+  "dimbovita": {
+    "countryCode": "RO",
+    "provinceCode": "17"
+  },
+  "dolj": {
+    "countryCode": "RO",
+    "provinceCode": "18"
+  },
+  "galati": {
+    "countryCode": "RO",
+    "provinceCode": "19"
+  },
+  "gorj": {
+    "countryCode": "RO",
+    "provinceCode": "20"
+  },
+  "giurgiu": {
+    "countryCode": "RO",
+    "provinceCode": "21"
+  },
+  "harghita": {
+    "countryCode": "RO",
+    "provinceCode": "22"
+  },
+  "hunedoara": {
+    "countryCode": "RO",
+    "provinceCode": "23"
+  },
+  "ialomita": {
+    "countryCode": "RO",
+    "provinceCode": "24"
+  },
+  "iasi": {
+    "countryCode": "RO",
+    "provinceCode": "25"
+  },
+  "maramures": {
+    "countryCode": "RO",
+    "provinceCode": "26"
+  },
+  "mehedinti": {
+    "countryCode": "RO",
+    "provinceCode": "27"
+  },
+  "mures": {
+    "countryCode": "RO",
+    "provinceCode": "28"
+  },
+  "neamt": {
+    "countryCode": "RO",
+    "provinceCode": "29"
+  },
+  "olt": {
+    "countryCode": "RO",
+    "provinceCode": "30"
+  },
+  "prahova": {
+    "countryCode": "RO",
+    "provinceCode": "31"
+  },
+  "salaj": {
+    "countryCode": "RO",
+    "provinceCode": "32"
+  },
+  "satu mare": {
+    "countryCode": "RO",
+    "provinceCode": "33"
+  },
+  "sibiu": {
+    "countryCode": "RO",
+    "provinceCode": "34"
+  },
+  "suceava": {
+    "countryCode": "RO",
+    "provinceCode": "35"
+  },
+  "teleorman": {
+    "countryCode": "RO",
+    "provinceCode": "36"
+  },
+  "timis": {
+    "countryCode": "RO",
+    "provinceCode": "37"
+  },
+  "tulcea": {
+    "countryCode": "RO",
+    "provinceCode": "38"
+  },
+  "vaslui": {
+    "countryCode": "RO",
+    "provinceCode": "39"
+  },
+  "vilcea": {
+    "countryCode": "RO",
+    "provinceCode": "40"
+  },
+  "vrancea": {
+    "countryCode": "RO",
+    "provinceCode": "41"
+  },
+  "adigeja republic": {
+    "countryCode": "RU",
+    "provinceCode": "01"
+  },
+  "highlands-altay rep.": {
+    "countryCode": "RU",
+    "provinceCode": "02"
+  },
+  "republ.of bashkortos": {
+    "countryCode": "RU",
+    "provinceCode": "03"
+  },
+  "buryat republic": {
+    "countryCode": "RU",
+    "provinceCode": "04"
+  },
+  "dagestan republic": {
+    "countryCode": "RU",
+    "provinceCode": "05"
+  },
+  "ingushetija republic": {
+    "countryCode": "RU",
+    "provinceCode": "06"
+  },
+  "kabardino-balkar.rep": {
+    "countryCode": "RU",
+    "provinceCode": "07"
+  },
+  "kalmyk republic": {
+    "countryCode": "RU",
+    "provinceCode": "08"
+  },
+  "karach.-cherkessk re": {
+    "countryCode": "RU",
+    "provinceCode": "09"
+  },
+  "karelian republic": {
+    "countryCode": "RU",
+    "provinceCode": "10"
+  },
+  "komi republic": {
+    "countryCode": "RU",
+    "provinceCode": "11"
+  },
+  "marijskaya republic": {
+    "countryCode": "RU",
+    "provinceCode": "12"
+  },
+  "mordovian republic": {
+    "countryCode": "RU",
+    "provinceCode": "13"
+  },
+  "yakutiya-saha rrepub": {
+    "countryCode": "RU",
+    "provinceCode": "14"
+  },
+  "north-osetiya republ": {
+    "countryCode": "RU",
+    "provinceCode": "15"
+  },
+  "tatarstan republic": {
+    "countryCode": "RU",
+    "provinceCode": "16"
+  },
+  "tuva republic": {
+    "countryCode": "RU",
+    "provinceCode": "17"
+  },
+  "the udmurt republic": {
+    "countryCode": "RU",
+    "provinceCode": "18"
+  },
+  "chakassky republic": {
+    "countryCode": "RU",
+    "provinceCode": "19"
+  },
+  "chechenskaya republ.": {
+    "countryCode": "RU",
+    "provinceCode": "20"
+  },
+  "chuvash republic": {
+    "countryCode": "RU",
+    "provinceCode": "21"
+  },
+  "altay territory": {
+    "countryCode": "RU",
+    "provinceCode": "22"
+  },
+  "krasnodar territory": {
+    "countryCode": "RU",
+    "provinceCode": "23"
+  },
+  "krasnoyarsk territor": {
+    "countryCode": "RU",
+    "provinceCode": "24"
+  },
+  "primorye territory": {
+    "countryCode": "RU",
+    "provinceCode": "25"
+  },
+  "stavropol territory": {
+    "countryCode": "RU",
+    "provinceCode": "26"
+  },
+  "khabarovsk territory": {
+    "countryCode": "RU",
+    "provinceCode": "27"
+  },
+  "the amur area": {
+    "countryCode": "RU",
+    "provinceCode": "28"
+  },
+  "the arkhangelsk area": {
+    "countryCode": "RU",
+    "provinceCode": "29"
+  },
+  "the astrakhan area": {
+    "countryCode": "RU",
+    "provinceCode": "30"
+  },
+  "the belgorod area": {
+    "countryCode": "RU",
+    "provinceCode": "31"
+  },
+  "the bryansk area": {
+    "countryCode": "RU",
+    "provinceCode": "32"
+  },
+  "the vladimir area": {
+    "countryCode": "RU",
+    "provinceCode": "33"
+  },
+  "the volgograd area": {
+    "countryCode": "RU",
+    "provinceCode": "34"
+  },
+  "the vologda area": {
+    "countryCode": "RU",
+    "provinceCode": "35"
+  },
+  "the voronezh area": {
+    "countryCode": "RU",
+    "provinceCode": "36"
+  },
+  "the ivanovo area": {
+    "countryCode": "RU",
+    "provinceCode": "37"
+  },
+  "the irkutsk area": {
+    "countryCode": "RU",
+    "provinceCode": "38"
+  },
+  "the kaliningrad area": {
+    "countryCode": "RU",
+    "provinceCode": "39"
+  },
+  "the kaluga area": {
+    "countryCode": "RU",
+    "provinceCode": "40"
+  },
+  "the kamchatka area": {
+    "countryCode": "RU",
+    "provinceCode": "41"
+  },
+  "the kemerovo area": {
+    "countryCode": "RU",
+    "provinceCode": "42"
+  },
+  "the kirov area": {
+    "countryCode": "RU",
+    "provinceCode": "43"
+  },
+  "the kostroma area": {
+    "countryCode": "RU",
+    "provinceCode": "44"
+  },
+  "the kurgan area": {
+    "countryCode": "RU",
+    "provinceCode": "45"
+  },
+  "the kursk area": {
+    "countryCode": "RU",
+    "provinceCode": "46"
+  },
+  "the leningrad area": {
+    "countryCode": "RU",
+    "provinceCode": "47"
+  },
+  "the lipetsk area": {
+    "countryCode": "RU",
+    "provinceCode": "48"
+  },
+  "the magadan area": {
+    "countryCode": "RU",
+    "provinceCode": "49"
+  },
+  "the moscow area": {
+    "countryCode": "RU",
+    "provinceCode": "50"
+  },
+  "the murmansk area": {
+    "countryCode": "RU",
+    "provinceCode": "51"
+  },
+  "the nizhniy novgorod": {
+    "countryCode": "RU",
+    "provinceCode": "52"
+  },
+  "the novgorod area": {
+    "countryCode": "RU",
+    "provinceCode": "53"
+  },
+  "the novosibirsk area": {
+    "countryCode": "RU",
+    "provinceCode": "54"
+  },
+  "the omsk area": {
+    "countryCode": "RU",
+    "provinceCode": "55"
+  },
+  "the orenburg area": {
+    "countryCode": "RU",
+    "provinceCode": "56"
+  },
+  "the oryol area": {
+    "countryCode": "RU",
+    "provinceCode": "57"
+  },
+  "the penza area": {
+    "countryCode": "RU",
+    "provinceCode": "58"
+  },
+  "the perm area": {
+    "countryCode": "RU",
+    "provinceCode": "59"
+  },
+  "the pskov area": {
+    "countryCode": "RU",
+    "provinceCode": "60"
+  },
+  "the rostov area": {
+    "countryCode": "RU",
+    "provinceCode": "61"
+  },
+  "the ryazan area": {
+    "countryCode": "RU",
+    "provinceCode": "62"
+  },
+  "the samara area": {
+    "countryCode": "RU",
+    "provinceCode": "63"
+  },
+  "the saratov area": {
+    "countryCode": "RU",
+    "provinceCode": "64"
+  },
+  "the sakhalin area": {
+    "countryCode": "RU",
+    "provinceCode": "65"
+  },
+  "the sverdlovsk area": {
+    "countryCode": "RU",
+    "provinceCode": "66"
+  },
+  "the smolensk area": {
+    "countryCode": "RU",
+    "provinceCode": "67"
+  },
+  "the tambov area": {
+    "countryCode": "RU",
+    "provinceCode": "68"
+  },
+  "the tver area": {
+    "countryCode": "RU",
+    "provinceCode": "69"
+  },
+  "the tomsk area": {
+    "countryCode": "RU",
+    "provinceCode": "70"
+  },
+  "the tula area": {
+    "countryCode": "RU",
+    "provinceCode": "71"
+  },
+  "the tyumen area": {
+    "countryCode": "RU",
+    "provinceCode": "72"
+  },
+  "the ulyanovsk area": {
+    "countryCode": "RU",
+    "provinceCode": "73"
+  },
+  "the chelyabinsk area": {
+    "countryCode": "RU",
+    "provinceCode": "74"
+  },
+  "the chita area": {
+    "countryCode": "RU",
+    "provinceCode": "75"
+  },
+  "the yaroslavl area": {
+    "countryCode": "RU",
+    "provinceCode": "76"
+  },
+  "c.moscow": {
+    "countryCode": "RU",
+    "provinceCode": "77"
+  },
+  "c.st-peterburg": {
+    "countryCode": "RU",
+    "provinceCode": "78"
+  },
+  "the jewish auton.are": {
+    "countryCode": "RU",
+    "provinceCode": "79"
+  },
+  "aginsk buryat aut.di": {
+    "countryCode": "RU",
+    "provinceCode": "80"
+  },
+  "komy permjats.aut.di": {
+    "countryCode": "RU",
+    "provinceCode": "81"
+  },
+  "korjacs auton.distri": {
+    "countryCode": "RU",
+    "provinceCode": "82"
+  },
+  "nenekchky auton.dist": {
+    "countryCode": "RU",
+    "provinceCode": "83"
+  },
+  "the taymir auton.dis": {
+    "countryCode": "RU",
+    "provinceCode": "84"
+  },
+  "ust-ordinsky buryat": {
+    "countryCode": "RU",
+    "provinceCode": "85"
+  },
+  "chanti-mansyjsky aut": {
+    "countryCode": "RU",
+    "provinceCode": "86"
+  },
+  "chukotka auton. dist": {
+    "countryCode": "RU",
+    "provinceCode": "87"
+  },
+  "evensky auton.distri": {
+    "countryCode": "RU",
+    "provinceCode": "88"
+  },
+  "jamalo-nenekchky aut": {
+    "countryCode": "RU",
+    "provinceCode": "89"
+  },
+  "blekinge lan": {
+    "countryCode": "SE",
+    "provinceCode": "001"
+  },
+  "dalarnas lan": {
+    "countryCode": "SE",
+    "provinceCode": "002"
+  },
+  "gotlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "003"
+  },
+  "gavleborgs lan": {
+    "countryCode": "SE",
+    "provinceCode": "004"
+  },
+  "hallands lan": {
+    "countryCode": "SE",
+    "provinceCode": "005"
+  },
+  "jamtlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "006"
+  },
+  "jonkopings lan": {
+    "countryCode": "SE",
+    "provinceCode": "007"
+  },
+  "kalmar lan": {
+    "countryCode": "SE",
+    "provinceCode": "008"
+  },
+  "kronobergs lan": {
+    "countryCode": "SE",
+    "provinceCode": "009"
+  },
+  "norrbottens lan": {
+    "countryCode": "SE",
+    "provinceCode": "010"
+  },
+  "skane lan": {
+    "countryCode": "SE",
+    "provinceCode": "011"
+  },
+  "stockholms lan": {
+    "countryCode": "SE",
+    "provinceCode": "012"
+  },
+  "sodermanlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "013"
+  },
+  "uppsala lan": {
+    "countryCode": "SE",
+    "provinceCode": "014"
+  },
+  "varmlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "015"
+  },
+  "vasterbottens lan": {
+    "countryCode": "SE",
+    "provinceCode": "016"
+  },
+  "vasternorrlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "017"
+  },
+  "vastmanlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "018"
+  },
+  "vastra gotalands lan": {
+    "countryCode": "SE",
+    "provinceCode": "019"
+  },
+  "orebro lan": {
+    "countryCode": "SE",
+    "provinceCode": "020"
+  },
+  "ostergotlands lan": {
+    "countryCode": "SE",
+    "provinceCode": "021"
+  },
+  "singapore": {
+    "countryCode": "SG",
+    "provinceCode": "SG"
+  },
+  "ajdovscina": {
+    "countryCode": "SI",
+    "provinceCode": "01"
+  },
+  "brezice": {
+    "countryCode": "SI",
+    "provinceCode": "02"
+  },
+  "celje": {
+    "countryCode": "SI",
+    "provinceCode": "03"
+  },
+  "cerknica": {
+    "countryCode": "SI",
+    "provinceCode": "04"
+  },
+  "crnomelj": {
+    "countryCode": "SI",
+    "provinceCode": "05"
+  },
+  "dravograd": {
+    "countryCode": "SI",
+    "provinceCode": "06"
+  },
+  "gornja radgona": {
+    "countryCode": "SI",
+    "provinceCode": "07"
+  },
+  "grosuplje": {
+    "countryCode": "SI",
+    "provinceCode": "08"
+  },
+  "hrastnik lasko": {
+    "countryCode": "SI",
+    "provinceCode": "09"
+  },
+  "idrija": {
+    "countryCode": "SI",
+    "provinceCode": "10"
+  },
+  "ilirska bistrica": {
+    "countryCode": "SI",
+    "provinceCode": "11"
+  },
+  "izola": {
+    "countryCode": "SI",
+    "provinceCode": "12"
+  },
+  "jesenice": {
+    "countryCode": "SI",
+    "provinceCode": "13"
+  },
+  "kamnik": {
+    "countryCode": "SI",
+    "provinceCode": "14"
+  },
+  "kocevje": {
+    "countryCode": "SI",
+    "provinceCode": "15"
+  },
+  "koper": {
+    "countryCode": "SI",
+    "provinceCode": "16"
+  },
+  "kranj": {
+    "countryCode": "SI",
+    "provinceCode": "17"
+  },
+  "krsko": {
+    "countryCode": "SI",
+    "provinceCode": "18"
+  },
+  "lenart": {
+    "countryCode": "SI",
+    "provinceCode": "19"
+  },
+  "lendava": {
+    "countryCode": "SI",
+    "provinceCode": "20"
+  },
+  "litija": {
+    "countryCode": "SI",
+    "provinceCode": "21"
+  },
+  "ljubljana-bezigrad": {
+    "countryCode": "SI",
+    "provinceCode": "22"
+  },
+  "ljubljana-center": {
+    "countryCode": "SI",
+    "provinceCode": "23"
+  },
+  "ljubljana-moste-polj": {
+    "countryCode": "SI",
+    "provinceCode": "24"
+  },
+  "ljubljana-siska": {
+    "countryCode": "SI",
+    "provinceCode": "25"
+  },
+  "ljubljana-vic-rudnik": {
+    "countryCode": "SI",
+    "provinceCode": "26"
+  },
+  "ljutomer": {
+    "countryCode": "SI",
+    "provinceCode": "27"
+  },
+  "logatec": {
+    "countryCode": "SI",
+    "provinceCode": "28"
+  },
+  "maribor": {
+    "countryCode": "SI",
+    "provinceCode": "29"
+  },
+  "metlika": {
+    "countryCode": "SI",
+    "provinceCode": "30"
+  },
+  "mozirje": {
+    "countryCode": "SI",
+    "provinceCode": "31"
+  },
+  "murska sobota": {
+    "countryCode": "SI",
+    "provinceCode": "32"
+  },
+  "nova gorica": {
+    "countryCode": "SI",
+    "provinceCode": "33"
+  },
+  "novo mesto": {
+    "countryCode": "SI",
+    "provinceCode": "34"
+  },
+  "ormoz": {
+    "countryCode": "SI",
+    "provinceCode": "35"
+  },
+  "pesnica": {
+    "countryCode": "SI",
+    "provinceCode": "36"
+  },
+  "piran": {
+    "countryCode": "SI",
+    "provinceCode": "37"
+  },
+  "postojna": {
+    "countryCode": "SI",
+    "provinceCode": "38"
+  },
+  "ptuj": {
+    "countryCode": "SI",
+    "provinceCode": "39"
+  },
+  "radlje ob dravi": {
+    "countryCode": "SI",
+    "provinceCode": "40"
+  },
+  "radovljica": {
+    "countryCode": "SI",
+    "provinceCode": "41"
+  },
+  "ravne na koroskem": {
+    "countryCode": "SI",
+    "provinceCode": "42"
+  },
+  "ribnica": {
+    "countryCode": "SI",
+    "provinceCode": "43"
+  },
+  "sentjur pri celju": {
+    "countryCode": "SI",
+    "provinceCode": "45"
+  },
+  "sevnica": {
+    "countryCode": "SI",
+    "provinceCode": "46"
+  },
+  "sezana": {
+    "countryCode": "SI",
+    "provinceCode": "47"
+  },
+  "skofja loka": {
+    "countryCode": "SI",
+    "provinceCode": "48"
+  },
+  "slovenj gradec": {
+    "countryCode": "SI",
+    "provinceCode": "49"
+  },
+  "slovenska bistrica": {
+    "countryCode": "SI",
+    "provinceCode": "50"
+  },
+  "slovenske konjice": {
+    "countryCode": "SI",
+    "provinceCode": "51"
+  },
+  "smarje pri jelsah": {
+    "countryCode": "SI",
+    "provinceCode": "52"
+  },
+  "tolmin": {
+    "countryCode": "SI",
+    "provinceCode": "53"
+  },
+  "trbovlje": {
+    "countryCode": "SI",
+    "provinceCode": "54"
+  },
+  "trebnje": {
+    "countryCode": "SI",
+    "provinceCode": "55"
+  },
+  "trzic": {
+    "countryCode": "SI",
+    "provinceCode": "56"
+  },
+  "velenje": {
+    "countryCode": "SI",
+    "provinceCode": "57"
+  },
+  "vrhnika": {
+    "countryCode": "SI",
+    "provinceCode": "58"
+  },
+  "zagorje ob savi": {
+    "countryCode": "SI",
+    "provinceCode": "59"
+  },
+  "zalec": {
+    "countryCode": "SI",
+    "provinceCode": "60"
+  },
+  "bratislava": {
+    "countryCode": "SK",
+    "provinceCode": "01"
+  },
+  "zapadoslovensky": {
+    "countryCode": "SK",
+    "provinceCode": "02"
+  },
+  "stredoslovensky": {
+    "countryCode": "SK",
+    "provinceCode": "03"
+  },
+  "vychodoslovensky": {
+    "countryCode": "SK",
+    "provinceCode": "04"
+  },
+  "amnat charoen": {
+    "countryCode": "TH",
+    "provinceCode": "01"
+  },
+  "ang thong": {
+    "countryCode": "TH",
+    "provinceCode": "02"
+  },
+  "buriram": {
+    "countryCode": "TH",
+    "provinceCode": "03"
+  },
+  "chachoengsao": {
+    "countryCode": "TH",
+    "provinceCode": "04"
+  },
+  "chai nat": {
+    "countryCode": "TH",
+    "provinceCode": "05"
+  },
+  "chaiyaphum": {
+    "countryCode": "TH",
+    "provinceCode": "06"
+  },
+  "chanthaburi": {
+    "countryCode": "TH",
+    "provinceCode": "07"
+  },
+  "chiang mai": {
+    "countryCode": "TH",
+    "provinceCode": "08"
+  },
+  "chiang rai": {
+    "countryCode": "TH",
+    "provinceCode": "09"
+  },
+  "chon buri": {
+    "countryCode": "TH",
+    "provinceCode": "10"
+  },
+  "chumphon": {
+    "countryCode": "TH",
+    "provinceCode": "11"
+  },
+  "kalasin": {
+    "countryCode": "TH",
+    "provinceCode": "12"
+  },
+  "kamphaeng phet": {
+    "countryCode": "TH",
+    "provinceCode": "13"
+  },
+  "kanchanaburi": {
+    "countryCode": "TH",
+    "provinceCode": "14"
+  },
+  "khon kaen": {
+    "countryCode": "TH",
+    "provinceCode": "15"
+  },
+  "krabi": {
+    "countryCode": "TH",
+    "provinceCode": "16"
+  },
+  "krung thep": {
+    "countryCode": "TH",
+    "provinceCode": "17"
+  },
+  "mahanakhon": {
+    "countryCode": "TH",
+    "provinceCode": "18"
+  },
+  "lampang": {
+    "countryCode": "TH",
+    "provinceCode": "19"
+  },
+  "lamphun": {
+    "countryCode": "TH",
+    "provinceCode": "20"
+  },
+  "loei": {
+    "countryCode": "TH",
+    "provinceCode": "21"
+  },
+  "lop buri": {
+    "countryCode": "TH",
+    "provinceCode": "22"
+  },
+  "mae hong son": {
+    "countryCode": "TH",
+    "provinceCode": "23"
+  },
+  "maha sarakham": {
+    "countryCode": "TH",
+    "provinceCode": "24"
+  },
+  "mukdahan": {
+    "countryCode": "TH",
+    "provinceCode": "25"
+  },
+  "nakhon nayok": {
+    "countryCode": "TH",
+    "provinceCode": "26"
+  },
+  "nakhon pathom": {
+    "countryCode": "TH",
+    "provinceCode": "27"
+  },
+  "nakhon phanom": {
+    "countryCode": "TH",
+    "provinceCode": "28"
+  },
+  "nakhon ratchasima": {
+    "countryCode": "TH",
+    "provinceCode": "29"
+  },
+  "nakhon sawan": {
+    "countryCode": "TH",
+    "provinceCode": "30"
+  },
+  "nakhon si thammarat": {
+    "countryCode": "TH",
+    "provinceCode": "31"
+  },
+  "nan": {
+    "countryCode": "TH",
+    "provinceCode": "32"
+  },
+  "narathiwat": {
+    "countryCode": "TH",
+    "provinceCode": "33"
+  },
+  "nong bua lamphu": {
+    "countryCode": "TH",
+    "provinceCode": "34"
+  },
+  "nong khai": {
+    "countryCode": "TH",
+    "provinceCode": "35"
+  },
+  "nonthaburi": {
+    "countryCode": "TH",
+    "provinceCode": "36"
+  },
+  "pathum thani": {
+    "countryCode": "TH",
+    "provinceCode": "37"
+  },
+  "pattani": {
+    "countryCode": "TH",
+    "provinceCode": "38"
+  },
+  "phangnga": {
+    "countryCode": "TH",
+    "provinceCode": "39"
+  },
+  "phatthalung": {
+    "countryCode": "TH",
+    "provinceCode": "40"
+  },
+  "phayao": {
+    "countryCode": "TH",
+    "provinceCode": "41"
+  },
+  "phetchabun": {
+    "countryCode": "TH",
+    "provinceCode": "42"
+  },
+  "phetchaburi": {
+    "countryCode": "TH",
+    "provinceCode": "43"
+  },
+  "phichit": {
+    "countryCode": "TH",
+    "provinceCode": "44"
+  },
+  "phitsanulok": {
+    "countryCode": "TH",
+    "provinceCode": "45"
+  },
+  "phra nakhon si ayut.": {
+    "countryCode": "TH",
+    "provinceCode": "46"
+  },
+  "phrae": {
+    "countryCode": "TH",
+    "provinceCode": "47"
+  },
+  "phuket": {
+    "countryCode": "TH",
+    "provinceCode": "48"
+  },
+  "prachin buri": {
+    "countryCode": "TH",
+    "provinceCode": "49"
+  },
+  "adana": {
+    "countryCode": "TR",
+    "provinceCode": "01"
+  },
+  "adiyaman": {
+    "countryCode": "TR",
+    "provinceCode": "02"
+  },
+  "afyon": {
+    "countryCode": "TR",
+    "provinceCode": "03"
+  },
+  "agri": {
+    "countryCode": "TR",
+    "provinceCode": "04"
+  },
+  "amasya": {
+    "countryCode": "TR",
+    "provinceCode": "05"
+  },
+  "ankara": {
+    "countryCode": "TR",
+    "provinceCode": "06"
+  },
+  "antalya": {
+    "countryCode": "TR",
+    "provinceCode": "07"
+  },
+  "artvin": {
+    "countryCode": "TR",
+    "provinceCode": "08"
+  },
+  "aydin": {
+    "countryCode": "TR",
+    "provinceCode": "09"
+  },
+  "balikesir": {
+    "countryCode": "TR",
+    "provinceCode": "10"
+  },
+  "bilecik": {
+    "countryCode": "TR",
+    "provinceCode": "11"
+  },
+  "bingol": {
+    "countryCode": "TR",
+    "provinceCode": "12"
+  },
+  "bitlis": {
+    "countryCode": "TR",
+    "provinceCode": "13"
+  },
+  "bolu": {
+    "countryCode": "TR",
+    "provinceCode": "14"
+  },
+  "burdur": {
+    "countryCode": "TR",
+    "provinceCode": "15"
+  },
+  "bursa": {
+    "countryCode": "TR",
+    "provinceCode": "16"
+  },
+  "canakkale": {
+    "countryCode": "TR",
+    "provinceCode": "17"
+  },
+  "cankiri": {
+    "countryCode": "TR",
+    "provinceCode": "18"
+  },
+  "corum": {
+    "countryCode": "TR",
+    "provinceCode": "19"
+  },
+  "denizli": {
+    "countryCode": "TR",
+    "provinceCode": "20"
+  },
+  "diyarbakir": {
+    "countryCode": "TR",
+    "provinceCode": "21"
+  },
+  "edirne": {
+    "countryCode": "TR",
+    "provinceCode": "22"
+  },
+  "elazig": {
+    "countryCode": "TR",
+    "provinceCode": "23"
+  },
+  "erzincan": {
+    "countryCode": "TR",
+    "provinceCode": "24"
+  },
+  "erzurum": {
+    "countryCode": "TR",
+    "provinceCode": "25"
+  },
+  "eskisehir": {
+    "countryCode": "TR",
+    "provinceCode": "26"
+  },
+  "gaziantep": {
+    "countryCode": "TR",
+    "provinceCode": "27"
+  },
+  "giresun": {
+    "countryCode": "TR",
+    "provinceCode": "28"
+  },
+  "gumushane": {
+    "countryCode": "TR",
+    "provinceCode": "29"
+  },
+  "hakkari": {
+    "countryCode": "TR",
+    "provinceCode": "30"
+  },
+  "hatay": {
+    "countryCode": "TR",
+    "provinceCode": "31"
+  },
+  "isparta": {
+    "countryCode": "TR",
+    "provinceCode": "32"
+  },
+  "icel": {
+    "countryCode": "TR",
+    "provinceCode": "33"
+  },
+  "istanbul": {
+    "countryCode": "TR",
+    "provinceCode": "34"
+  },
+  "izmir": {
+    "countryCode": "TR",
+    "provinceCode": "35"
+  },
+  "kars": {
+    "countryCode": "TR",
+    "provinceCode": "36"
+  },
+  "kastamonu": {
+    "countryCode": "TR",
+    "provinceCode": "37"
+  },
+  "kayseri": {
+    "countryCode": "TR",
+    "provinceCode": "38"
+  },
+  "kirklareli": {
+    "countryCode": "TR",
+    "provinceCode": "39"
+  },
+  "kirshehir": {
+    "countryCode": "TR",
+    "provinceCode": "40"
+  },
+  "kocaeli": {
+    "countryCode": "TR",
+    "provinceCode": "41"
+  },
+  "konya": {
+    "countryCode": "TR",
+    "provinceCode": "42"
+  },
+  "kutahya": {
+    "countryCode": "TR",
+    "provinceCode": "43"
+  },
+  "malatya": {
+    "countryCode": "TR",
+    "provinceCode": "44"
+  },
+  "manisa": {
+    "countryCode": "TR",
+    "provinceCode": "45"
+  },
+  "k.marash": {
+    "countryCode": "TR",
+    "provinceCode": "46"
+  },
+  "mardin": {
+    "countryCode": "TR",
+    "provinceCode": "47"
+  },
+  "mugla": {
+    "countryCode": "TR",
+    "provinceCode": "48"
+  },
+  "mush": {
+    "countryCode": "TR",
+    "provinceCode": "49"
+  },
+  "nevshehir": {
+    "countryCode": "TR",
+    "provinceCode": "50"
+  },
+  "nigde": {
+    "countryCode": "TR",
+    "provinceCode": "51"
+  },
+  "ordu": {
+    "countryCode": "TR",
+    "provinceCode": "52"
+  },
+  "rize": {
+    "countryCode": "TR",
+    "provinceCode": "53"
+  },
+  "sakarya": {
+    "countryCode": "TR",
+    "provinceCode": "54"
+  },
+  "samsun": {
+    "countryCode": "TR",
+    "provinceCode": "55"
+  },
+  "siirt": {
+    "countryCode": "TR",
+    "provinceCode": "56"
+  },
+  "sinop": {
+    "countryCode": "TR",
+    "provinceCode": "57"
+  },
+  "sivas": {
+    "countryCode": "TR",
+    "provinceCode": "58"
+  },
+  "tekirdag": {
+    "countryCode": "TR",
+    "provinceCode": "59"
+  },
+  "tokat": {
+    "countryCode": "TR",
+    "provinceCode": "60"
+  },
+  "trabzon": {
+    "countryCode": "TR",
+    "provinceCode": "61"
+  },
+  "tunceli": {
+    "countryCode": "TR",
+    "provinceCode": "62"
+  },
+  "shanliurfa": {
+    "countryCode": "TR",
+    "provinceCode": "63"
+  },
+  "ushak": {
+    "countryCode": "TR",
+    "provinceCode": "64"
+  },
+  "van": {
+    "countryCode": "TR",
+    "provinceCode": "65"
+  },
+  "yozgat": {
+    "countryCode": "TR",
+    "provinceCode": "66"
+  },
+  "zonguldak": {
+    "countryCode": "TR",
+    "provinceCode": "67"
+  },
+  "aksaray": {
+    "countryCode": "TR",
+    "provinceCode": "68"
+  },
+  "bayburt": {
+    "countryCode": "TR",
+    "provinceCode": "69"
+  },
+  "karaman": {
+    "countryCode": "TR",
+    "provinceCode": "70"
+  },
+  "kirikkale": {
+    "countryCode": "TR",
+    "provinceCode": "71"
+  },
+  "batman": {
+    "countryCode": "TR",
+    "provinceCode": "72"
+  },
+  "shirnak": {
+    "countryCode": "TR",
+    "provinceCode": "73"
+  },
+  "bartin": {
+    "countryCode": "TR",
+    "provinceCode": "74"
+  },
+  "ardahan": {
+    "countryCode": "TR",
+    "provinceCode": "75"
+  },
+  "igdir": {
+    "countryCode": "TR",
+    "provinceCode": "76"
+  },
+  "yalova": {
+    "countryCode": "TR",
+    "provinceCode": "77"
+  },
+  "fu-chien": {
+    "countryCode": "TW",
+    "provinceCode": "FJN"
+  },
+  "kao-hsiung": {
+    "countryCode": "TW",
+    "provinceCode": "KSH"
+  },
+  "t´ai-pei": {
+    "countryCode": "TW",
+    "provinceCode": "TPE"
+  },
+  "chernigivs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "CHG"
+  },
+  "cherkas'ka": {
+    "countryCode": "UA",
+    "provinceCode": "CHR"
+  },
+  "chernovits'ka": {
+    "countryCode": "UA",
+    "provinceCode": "CHV"
+  },
+  "dnipropetrovs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "DNP"
+  },
+  "donets'ka": {
+    "countryCode": "UA",
+    "provinceCode": "DON"
+  },
+  "harkivs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "HAR"
+  },
+  "hmel'nits'ka": {
+    "countryCode": "UA",
+    "provinceCode": "HML"
+  },
+  "hersons'ka": {
+    "countryCode": "UA",
+    "provinceCode": "HRS"
+  },
+  "ivano-frankivs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "IVF"
+  },
+  "kievs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "KIE"
+  },
+  "kirovograds'ka": {
+    "countryCode": "UA",
+    "provinceCode": "KIR"
+  },
+  "respublika krim": {
+    "countryCode": "UA",
+    "provinceCode": "KRM"
+  },
+  "lugans'ka": {
+    "countryCode": "UA",
+    "provinceCode": "LUG"
+  },
+  "l'vivsbka": {
+    "countryCode": "UA",
+    "provinceCode": "L'V"
+  },
+  "m.kiev": {
+    "countryCode": "UA",
+    "provinceCode": "M_K"
+  },
+  "m.sevastopil'": {
+    "countryCode": "UA",
+    "provinceCode": "M_S"
+  },
+  "mikolaivs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "MIK"
+  },
+  "odes'ka": {
+    "countryCode": "UA",
+    "provinceCode": "ODS"
+  },
+  "poltavs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "POL"
+  },
+  "rivnens'ka": {
+    "countryCode": "UA",
+    "provinceCode": "RIV"
+  },
+  "sums'ka": {
+    "countryCode": "UA",
+    "provinceCode": "SUM"
+  },
+  "ternopil's'ka": {
+    "countryCode": "UA",
+    "provinceCode": "TER"
+  },
+  "vinnits'ka": {
+    "countryCode": "UA",
+    "provinceCode": "VIN"
+  },
+  "volins'ka": {
+    "countryCode": "UA",
+    "provinceCode": "VOL"
+  },
+  "zakarpats'ka": {
+    "countryCode": "UA",
+    "provinceCode": "ZAK"
+  },
+  "zaporiz'ka": {
+    "countryCode": "UA",
+    "provinceCode": "ZAP"
+  },
+  "zhitomirs'ka": {
+    "countryCode": "UA",
+    "provinceCode": "ZHI"
+  },
+  "armed forces america": {
+    "countryCode": "US",
+    "provinceCode": "AA"
+  },
+  "armed forces europe": {
+    "countryCode": "US",
+    "provinceCode": "AE"
+  },
+  "alaska": {
+    "countryCode": "US",
+    "provinceCode": "AK"
+  },
+  "alabama": {
+    "countryCode": "US",
+    "provinceCode": "AL"
+  },
+  "armed forces pacific": {
+    "countryCode": "US",
+    "provinceCode": "AP"
+  },
+  "arkansas": {
+    "countryCode": "US",
+    "provinceCode": "AR"
+  },
+  "american samoa": {
+    "countryCode": "US",
+    "provinceCode": "AS"
+  },
+  "arizona": {
+    "countryCode": "US",
+    "provinceCode": "AZ"
+  },
+  "california": {
+    "countryCode": "US",
+    "provinceCode": "CA"
+  },
+  "colorado": {
+    "countryCode": "US",
+    "provinceCode": "CO"
+  },
+  "connecticut": {
+    "countryCode": "US",
+    "provinceCode": "CT"
+  },
+  "district of columbia": {
+    "countryCode": "US",
+    "provinceCode": "DC"
+  },
+  "delaware": {
+    "countryCode": "US",
+    "provinceCode": "DE"
+  },
+  "florida": {
+    "countryCode": "US",
+    "provinceCode": "FL"
+  },
+  "georgia": {
+    "countryCode": "US",
+    "provinceCode": "GA"
+  },
+  "guam": {
+    "countryCode": "US",
+    "provinceCode": "GU"
+  },
+  "hawaii": {
+    "countryCode": "US",
+    "provinceCode": "HI"
+  },
+  "iowa": {
+    "countryCode": "US",
+    "provinceCode": "IA"
+  },
+  "idaho": {
+    "countryCode": "US",
+    "provinceCode": "ID"
+  },
+  "illinois": {
+    "countryCode": "US",
+    "provinceCode": "IL"
+  },
+  "indiana": {
+    "countryCode": "US",
+    "provinceCode": "IN"
+  },
+  "kansas": {
+    "countryCode": "US",
+    "provinceCode": "KS"
+  },
+  "kentucky": {
+    "countryCode": "US",
+    "provinceCode": "KY"
+  },
+  "louisiana": {
+    "countryCode": "US",
+    "provinceCode": "LA"
+  },
+  "massachusetts": {
+    "countryCode": "US",
+    "provinceCode": "MA"
+  },
+  "maryland": {
+    "countryCode": "US",
+    "provinceCode": "MD"
+  },
+  "maine": {
+    "countryCode": "US",
+    "provinceCode": "ME"
+  },
+  "michigan": {
+    "countryCode": "US",
+    "provinceCode": "MI"
+  },
+  "minnesota": {
+    "countryCode": "US",
+    "provinceCode": "MN"
+  },
+  "missouri": {
+    "countryCode": "US",
+    "provinceCode": "MO"
+  },
+  "northern mariana isl": {
+    "countryCode": "US",
+    "provinceCode": "MP"
+  },
+  "mississippi": {
+    "countryCode": "US",
+    "provinceCode": "MS"
+  },
+  "north carolina": {
+    "countryCode": "US",
+    "provinceCode": "NC"
+  },
+  "north dakota": {
+    "countryCode": "US",
+    "provinceCode": "ND"
+  },
+  "nebraska": {
+    "countryCode": "US",
+    "provinceCode": "NE"
+  },
+  "new hampshire": {
+    "countryCode": "US",
+    "provinceCode": "NH"
+  },
+  "new jersey": {
+    "countryCode": "US",
+    "provinceCode": "NJ"
+  },
+  "new mexico": {
+    "countryCode": "US",
+    "provinceCode": "NM"
+  },
+  "no plate": {
+    "countryCode": "US",
+    "provinceCode": "NP"
+  },
+  "nevada": {
+    "countryCode": "US",
+    "provinceCode": "NV"
+  },
+  "new york": {
+    "countryCode": "US",
+    "provinceCode": "NY"
+  },
+  "ohio": {
+    "countryCode": "US",
+    "provinceCode": "OH"
+  },
+  "oklahoma": {
+    "countryCode": "US",
+    "provinceCode": "OK"
+  },
+  "oregon": {
+    "countryCode": "US",
+    "provinceCode": "OR"
+  },
+  "pennsylvania": {
+    "countryCode": "US",
+    "provinceCode": "PA"
+  },
+  "paper plate": {
+    "countryCode": "US",
+    "provinceCode": "PP"
+  },
+  "puerto rico": {
+    "countryCode": "US",
+    "provinceCode": "PR"
+  },
+  "rhode island": {
+    "countryCode": "US",
+    "provinceCode": "RI"
+  },
+  "south carolina": {
+    "countryCode": "US",
+    "provinceCode": "SC"
+  },
+  "south dakota": {
+    "countryCode": "US",
+    "provinceCode": "SD"
+  },
+  "tennessee": {
+    "countryCode": "US",
+    "provinceCode": "TN"
+  },
+  "texas": {
+    "countryCode": "US",
+    "provinceCode": "TX"
+  },
+  "utah": {
+    "countryCode": "US",
+    "provinceCode": "UT"
+  },
+  "virginia": {
+    "countryCode": "US",
+    "provinceCode": "VA"
+  },
+  "virgin islands": {
+    "countryCode": "US",
+    "provinceCode": "VI"
+  },
+  "vermont": {
+    "countryCode": "US",
+    "provinceCode": "VT"
+  },
+  "washington": {
+    "countryCode": "US",
+    "provinceCode": "WA"
+  },
+  "wisconsin": {
+    "countryCode": "US",
+    "provinceCode": "WI"
+  },
+  "west virginia": {
+    "countryCode": "US",
+    "provinceCode": "WV"
+  },
+  "wyoming": {
+    "countryCode": "US",
+    "provinceCode": "WY"
+  },
+  "anzoategui": {
+    "countryCode": "VE",
+    "provinceCode": "ANZ"
+  },
+  "apure": {
+    "countryCode": "VE",
+    "provinceCode": "APU"
+  },
+  "aragua": {
+    "countryCode": "VE",
+    "provinceCode": "ARA"
+  },
+  "barinas": {
+    "countryCode": "VE",
+    "provinceCode": "BAR"
+  },
+  "carabobo": {
+    "countryCode": "VE",
+    "provinceCode": "CAR"
+  },
+  "cojedes": {
+    "countryCode": "VE",
+    "provinceCode": "COJ"
+  },
+  "delta amacuro": {
+    "countryCode": "VE",
+    "provinceCode": "DA"
+  },
+  "falcon": {
+    "countryCode": "VE",
+    "provinceCode": "FAL"
+  },
+  "guarico": {
+    "countryCode": "VE",
+    "provinceCode": "GUA"
+  },
+  "lara": {
+    "countryCode": "VE",
+    "provinceCode": "LAR"
+  },
+  "merida": {
+    "countryCode": "VE",
+    "provinceCode": "MER"
+  },
+  "miranda": {
+    "countryCode": "VE",
+    "provinceCode": "MIR"
+  },
+  "monagas": {
+    "countryCode": "VE",
+    "provinceCode": "MON"
+  },
+  "nueva esparta": {
+    "countryCode": "VE",
+    "provinceCode": "NE"
+  },
+  "portuguesa": {
+    "countryCode": "VE",
+    "provinceCode": "POR"
+  },
+  "tachira": {
+    "countryCode": "VE",
+    "provinceCode": "TAC"
+  },
+  "trujillo": {
+    "countryCode": "VE",
+    "provinceCode": "TRU"
+  },
+  "vargas": {
+    "countryCode": "VE",
+    "provinceCode": "VAR"
+  },
+  "yaracuy": {
+    "countryCode": "VE",
+    "provinceCode": "YAR"
+  },
+  "zulia": {
+    "countryCode": "VE",
+    "provinceCode": "ZUL"
+  },
+  "eastern cape": {
+    "countryCode": "ZA",
+    "provinceCode": "EC"
+  },
+  "freestate": {
+    "countryCode": "ZA",
+    "provinceCode": "FS"
+  },
+  "gauteng": {
+    "countryCode": "ZA",
+    "provinceCode": "GP"
+  },
+  "kwazulu/natal": {
+    "countryCode": "ZA",
+    "provinceCode": "KZN"
+  },
+  "mpumalanga": {
+    "countryCode": "ZA",
+    "provinceCode": "MP"
+  },
+  "northern cape": {
+    "countryCode": "ZA",
+    "provinceCode": "NC"
+  },
+  "northern province": {
+    "countryCode": "ZA",
+    "provinceCode": "NP"
+  },
+  "north-west": {
+    "countryCode": "ZA",
+    "provinceCode": "NW"
+  },
+  "western cape": {
+    "countryCode": "ZA",
+    "provinceCode": "WC"
+  }
+}
