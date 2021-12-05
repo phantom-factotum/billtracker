@@ -54,18 +54,6 @@ export default function ColorGeneratorPicker({label,currentValueMessage,style,..
 		  				</View>
 		  			)}
 					/>				
-					{false &&<Picker
-						placeholder={colorGenObj.label+" ⬇️"}
-						containerStyle={{width:'100%',padding:0,alignItems:'flex-end',justifyContent:isLandScape? null:'center'}}
-						textInputStyle={{ textAlign:'right' }}
-						item={colorGenType}
-						items={colorGenerators}
-						mode={'dropdown'}
-						onItemChange={itemValue=>expenseDispatch({
-							type:'setColorGenerator',
-							payload:itemValue.value
-						})}
-					/>}
 				</View>
 		</View>
 	</View>

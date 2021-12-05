@@ -1,4 +1,5 @@
-import { LogBox, YellowBox } from "react-native"
+import { LogBox } from "react-native"
+// try to suppress logbox warnings
 LogBox.ignoreAllLogs([""]);
 // YellowBox.ignoreAllLogs([""]);
 
@@ -30,7 +31,6 @@ import LoginScreen from './screens/Login';
 import HomeScreen from './screens/Home';
 import AddExpensesScreen from './screens/Expenses';
 import SettingsScreen from './screens/Settings';
-import TutorialScreen from './screens/Tutorial';
 import DrawerRenderer from './components/Drawer';
 
 import useUserContext from './hooks/useUserContext';
@@ -44,11 +44,11 @@ import { getCachedData, saveAppData, appDataExists } from './hooks/handleAppData
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator()
-
+// created to open app without using saved data
 const ignoreSavedData = true;
 
 const App = () => {
-  // context providers☻
+  // context providers
   const { provider:UserContextProvider } = useUserContext();
   const { provider:ExpenseContextProvider } = useExpenseContext();
   const { provider:CalculationsContextProvider } = useCalculationsContext();
@@ -62,6 +62,8 @@ const App = () => {
   
   const isSignedIn = Object.keys(user || {}).length > 0 && user.uid
   const hasExpenses = expensesData?.expenses?.length > 0 || false;
+  // home page has pie chart so I created function to determine
+  // if a useful chart could be rendered
   const {canRenderChart} = useExpenseHelpers();
  
   const headerShown = {headerShown:false}
@@ -76,8 +78,10 @@ const App = () => {
   const userData = {...user,setUser,logout,isSigningOut, setIsSigningOut}
   const loadData = async ()=>{
     return await new Promise (async (resolve, reject)=>{
-      if(ignoreSavedData)
+      if(ignoreSavedData){
         resolve()
+        return
+      }
       const data = await getCachedData();
       if(data){
         if(data.calculationsData)
@@ -86,16 +90,18 @@ const App = () => {
           expensesData.dispatch({type:'setAll',payload:data.expensesData});
         // load user data last, as this will trigger navigation
         if(data.userData)
+          // showTutorial should be only active if new user
           setUser({showTutorial:true,...data.userData});
         resolve();
       }
       reject();
     })
   }
- 
   const onLoadFinish = ()=>{
     setIsReady(true)
-  } 
+  }
+
+  //effects
   useEffect(()=>{
     // dont overwrite on log outs
     if(isSigningOut)
@@ -107,8 +113,10 @@ const App = () => {
     })
     // saveData()
   },
-  [user,isSigningOut,expensesData,calculationsData,user])
+  [user,isSigningOut,expensesData,calculationsData])
+// try to suppress logbox warnings
   useEffect(() => LogBox.ignoreLogs(['']), [])
+
   return (
     <SafeAreaView style={styles.container}>
     <NavigationContainer>

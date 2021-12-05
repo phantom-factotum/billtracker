@@ -1,14 +1,12 @@
 TO DO
 _ _ _ _ _ _ _
-
-- Save expenses to file and load it when "logging" in
-- allow user to import expense files
+- showTutorial mode needs lots of work
+  - showTutorial should get its own context with its own list of tasks to complete
+  - currently showTutorial is always true, it should only be true when a new user is recognized
+    or the user has gone into settings and chosen to enable showTutorial
 - cloud storage of expense file
-- when in landscape mode, the expense list is barely visible
-- Make custom button component
 - When add expense button is pressed, the new expense should go into focus
 - let user set/take profile photo
-- remove border from Drawer
 - Add Common Expenses Button and Reorder List Switch goes in same row
 - Add more complex calculation settings
 - Tweak color scheme

@@ -31,11 +31,7 @@ import { lightenColor, darkenColor, getTetradicScheme, setOpacity } from './genC
 const AnimatedIcon = Animated.createAnimatedComponent(Ionicons);
 // const iconSize = 40;
 
-
-
-
-export default function expense ({ 
-  value, index, onFocus, openModal,
+export default function expense ({ value, index, onFocus, openModal,
   isReorderingList, iconSize,
 	onSwipeStart=()=>{}, 
   onSwipeRelease=()=>{},
@@ -61,6 +57,7 @@ export default function expense ({
       return ()=>iconAnimation.reset();
 		}
 	})
+	// a tutorial task will be to delete an item
   const [ deleteTask, setDeleteTask ] = useTutorialTask({
 		defaultValue:{
 			showPrompt:false,
@@ -100,7 +97,7 @@ export default function expense ({
     swipeArrowMessage = 'Swipe item left to delete';
   if(tutorialIsActive && !isPrompting)
     swipeArrowMessage = ''
-  
+  // iconAnimation in tutorial mode
   const iconAnimation = Animated.loop(
     Animated.sequence([
       Animated.timing(iconAnim,{
@@ -136,6 +133,7 @@ export default function expense ({
     ],
     
   }
+	// reorderlist animation
   const reorderAnimDuration = 500
   const reorderingAnimation = Animated.loop(
     Animated.sequence([

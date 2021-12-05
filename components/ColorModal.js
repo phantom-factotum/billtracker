@@ -10,7 +10,6 @@ import {
 import { TriangleColorPicker, ColorPicker, fromHsv } from 'react-native-color-picker';
 import ScrollPicker from 'react-native-wheel-scrollview-picker';
 import { LinearGradient } from 'expo-linear-gradient';
-// import Picker from './Picker'
 import ModalButton from './ModalButton';
 import { setOpacity } from './genColors'
 import useExpenseContext from '../hooks/useExpenseContext';
@@ -29,6 +28,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 	const [ modalWidth, setModalWidth ] = useState(400);
 	const expense = expenses[index] || {}
 	const { user:{showTutorial} }  = useUserContext().context;
+	// in tutorial mode one task will be to change expense color
 	const [ changeColorTask, setChangeColorTask ] = useTutorialTask({
     onShowPrompt:()=>{
       colorPickerAnimation.start();
@@ -39,6 +39,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
       return colorPickerAnimation.reset();
     }
   });
+	// in tutorial mode another task will be to navigate to another expense in the color modal
   const [ changeIndexTask, setChangeIndexTask ] = useTutorialTask({ 
     defaultValue:{showPrompt:false,completed:false},
     onShowPrompt:()=>{
@@ -50,6 +51,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
       return ()=>pickerAnimation.reset();
     }
   });
+	// animation values for tutorial mode tasks
   let pickerAnim = useRef(new Animated.Value(0)).current;
   let colorPickerAnim = useRef( new Animated.Value(0)).current;
   
@@ -68,7 +70,6 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 			Animated.delay(1000)
 		],{useNativeDriver:false})
 	)
- 
 	const pickerAnimatedStyle = {
 		transform:[
 			{scaleX:pickerAnim.interpolate({
@@ -97,24 +98,25 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 				duration:2000
 			})
 		],{useNativeDriver:false})
-    )
-    const colorPickerAnimatedStyle = {
-      transform:[
-        {scaleX:colorPickerAnim.interpolate({
-          inputRange:[0,1],
-          outputRange:[1,1.2]
-        })},
-        {scaleY:colorPickerAnim.interpolate({
-          inputRange:[0,1],
-          outputRange:[1,1.2]
-        })}
-      ],
-      opacity:colorPickerAnim.interpolate({
-        inputRange:[0,1],
-        outputRange:[0,1]
-      }),
-      textAlign:'center',
-    }
+  )
+	const colorPickerAnimatedStyle = {
+		transform:[
+			{scaleX:colorPickerAnim.interpolate({
+				inputRange:[0,1],
+				outputRange:[1,1.2]
+			})},
+			{scaleY:colorPickerAnim.interpolate({
+				inputRange:[0,1],
+				outputRange:[1,1.2]
+			})}
+		],
+		opacity:colorPickerAnim.interpolate({
+			inputRange:[0,1],
+			outputRange:[0,1]
+		}),
+		textAlign:'center',
+	}
+
   const onColorSelected = (hsvColor)=>{
 		dispatch({
 			type:'updateItem',
@@ -144,25 +146,25 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 		setModalWidth(width*widthPercentage);
 		setModalHeight(height*heightPercentage);
 	}
-	// a linear gradient is used as a border of the modal
-	// map expenses to their colors 
-	const shiftColors = ()=>{
-		// convert to colors
+	
+	const genGradientColors = ()=>{
+		// map to colors
 		let colors = expenses.slice().map(e=>e.color);	  
   	// shift list so current index is first item
   	let newStart = colors.slice(index);
   	let newEnd = colors.slice(0,index);
-  	// make the currently selected expense the main color
-  	// by allowing to dominate the color list
+  	// repeat currently selected color make it more visible in gradient
   	const mainColor = colors[index]
-  	// first and last items in list is the colors the
-  	// top and bottom gradienct colors
   	colors = newStart.concat(mainColor,newEnd,mainColor);
   	return colors
 	}
-	// use the color of the current expense to them expense picker
-	const borderColor = expense?.color
-	const backgroundColor = setOpacity(expense?.color,0.4)
+	
+	const modalButtonStyle = {
+		borderColor:expense?.color,
+		backgroundColor:setOpacity(expense?.color,0.2),
+		borderWidth:3
+	}
+	
 	// calculate the maximum width the picker can be
 	const pickerWidth = modalWidth - pickerHeight - pickerLeftPadding
 	//calculate the maximum height the color picker can be
@@ -171,7 +173,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 		<Modal  visible={visible} transparent>
 		<LinearGradient
 			style={styles.linearGradient}
-		  colors={shiftColors()}
+		  colors={genGradientColors()}
 		  onLayout={onModalLayout}
 		>
 		<View style={styles.modal} >
@@ -181,7 +183,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
           onPress={()=>setVisible(false)}
           start={{x:0,y:0}}
           end={{x:1,y:0.7}}
-          buttonStyle={[styles.modalButton,{borderColor,borderWidth:3}]}
+          buttonStyle={[styles.modalButton,modalButtonStyle]}
         />
       	<Animated.View style={{paddingLeft:pickerLeftPadding,width:pickerWidth,height:pickerHeight,...pickerAnimatedStyle}}>
           <ScrollPicker
@@ -200,8 +202,6 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 		  			renderItem={(item,index)=>(
 		  				<View style={[styles.pickerItem,{
 		  					borderColor:item.color,
-		  					// borderTopWidth:3,
-		  					// borderBottomWidth:3,
 		  					backgroundColor:setOpacity(item.color,.2)
 		  					}
 		  				]}>
