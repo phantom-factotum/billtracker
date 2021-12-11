@@ -18,7 +18,7 @@ import { useIsFocused } from "@react-navigation/native";
 
 const AnimatedIcon = Animated.createAnimatedComponent(MaterialCommunityIcons)
 
-export default function SwipeArrows ({ size, color, prompt,isAnimated=true,reverseArrow=false }){
+export default function SwipeArrows ({ size, color, prompt,onRender,isAnimated=true,reverseArrow=false }){
   const {width, height} = useWindowDimensions();
   const isFocused = useIsFocused();
 	const animationValues = useRef([]).current;
@@ -59,6 +59,7 @@ export default function SwipeArrows ({ size, color, prompt,isAnimated=true,rever
   else
     loopAnimations.reset()
 	useEffect(()=>{
+		onRender && onRender();
 		return ()=>{
       loopAnimations.reset()
 		}

@@ -32,7 +32,7 @@ import {ColorScheme} from './genColors';
 
 import useExpenseContext from '../hooks/useExpenseContext'
 import useUserContext from '../hooks/useUserContext';
-import useTutorialTask from '../hooks/useTutorialTask';
+import useTutorialContext from '../hooks/useTutorialContext';
 
 const iconSize = 40
 
@@ -46,9 +46,7 @@ export default function RenderExpenses(){
 	const draxListRef = useRef({}).current;
 	const isDraggableAnim = useRef(new Animated.Value(0)).current;
 	const {expenses, dispatch, isFocused, listItemRefs } = useExpenseContext().context;
-	const { user:{showTutorial} } = useUserContext().context;
-	
-	
+	// const { user:{showTutorial} } = useUserContext().context;
 	const headerHeight = useHeaderHeight()
 
 	

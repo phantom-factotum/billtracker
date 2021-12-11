@@ -22,7 +22,7 @@ import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import Swipeable from 'react-native-swipeable';
 
 import useExpenseHelpers from '../hooks/useExpenseHelpers';
-import useTutorialTask from '../hooks/useTutorialTask';
+import useTutorialContext from '../hooks/useTutorialContext';
 import useExpenseContext from '../hooks/useExpenseContext';
 import useUserContext from '../hooks/useUserContext';
 import SwipeArrows from './SwipeArrows'
@@ -30,6 +30,11 @@ import { lightenColor, darkenColor, getTetradicScheme, setOpacity } from './genC
 
 const AnimatedIcon = Animated.createAnimatedComponent(Ionicons);
 // const iconSize = 40;
+const tutorialTaskNames = [
+	'openSwipeButtonTray',
+	'openColorModal',
+	'deleteExpense'
+]
 
 export default function expense ({ value, index, onFocus, openModal,
   isReorderingList, iconSize,
@@ -43,30 +48,17 @@ export default function expense ({ value, index, onFocus, openModal,
 	const [ swipePan, setSwipePan ] = useState(new Animated.ValueXY());
 	const { height, width } = useWindowDimensions();
 	const reorderingAnim = useRef(new Animated.Value(0)).current;
-  const iconAnim = useRef(new Animated.Value(0)).current;
 
 	const { isFocused, dispatch } = useExpenseContext().context;
 	const { user:{showTutorial} } = useUserContext().context;
 	let { goToNextFocus, hasNextFocus, addRef } = useExpenseHelpers();
-
+	
+	const {dispatch:tutorialDispatch,findTask, tasksLeft, completed, findTaskIndex} = useTutorialContext().context;
 	const swipeActivationDistance = width ? Math.floor(width *.5) : 175
 	const isTutorialMode = showTutorial && index == 0
-	const [ openModalTask, setOpenModalTask ] = useTutorialTask({
-		onCompleted:()=>{
-      iconAnimation.reset();
-      return ()=>iconAnimation.reset();
-		}
-	})
-	// a tutorial task will be to delete an item
-  const [ deleteTask, setDeleteTask ] = useTutorialTask({
-		defaultValue:{
-			showPrompt:false,
-			completed:false
-		},	
-		onCompleted:()=>{
-     
-		}
-	})
+	const revealButtonsTask = findTask(tutorialTaskNames[0]);
+	const openModalTask = findTask(tutorialTaskNames[1]);
+	const deleteTask = findTask(tutorialTaskNames[2]);
 
   const indexColor = value.color
 	const backgroundColor = setOpacity(indexColor,0.2)
@@ -85,54 +77,19 @@ export default function expense ({ value, index, onFocus, openModal,
 	if(swipeIsActive)
 		parentContainerStyle.push(swipeActiveStyle)
 
-  const useReverseArrows = isTutorialMode && openModalTask.showPrompt;
-  const tutorialIsActive = isTutorialMode && (!openModalTask.completed || !deleteTask.completed);
-  const isPrompting = tutorialIsActive && (openModalTask.showPrompt || deleteTask.showPrompt);
-  let swipeArrowMessage = 'Keep swiping to delete'
+  const useReverseArrows = isTutorialMode && revealButtonsTask.started;
+  const tutorialIsActive = isTutorialMode && !completed;
+  const isPrompting = tutorialIsActive && (openModalTask.started || deleteTask.started);
+  let swipeArrowMessage
   if(useReverseArrows)
     swipeArrowMessage = 'Swipe item right to show buttons';
-  if(isTutorialMode && openModalTask.showPrompt)
+  else if(isTutorialMode && openModalTask.started)
     swipeArrowMessage = "Press the button!"
-  if(isTutorialMode && deleteTask.showPrompt)
+  else if(isTutorialMode && deleteTask.started)
     swipeArrowMessage = 'Swipe item left to delete';
-  if(tutorialIsActive && !isPrompting)
+  else if(tutorialIsActive && !isPrompting)
     swipeArrowMessage = ''
-  // iconAnimation in tutorial mode
-  const iconAnimation = Animated.loop(
-    Animated.sequence([
-      Animated.timing(iconAnim,{
-        useNativeDriver:false,
-        toValue:1,
-        duration:2000,
-        // delay:index*50
-      }),
-      Animated.timing(iconAnim,{
-        useNativeDriver:false,
-        toValue:0,
-        duration:2000,
-        // delay:index*50
-      }),
-      Animated.delay(1000)
-    ])
-  )
-  const iconGrowth = 1.25
-  const iconAnimationStyle = {
-    transform:[
-      {translateX:iconAnim.interpolate({
-        inputRange:[0,1],
-        outputRange:[0,iconGrowth*width*.1]
-      })},
-      {scaleX:iconAnim.interpolate({
-        inputRange:[0,1],
-        outputRange:[1,iconGrowth]
-      })},
-      {scaleY:iconAnim.interpolate({
-        inputRange:[0,1],
-        outputRange:[1,iconGrowth]
-      })}
-    ],
-    
-  }
+  
 	// reorderlist animation
   const reorderAnimDuration = 500
   const reorderingAnimation = Animated.loop(
@@ -183,20 +140,20 @@ export default function expense ({ value, index, onFocus, openModal,
 		onSwipeRelease();
 	}
   const ColorPickerIcon = ()=>(
-    <Animated.View style={[{alignItems:'flex-start'},iconAnimationStyle]}>
+    <Animated.View style={[{alignItems:'flex-start'},openModalTask.animationStyle]}>
       <Ionicons 
         name="ios-color-palette"
         size={iconSize}
         color={deleteColor || 'black'}
         onPress={()=>{
-          console.log('hmmmmmm')
           // return
           if(tutorialIsActive){
             console.log('updating modal task')
-            setOpenModalTask({showPrompt:false,completed:true})
-            console.log('prepping delete task')
-            setDeleteTask({...deleteTask,showPrompt:true})
-          } 
+            tutorialDispatch({
+							type:'taskCompleted',
+						})
+						// tutorialDispatch({type:'startTask'})
+					}
           openModal(index);
         }}
       />
@@ -205,16 +162,30 @@ export default function expense ({ value, index, onFocus, openModal,
 
 	const onLeftSwipe = ()=>{
 		dispatch({type:'delete',payload:value.id})
-    setDeleteTask({completed:true,showPrompt:true})
+		console.log('deleting')
+    tutorialDispatch({
+			type:'taskCompleted',
+			payload:{
+				name:tutorialTaskNames[2]
+			}
+		})
 	}
   const onRightSwipe=()=>{
-    if( isTutorialMode && openModalTask.showPrompt){
-      setOpenModalTask({...openModalTask,showPrompt:false})
-      iconAnimation.start();
+		console.log('Button tray opened!')
+		// mark openModalTask completed and start next task
+    if( isTutorialMode && revealButtonsTask.started){
+			// the next animation uses width to work smoothly
+			tutorialDispatch({
+				type:'configureAnimationStyle',
+				payload:{
+					configs:[{deviceWidth:width,index:findTaskIndex(tutorialTaskNames[1])}]
+				}
+			})
+			tutorialDispatch({type:'taskCompleted'})
+			// tutorialDispatch({type:'startTask'})
     }  
   }
 	
-  
   useEffect(()=>{
     if(isReorderingList)
       reorderingAnimation.start()
@@ -223,7 +194,11 @@ export default function expense ({ value, index, onFocus, openModal,
     return ()=>reorderingAnimation.reset()
 
   },[isReorderingList]);
-  
+  // useEffect(()=>{
+	// 	isTutorialMode && tutorialDispatch({type:'startTask'})
+	// 	// tutorialDispatch({type:'taskCompleted'})
+	// },[])
+		
 	return (
 		<Animated.View style={ {paddingHorizontal:2,overflow:'visible',transform:[ { translateX } ]} }>
 			<Swipeable 
@@ -246,6 +221,14 @@ export default function expense ({ value, index, onFocus, openModal,
             prompt={swipeArrowMessage}
             reverseArrow={useReverseArrows }
             isAnimated={swipeIsActive || (tutorialIsActive && isPrompting)}
+						onRender={(tutorialIsActive && isPrompting) ? 
+							()=>tutorialDispatch({
+								type:'taskCompleted',
+								payload:{
+									name:tutorialTaskNames[0]
+								}
+							}) : null
+						}
           />
         }
         <View style={ parentContainerStyle }>
@@ -264,7 +247,7 @@ export default function expense ({ value, index, onFocus, openModal,
               returnKeyType={hasNextFocus() ? 'next' : 'done'}
               key={'text-input-name-'+index+'-'+value.id}
               ref={ref=>addRef(index,'name',ref)}
-              editable={!isReorderingList || swipeIsActive}
+              editable={!isReorderingList && !swipeIsActive}
             />
           </View>
           <View style={[styles.priceContainer,{borderBottomColor:darkenColor(deleteColor)}]}>
@@ -279,7 +262,7 @@ export default function expense ({ value, index, onFocus, openModal,
               returnKeyType={Platform.select({ios:'done',android:hasNextFocus() ? 'next':'done'})}
               onFocus={()=>onFocus(index,'price')}
               ref={ref=>addRef(index,'price',ref)}
-              editable={!isReorderingList || swipeIsActive}
+              editable={!isReorderingList && !swipeIsActive}
             />
 
         </View>

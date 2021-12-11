@@ -13,8 +13,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import ModalButton from './ModalButton';
 import { setOpacity } from './genColors'
 import useExpenseContext from '../hooks/useExpenseContext';
-import useTutorialTask from '../hooks/useTutorialTask';
+import useTutorialTask from '../hooks/TasksReducer';
 import useUserContext from '../hooks/useUserContext';
+import useTutorialContext from '../hooks/useTutorialContext';
 
 
 const pickerHeight = 40;
@@ -28,94 +29,10 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 	const [ modalWidth, setModalWidth ] = useState(400);
 	const expense = expenses[index] || {}
 	const { user:{showTutorial} }  = useUserContext().context;
+	const {findTask,isCurrentTask, dispatch:tutorialDispatch} = useTutorialContext().context;
 	// in tutorial mode one task will be to change expense color
-	const [ changeColorTask, setChangeColorTask ] = useTutorialTask({
-    onShowPrompt:()=>{
-      colorPickerAnimation.start();
-      return ()=>pickerAnimation.reset();
-    },
-    onCompleted:()=>{
-      colorPickerAnimation.reset();
-      return colorPickerAnimation.reset();
-    }
-  });
-	// in tutorial mode another task will be to navigate to another expense in the color modal
-  const [ changeIndexTask, setChangeIndexTask ] = useTutorialTask({ 
-    defaultValue:{showPrompt:false,completed:false},
-    onShowPrompt:()=>{
-      pickerAnimation.start();
-      return ()=>pickerAnimation.reset();
-    },
-    onCompleted:()=>{
-      pickerAnimation.reset();
-      return ()=>pickerAnimation.reset();
-    }
-  });
-	// animation values for tutorial mode tasks
-  let pickerAnim = useRef(new Animated.Value(0)).current;
-  let colorPickerAnim = useRef( new Animated.Value(0)).current;
-  
-  const pickerAnimation = Animated.loop(
-		Animated.sequence([
-			Animated.timing(pickerAnim,{
-				toValue:1,
-				useNativeDriver:false,
-				duration:2000
-			}),
-			Animated.timing(pickerAnim,{
-				toValue:0,
-				useNativeDriver:false,
-				duration:2000
-			}),
-			Animated.delay(1000)
-		],{useNativeDriver:false})
-	)
-	const pickerAnimatedStyle = {
-		transform:[
-			{scaleX:pickerAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})},
-			{scaleY:pickerAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})}
-		],
-    textAlign:'center'
-    
-	}
-  const colorPickerAnimation =  Animated.loop(
-    Animated.sequence([
-      Animated.timing(colorPickerAnim,{
-        toValue:1,
-				useNativeDriver:false,
-				duration:2000
-			}),
-      Animated.delay(6000),
-			Animated.timing(colorPickerAnim,{
-        toValue:0,
-				useNativeDriver:false,
-				duration:2000
-			})
-		],{useNativeDriver:false})
-  )
-	const colorPickerAnimatedStyle = {
-		transform:[
-			{scaleX:colorPickerAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})},
-			{scaleY:colorPickerAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})}
-		],
-		opacity:colorPickerAnim.interpolate({
-			inputRange:[0,1],
-			outputRange:[0,1]
-		}),
-		textAlign:'center',
-	}
+	const changeColorTask = findTask('changeExpenseColor')
+	const changeIndexTask = findTask('scrollToNewExpense');
 
   const onColorSelected = (hsvColor)=>{
 		dispatch({
@@ -128,14 +45,12 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 			}
 		})
     if(showTutorial){
-      setChangeColorTask({
-        showPrompt:false,
-        completed:true
-      })
-      setChangeIndexTask({
-        showPrompt:true,
-        completed:false
-      })
+			tutorialDispatch({
+				type:'taskCompleted',
+				payload:{
+					name:'changeExpenseColor'
+				}
+			})
     }
 	}
 	// using percentages in a modal has given me very odd results
@@ -185,7 +100,7 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
           end={{x:1,y:0.7}}
           buttonStyle={[styles.modalButton,modalButtonStyle]}
         />
-      	<Animated.View style={{paddingLeft:pickerLeftPadding,width:pickerWidth,height:pickerHeight,...pickerAnimatedStyle}}>
+      	<Animated.View style={{paddingLeft:pickerLeftPadding,width:pickerWidth,height:pickerHeight,...changeIndexTask.animationStyle}}>
           <ScrollPicker
 		  			dataSource={expenses}
 		  			itemHeight={pickerHeight}
@@ -194,8 +109,13 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 		  			highlightColor={expense.color}
 		  			highlightBorderWidth={3}
 		  			onValueChange={(itemValue,itemIndex)=>{
-              if( showTutorial && changeIndexTask.showPrompt){
-                setChangeIndexTask({showTutorial:false,completed:true})
+              if( showTutorial && changeIndexTask.started){
+								tutorialDispatch({
+									type:'taskCompleted',
+									payload:{
+										name:'scrollToNewExpense'
+									}
+								})
               }			
 		  				setIndex(itemIndex)
 		  			}}
@@ -212,11 +132,11 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 				</Animated.View>			
 			</View>			
 	     <View style={{width:modalWidth,height:colorPickerHeight,}}>
-          {showTutorial && changeColorTask.showPrompt &&
-            <Animated.Text style={colorPickerAnimatedStyle}>Change your expense color</Animated.Text>
+          {showTutorial && changeColorTask.started &&
+            <Animated.Text style={{...changeColorTask.animationStyle,textAlign:'center'}}>Change your expense color</Animated.Text>
           }
-          {showTutorial && changeIndexTask.showPrompt && 
-            <Animated.Text style={pickerAnimatedStyle}>Scroll to another expense! </Animated.Text>
+          {showTutorial && changeIndexTask.started && 
+            <Animated.Text style={{...changeIndexTask.animationStyle,textAlign:'center'}}>Scroll to another expense! </Animated.Text>
           }
 					<ColorPicker 
 						style={{flex:1,margin:'1%',borderRadius:0}}

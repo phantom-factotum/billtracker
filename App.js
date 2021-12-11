@@ -35,10 +35,12 @@ import DrawerRenderer from './components/Drawer';
 
 import useUserContext from './hooks/useUserContext';
 import useExpenseContext from './hooks/useExpenseContext';
-import useExpenseHelpers from './hooks/useExpenseHelpers';
+import useTutorialContext from './hooks/useTutorialContext';
 import useCalculationsContext from './hooks/useCalculationsContext';
+import useExpenseHelpers from './hooks/useExpenseHelpers';
 import ExpensesReducer from './hooks/ExpensesReducer';
 import CalculationsReducer from './hooks/CalculationsReducer';
+import TasksReducer from "./hooks/TasksReducer";
 // import useUser from './hooks/useUser';
 import { getCachedData, saveAppData, appDataExists } from './hooks/handleAppData';
 
@@ -51,11 +53,13 @@ const App = () => {
   // context providers
   const { provider:UserContextProvider } = useUserContext();
   const { provider:ExpenseContextProvider } = useExpenseContext();
+  const { provider:TutorialContextProvider } = useTutorialContext();
   const { provider:CalculationsContextProvider } = useCalculationsContext();
   // state vars
   const calculationsData = CalculationsReducer();
   const expensesData = ExpensesReducer();
-  const [user,setUser] = useState({});
+	const tutorialData = TasksReducer();
+  const [user,setUser] = useState({showTutorial:true});
   const [ isSigningOut, setIsSigningOut] = useState(false);
   const [ isReady, setIsReady ] = useState(false);
   // let expensesData, calculationsData
@@ -79,8 +83,7 @@ const App = () => {
   const loadData = async ()=>{
     return await new Promise (async (resolve, reject)=>{
       if(ignoreSavedData){
-        resolve()
-        return
+				return resolve()
       }
       const data = await getCachedData();
       if(data){
@@ -91,10 +94,10 @@ const App = () => {
         // load user data last, as this will trigger navigation
         if(data.userData)
           // showTutorial should be only active if new user
-          setUser({showTutorial:true,...data.userData});
-        resolve();
+          setUser({...user,...data.userData});
+        return resolve();
       }
-      reject();
+      return;
     })
   }
   const onLoadFinish = ()=>{
@@ -102,6 +105,7 @@ const App = () => {
   }
 
   //effects
+	// saveAppData on expense/user/calculations data change
   useEffect(()=>{
     // dont overwrite on log outs
     if(isSigningOut)
@@ -114,6 +118,20 @@ const App = () => {
     // saveData()
   },
   [user,isSigningOut,expensesData,calculationsData])
+	//listen for user cancellation or completion of tutorial
+	useEffect(()=>{
+		// user has completed tutorial
+		if(user.showTutorial && tutorialData.completed){
+			console.log('tutorial disabled by user completion')
+			setUser({...user,showTutorial:false})
+		}
+		//user has gone into settings and turn off tutorial mode
+		else if(!user.showTutorial && !tutorialData.completed){
+			console.log('tutorial mode disabled by settings')
+			tutorialData.dispatch({type:'removeAll'})
+			setUser({...user,showTutorial:false})
+		}
+	},[user.showTutorial,tutorialData])
 // try to suppress logbox warnings
   useEffect(() => LogBox.ignoreLogs(['']), [])
 
@@ -123,6 +141,7 @@ const App = () => {
       <UserContextProvider value={{ user, setUser, logout, isSigningOut,setIsSigningOut }}>
       <ExpenseContextProvider value={ expensesData }>
       <CalculationsContextProvider value={ calculationsData }>
+			<TutorialContextProvider value={tutorialData}>
         {isReady ? (
           isSignedIn ? (
             <Drawer.Navigator drawerContent={props=><DrawerRenderer {...props} />} >
@@ -155,6 +174,7 @@ const App = () => {
           />
         )
         }
+			</TutorialContextProvider>
       </CalculationsContextProvider>
       </ExpenseContextProvider>
       </UserContextProvider>

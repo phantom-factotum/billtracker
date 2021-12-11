@@ -23,9 +23,9 @@ import * as FileSystem from 'expo-file-system';
 import { useHeaderHeight } from '@react-navigation/elements'
 
 import useUserContext from '../hooks/useUserContext';
-import useTutorialTask from '../hooks/useTutorialTask';
 import useExpenseContext from '../hooks/useExpenseContext';
 import useCalculationsContext from '../hooks/useCalculationsContext';
+import useTutorialContext from '../hooks/useTutorialContext';
 import useExpenseHelpers,{ fastListGenerator } from '../hooks/useExpenseHelpers';
 
 import RenderExpenses from '../components/RenderExpenses';
@@ -33,91 +33,53 @@ import ExpenseInput from '../components/ExpenseInput';
 import TableItem from '../components/TableItem'
 import { ColorScheme } from '../components/genColors';
 
+const tutorialTaskName = 'addCommonExpenses'
+
 export default function Home({navigation}){
 	const { user:{showTutorial} }  = useUserContext().context;
 	const { expenses, dispatch,  } = useExpenseContext().context;
-  let timesPushed = useRef(0).current
-	let addButtonAnim = useRef(new Animated.Value(0)).current
-	const [addButtonPrompt, setAddPrompt ] = useTutorialTask({
-		onShowPrompt:()=>{
-			animateAddExpenses.start();
-			return ()=> {
-				animateAddExpenses.reset();
-			}
-
-		},
-		onCompleted: ()=>{
-			animateAddExpenses.stop()
-			return ()=> {
-				animateAddExpenses.reset();
-			}
-		}
-	});
-	// const  { addExpense, getPriceSum	} = useExpenseHelpers()
-	
 	const {width, height} = useWindowDimensions();
   const headerHeight = useHeaderHeight();
-	// if tutorial is showing then there is extra stuff to do
-	const animateAddExpenses = Animated.loop(
-		Animated.sequence([
-			Animated.timing(addButtonAnim,{
-				toValue:1,
-				useNativeDriver:false,
-				duration:2000
-			}),
-			Animated.timing(addButtonAnim,{
-				toValue:0,
-				useNativeDriver:false,
-				duration:2000
-			}),
-			Animated.delay(1000)
-		],{useNativeDriver:false})
-	)
 	const isLandScape = width > height;
-	const addButtonAnimation = {
-		transform:[
-			{scaleX:addButtonAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})},
-			{scaleY:addButtonAnim.interpolate({
-				inputRange:[0,1],
-				outputRange:[1,1.2]
-			})}
-		],
-
-		top:!addButtonPrompt.completed ? '-12%':0,
+	// tutorial mode data
+	const { currentIndex,isCurrentTask,findTask,dispatch:tutorialDispatch } = useTutorialContext().context;
+	// there's one task to complete
+	const addExpensesTask = findTask(tutorialTaskName);
+	// tutorial mode animations
+	const tutorialButtonAnimation = {
+		...addExpensesTask?.animationStyle,
+		top:addExpensesTask?.started ? '-12%':0,
 		borderRadius:200,
 	}
-  
   const tutorialTextStyle = {
-    opacity:addButtonAnim.interpolate({
+    opacity:addExpensesTask?.anim?.interpolate({
       inputRange: [0, 0.6 , 1],
       outputRange:[0, 0.0, 1]
     })
   }
-  let tutorialText
-  if(expenses.length == 0)
-    tutorialText = "Press Me"
-  if(expenses.length == 1){
-    tutorialText = "Press Me Again"
-  }
+	// immediately start task if addExpenseTask is current task to complete
+	useEffect(()=>{
+			if(!showTutorial)
+				return
+			if(isCurrentTask(tutorialTaskName))
+				tutorialDispatch({type:'startTask'})
+	},[currentIndex])
 	return (
 		<View style={[styles.container,{height:isLandScape ? '100%': '95%'}]}>
 			{expenses.length < 5 && (
-        <Animated.View style={{paddingTop:headerHeight*1.5,...addButtonAnimation}}>
+        <Animated.View style={{paddingTop:headerHeight*1.5,...tutorialButtonAnimation}}>
           <TouchableOpacity 
             style={styles.quickAddButton}
             onPress={ ()=>{
               dispatch({type:'addCommonExpenses'}) 
-              setAddPrompt({showPrompt:false,completed:true})
+              showTutorial && tutorialDispatch({type:'taskCompleted'})
             }}
             >
             <Text style={{color:'white'}}>Add Common Expenses</Text>
           </TouchableOpacity>
-          {addButtonPrompt.showPrompt && 
+          {addExpensesTask.started && 
             <Animated.View style={[styles.addButtonPrompt,tutorialTextStyle]}>
-              <Text> {tutorialText} </Text>
+              <Text> Press Me </Text>
             </Animated.View>
           }
         </Animated.View>
@@ -125,7 +87,7 @@ export default function Home({navigation}){
 			<View style={{flex:1, width:'100%'}}>		
 				<RenderExpenses />
 			</View>
-			<Animated.View style={styles.addExpense}>
+			<View style={styles.addExpense}>
 				<Button
 					title="Add Expense"
 					onPress={()=>{
@@ -134,7 +96,7 @@ export default function Home({navigation}){
 					color={ColorScheme[0]}
 					disabled={showTutorial}
 				/>
-			</Animated.View>				
+			</View>				
 		</View>
 
 	);
