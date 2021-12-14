@@ -29,8 +29,8 @@ export default function ColorModal ({visible,setVisible,index,setIndex}){
 	const [ modalWidth, setModalWidth ] = useState(400);
 	const expense = expenses[index] || {}
 	const { user:{showTutorial} }  = useUserContext().context;
-	const {findTask,isCurrentTask, dispatch:tutorialDispatch} = useTutorialContext().context;
-	// in tutorial mode one task will be to change expense color
+	const {findTask, dispatch:tutorialDispatch} = useTutorialContext().context;
+	// tutorialMode tasks
 	const changeColorTask = findTask('changeExpenseColor')
 	const changeIndexTask = findTask('scrollToNewExpense');
 

@@ -55,10 +55,26 @@ export default function expense ({ value, index, onFocus, openModal,
 	
 	const {dispatch:tutorialDispatch,findTask, tasksLeft, completed, findTaskIndex} = useTutorialContext().context;
 	const swipeActivationDistance = width ? Math.floor(width *.5) : 175
-	const isTutorialMode = showTutorial && index == 0
+	// every expense is rendered by this component. Only run the tutorialMode
+	// on the first expense
+	const isTutorialMode = showTutorial && index == 0;
+	// tutorial tasks
 	const revealButtonsTask = findTask(tutorialTaskNames[0]);
 	const openModalTask = findTask(tutorialTaskNames[1]);
 	const deleteTask = findTask(tutorialTaskNames[2]);
+	//tutorial variables
+	const useReverseArrows = isTutorialMode && revealButtonsTask.started;
+  const tutorialIsActive = isTutorialMode && !completed;
+  const isPrompting = tutorialIsActive && (openModalTask.started || deleteTask.started);
+  let swipeArrowMessage
+  if(useReverseArrows)
+    swipeArrowMessage = 'Swipe item right to show buttons';
+  else if(isTutorialMode && openModalTask.started)
+    swipeArrowMessage = "Press the button!"
+  else if(isTutorialMode && deleteTask.started)
+    swipeArrowMessage = 'Swipe item left to delete';
+  else if(tutorialIsActive && !isPrompting)
+    swipeArrowMessage = ''
 
   const indexColor = value.color
 	const backgroundColor = setOpacity(indexColor,0.2)
@@ -76,19 +92,6 @@ export default function expense ({ value, index, onFocus, openModal,
 		parentContainerStyle.push(deleteStyle)
 	if(swipeIsActive)
 		parentContainerStyle.push(swipeActiveStyle)
-
-  const useReverseArrows = isTutorialMode && revealButtonsTask.started;
-  const tutorialIsActive = isTutorialMode && !completed;
-  const isPrompting = tutorialIsActive && (openModalTask.started || deleteTask.started);
-  let swipeArrowMessage
-  if(useReverseArrows)
-    swipeArrowMessage = 'Swipe item right to show buttons';
-  else if(isTutorialMode && openModalTask.started)
-    swipeArrowMessage = "Press the button!"
-  else if(isTutorialMode && deleteTask.started)
-    swipeArrowMessage = 'Swipe item left to delete';
-  else if(tutorialIsActive && !isPrompting)
-    swipeArrowMessage = ''
   
 	// reorderlist animation
   const reorderAnimDuration = 500
@@ -162,19 +165,19 @@ export default function expense ({ value, index, onFocus, openModal,
 
 	const onLeftSwipe = ()=>{
 		dispatch({type:'delete',payload:value.id})
-		console.log('deleting')
-    tutorialDispatch({
-			type:'taskCompleted',
-			payload:{
-				name:tutorialTaskNames[2]
-			}
-		})
+		if(tutorialIsActive)
+			tutorialDispatch({
+				type:'taskCompleted',
+				payload:{
+					name:tutorialTaskNames[2]
+				}
+			})
 	}
   const onRightSwipe=()=>{
 		console.log('Button tray opened!')
-		// mark openModalTask completed and start next task
+		// mark task completed
     if( isTutorialMode && revealButtonsTask.started){
-			// the next animation uses width to work smoothly
+			// the next task needs device width for the animation to work smoothly
 			tutorialDispatch({
 				type:'configureAnimationStyle',
 				payload:{
@@ -182,7 +185,6 @@ export default function expense ({ value, index, onFocus, openModal,
 				}
 			})
 			tutorialDispatch({type:'taskCompleted'})
-			// tutorialDispatch({type:'startTask'})
     }  
   }
 	
@@ -194,10 +196,6 @@ export default function expense ({ value, index, onFocus, openModal,
     return ()=>reorderingAnimation.reset()
 
   },[isReorderingList]);
-  // useEffect(()=>{
-	// 	isTutorialMode && tutorialDispatch({type:'startTask'})
-	// 	// tutorialDispatch({type:'taskCompleted'})
-	// },[])
 		
 	return (
 		<Animated.View style={ {paddingHorizontal:2,overflow:'visible',transform:[ { translateX } ]} }>
@@ -222,11 +220,10 @@ export default function expense ({ value, index, onFocus, openModal,
             reverseArrow={useReverseArrows }
             isAnimated={swipeIsActive || (tutorialIsActive && isPrompting)}
 						onRender={(tutorialIsActive && isPrompting) ? 
+							// Im not sure if this is needed but the tutorialMode
+							// doesnt appear to skip any tasks with this present
 							()=>tutorialDispatch({
 								type:'taskCompleted',
-								payload:{
-									name:tutorialTaskNames[0]
-								}
 							}) : null
 						}
           />
