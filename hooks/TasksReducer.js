@@ -4,7 +4,7 @@ import React, {
 	useRef,
 } from 'react';
 import { 
-  Animated,
+  // Animated,
   StyleSheet,
   View,
   Text,
@@ -14,7 +14,18 @@ import {
   Alert,
   useWindowDimensions
 } from 'react-native';
-
+import Animated, {
+	useAnimatedStyle,
+	useSharedValue,
+	interpolate,
+	withSequence,
+	withRepeat,
+	withTiming,
+	withDelay,
+	cancelAnimation
+} from 'react-native-reanimated';
+const chalk = require('chalk');
+const myChalk = new chalk.Instance({level:3});
 // all tutorial tasks
 /*
   I tried to avoid having to hard code each task with an 
@@ -51,53 +62,44 @@ export default function tasksReducer (onEvents=[]){
    
     switch(type){
       case 'grow':{
-        const scale = anim.interpolate({
-          inputRange:[0,1],
-          outputRange:[1,growthScale]
+        return useAnimatedStyle(()=>{
+          const scale = interpolate(anim.value,[0,1],[1,growthScale])
+					return {
+							transform:[
+								{scaleX:scale},
+								{scaleY:scale}
+							]
+					}
         })
-        return {
-          transform:[
-            {scaleX:scale},
-            {scaleY:scale}
-          ]
-        }
       }
       // if placement is important while growing, then
       // slideAndGrow may fix placement by
       //sliding base on growthScale and deviceWidth
       case 'slideAndGrow':{
-        const scale = anim.interpolate({
-          inputRange:[0,1],
-          outputRange:[1,growthScale]
+				const { width } = useWindowDimensions();
+				return  useAnimatedStyle(()=>{
+					const scale = interpolate(anim.value,[0,1],[1,growthScale])
+					return {
+						transform:[
+							{translateX:interpolate(anim.value,[0,1],[0,growthScale*width*.1])},
+							{scaleX:scale},
+							{scaleY:scale}
+						],
+					}
         })
-        return  {
-          transform:[
-            {translateX:anim.interpolate({
-              inputRange:[0,1],
-              outputRange:[0,growthScale*deviceWidth*.1]
-            })},
-            {scaleX:scale},
-            {scaleY:scale}
-          ],
-        } 
       }
       case 'fadeAndGrow':{
-        const scale = anim.interpolate({
-          inputRange:[0,1],
-          outputRange:[1,growthScale]
+				return useAnimatedStyle(()=>{
+					const scale = interpolate(anim.value,[0,1],[1,growthScale])
+					return {
+						transform:[
+							{scaleX:scale},
+							{scaleY:scale}
+						],
+						opacity:anim.value
+						// textAlign:'center',
+					}
         })
-        return {
-          transform:[
-            {scaleX:scale},
-            {scaleY:scale}
-          ],
-          opacity:anim.interpolate({
-            inputRange:[0,1],
-            outputRange:[0,1]
-          }),
-          // textAlign:'center',
-        }
-
       }
       default:
         return {}
@@ -110,29 +112,37 @@ export default function tasksReducer (onEvents=[]){
       completed:false,
     }
     state.tasks = tasksNames.map(({name,animationType},i)=>{
-      let anim = new Animated.Value(0)
-      // loop to 1 and back to 0 with delay
-      let animation = Animated.loop(
-        Animated.sequence([
-          Animated.timing(anim,{
-            toValue:1,
-            useNativeDriver:false,
-            duration:2000
-          }),
-          Animated.timing(anim,{
-            toValue:0,
-            useNativeDriver:false,
-            duration:2000
-          }),
-          Animated.delay(1000)
-        ],{useNativeDriver:false})
-      )
+      let anim = useSharedValue(0)
       return {
         // when started is true animation will loop
+        name, anim, animationType,
         started:false,
-        animationType,
         animationStyle:animationStyles(animationType,anim),
-        name, anim, animation
+				onStart:() => {
+					console.log('Starting task',myChalk.green(name))
+					anim.value = withRepeat(
+						withSequence(
+							withTiming(1,{
+								duration:2000
+							}),
+							withTiming(0,{
+								duration:2000
+							}),
+						),
+						// times to repeat
+						-1,
+						//loop in reverse
+						true
+					)
+				},
+				onStop:()=>{
+					console.log('Stopping task',myChalk.green(name))
+					cancelAnimation(anim)
+				},
+				onComplete:()=>{
+					console.log('Task',myChalk.green(name),'completed')
+					cancelAnimation(anim)
+				}
       }
     })
     return state
@@ -145,40 +155,50 @@ export default function tasksReducer (onEvents=[]){
       return state;
 		switch (action.type) {
       case 'startTask':{
-        if(!currentTask) return state;
-				console.log('Starting',currentTask.name)
-        currentTask.animation?.start?.()
+        if(!currentTask)
+					return state;
+        currentTask.onStart()
         tasks[currentIndex] = {...currentTask,started:true}
         return {...state,currentIndex, tasks}
       }
       case 'stopTask':{
-        if(!currentTask) return state;
-        // currentTask.animation.stop prevents the task from being started again
-        Animated.spring(currentTask.anim,{toValue:0}).start();
+        if(!currentTask)
+					return state;
+				currentTask.onStop();
         tasks[currentIndex] = {...currentTask,started:false}
         return {...state,currentIndex, tasks}
       }
       // when task is completed set currentIndex to next task
       // and update taskLeft and completed
       case 'taskCompleted':{
-        if(!currentTask) return state;
-        currentTask.animation?.reset?.()
-        currentTask.started = false;
-				tasks[currentIndex] = currentTask;
-        currentIndex = currentIndex+1;
+        if(!currentTask)
+					return state;
+        currentTask.onComplete();
+				tasks[currentIndex] = {...currentTask,started:false};
+        // update index and start the next task
+				currentIndex = currentIndex+1;
         tasksLeft = tasks.length - currentIndex;
-				if(tasks[currentIndex]){
+				completed = tasksLeft <= 0;
+				if(!completed){
 					tasks[currentIndex].started = true
-					let newTask = tasks[currentIndex]
-					console.log('Starting',newTask.name)
-        	newTask.animation?.start?.()
+					tasks[currentIndex].onStart();
 				}
-				if(tasksLeft <= 0)
+				else
 					Alert.alert("You've completed the tutorial!","Please enjoy the app!")
-        return {...state, tasks,tasksLeft,currentIndex,
-          completed: tasksLeft <= 0
+        return {...state, 
+					tasks,tasksLeft,currentIndex, completed
         }     
       }
+			case 'setIndex':{
+				let newIndex = action.payload.index;
+				currentTask = tasks[newIndex];
+				if(newIndex == currentIndex || !currentTask)
+					return state;
+				console.log('Setting active task to:',myChalk.green(currentTask.name));
+				currentTask.onStart();
+				tasks[newIndex] = {...currentTask,started:true}
+				return {...state,tasks,currentIndex:newIndex}
+			}
       // action.payload.configs will have Array of configurations to pass to animationStyles
       // each config will have the index/targeted animationStyle to configure
       case 'configureAnimationStyle':{
@@ -216,9 +236,7 @@ export default function tasksReducer (onEvents=[]){
 	const findTask = name=>{
 		let index = findTaskIndex(name)
 		if(index < 0){
-		
-			console.log(name)
-			console.log(state.tasks.map(task=>task.name.replace(/ /g,'')))
+			console.log('Failed to find tutorial task:',name)
 			return null
 		}
 		return state.tasks[index]

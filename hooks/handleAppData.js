@@ -94,7 +94,7 @@ export const getCachedData = async (showErrors=true)=>{
 
 };
 
-export const saveAppData= async({calculationsData,expensesData,userData})=>{
+export const saveAppData= async({calculationsData,expensesData,userData,tutorialData})=>{
 	if( !await fileExists(userDataPath) ){
 		await createAppDataDirectory();
 	}
@@ -109,6 +109,12 @@ export const saveAppData= async({calculationsData,expensesData,userData})=>{
 		appData.expensesData = removeUnsaveables(expensesData)
 	if(userData)
 		appData.userData = removeUnsaveables(userData)
+	if(tutorialData){
+		// theres no need to save when the index is 0
+		if(tutorialData.index != 0){
+			appData.tutorialData = removeUnsaveables(tutorialData)
+		}
+	}
 	// if every key of newAppData is invalid then a massive failure has occurred
 	if(Object.keys(appData).every(key=>!isValidObject(appData[key] || {} ))){
 		console.log('boiiii failure loves u')

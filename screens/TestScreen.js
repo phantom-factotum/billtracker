@@ -59,12 +59,11 @@ export default function Home({navigation}){
   })
 	// immediately start task if addExpenseTask is current task to complete
 	useEffect(()=>{
-		if(!showTutorial)
-			return
-		// tutorial task starts at 0
-		// if task was completed, move on to the next
-		tutorialDispatch({type:'startTask'})
-	},[showTutorial])
+			if(!showTutorial)
+				return
+			if(isCurrentTask(tutorialTaskName))
+				tutorialDispatch({type:'startTask'})
+	},[currentIndex])
 	return (
 		<View style={[styles.container,{height:isLandScape ? '100%': '95%'}]}>
 			{expenses.length < 5 && (
@@ -75,7 +74,7 @@ export default function Home({navigation}){
               dispatch({type:'addCommonExpenses'}) 
               showTutorial && tutorialDispatch({type:'taskCompleted'})
             }}
-					>
+            >
             <Text style={{color:'white'}}>Add Common Expenses</Text>
           </TouchableOpacity>
           {addExpensesTask.started && 

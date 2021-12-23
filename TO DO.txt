@@ -1,20 +1,15 @@
 TO DO
 _ _ _ _ _ _ _
-- showTutorial mode needs lots of work
-  - showTutorial should get its own context with its own list of tasks to complete
-  - currently showTutorial is always true, it should only be true when a new user is recognized
-    or the user has gone into settings and chosen to enable showTutorial
+- Switch out Animated with Reanimated
+- Settings mode should allow enabling tutorial mode
 - cloud storage of expense file
 - When add expense button is pressed, the new expense should go into focus
 - let user set/take profile photo
 - Add Common Expenses Button and Reorder List Switch goes in same row
-- Add more complex calculation settings
 - Tweak color scheme
   - update delete border color
 - DARK MODE
 - TEXT SHADOWS
-
-
 - DraxList needs to expose FlatList refs
 - react-native-swipeable gives Animated.event warning
 - better empty list component

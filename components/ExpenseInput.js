@@ -15,9 +15,17 @@ import {
 	KeyboardAvoidingView,
 	Button,
 	useWindowDimensions,
-	Animated
+	// Animated
 } from 'react-native';
-
+import Animated, {
+	useSharedValue,
+	useAnimatedStyle,
+	withSequence,
+	withRepeat,
+	withDelay,
+	interpolate,
+	cancelAnimation
+} from 'react-native-reanimated';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons'; 
 import Swipeable from 'react-native-swipeable';
 
@@ -28,7 +36,6 @@ import useUserContext from '../hooks/useUserContext';
 import SwipeArrows from './SwipeArrows'
 import { lightenColor, darkenColor, getTetradicScheme, setOpacity } from './genColors';
 
-const AnimatedIcon = Animated.createAnimatedComponent(Ionicons);
 // const iconSize = 40;
 const tutorialTaskNames = [
 	'openSwipeButtonTray',
@@ -45,9 +52,8 @@ export default function expense ({ value, index, onFocus, openModal,
 	const [name, setName] = useState(value.name);
 	const [ willDelete, setWillDelete ] = useState(false);
 	const [swipeIsActive, setSwipeIsActive ] = useState(false);
-	const [ swipePan, setSwipePan ] = useState(new Animated.ValueXY());
 	const { height, width } = useWindowDimensions();
-	const reorderingAnim = useRef(new Animated.Value(0)).current;
+	const reorderingAnim = useSharedValue(0);
 
 	const { isFocused, dispatch } = useExpenseContext().context;
 	const { user:{showTutorial} } = useUserContext().context;
@@ -87,34 +93,38 @@ export default function expense ({ value, index, onFocus, openModal,
 	let swipeActiveStyle = {
     opacity:0.4
 	}
-	let parentContainerStyle = [styles.parentContainer,{height:iconSize,backgroundColor}]
+	let parentContainerStyle = [styles.parentContainer,{backgroundColor}]
 	if(willDelete)
 		parentContainerStyle.push(deleteStyle)
 	if(swipeIsActive)
 		parentContainerStyle.push(swipeActiveStyle)
   
 	// reorderlist animation
-  const reorderAnimDuration = 500
-  const reorderingAnimation = Animated.loop(
-    Animated.sequence([
-      Animated.timing(reorderingAnim,{
-        useNativeDriver:false,
-        toValue:1,
-        duration:reorderAnimDuration,
-        delay:index*50
-      }),
-      Animated.timing(reorderingAnim,{
-        useNativeDriver:false,
-        toValue:0,
-        duration:reorderAnimDuration,
-        delay:index*50
-      })
-    ])
-  )
-  const translateX = reorderingAnim.interpolate({
-    inputRange: [ 0, 0.5, 1],
-    outputRange:[ 0, -2,  2],
-  })
+  const startReorderAnimation = ()=>{
+		reorderingAnim.value = withRepeat(
+			withSequence(
+				withDelay(index*50,withTiming(1,{
+					duration:500,
+				})),
+				withDelay(index*50,withTiming(0,{
+					duration:500,
+				})),
+			),
+			// times to repeat
+			-1,
+			//loop in reverse
+			true
+			)
+	}
+	const stopAnimation = ()=> cancelAnimation(reorderingAnim)
+	const reorderAnimationStyle = useAnimatedStyle(()=>{
+		const translateX = interpolate(reorderingAnim.value,[ 0, 0.5, 1],[ 0, -2,  2])
+		return {
+			paddingHorizontal:2,
+			overflow:'visible',
+			transform:[ { translateX } ]
+		}
+	})
 	const handleEndEditing = ()=>{
 		if(name == value.name && price == value.price)
 			return
@@ -143,7 +153,7 @@ export default function expense ({ value, index, onFocus, openModal,
 		onSwipeRelease();
 	}
   const ColorPickerIcon = ()=>(
-    <Animated.View style={[{alignItems:'flex-start'},openModalTask.animationStyle]}>
+    <Animated.View style={[{alignItems:'flex-start'},isTutorialMode && openModalTask.animationStyle]}>
       <Ionicons 
         name="ios-color-palette"
         size={iconSize}
@@ -178,30 +188,30 @@ export default function expense ({ value, index, onFocus, openModal,
 		// mark task completed
     if( isTutorialMode && revealButtonsTask.started){
 			// the next task needs device width for the animation to work smoothly
-			tutorialDispatch({
-				type:'configureAnimationStyle',
-				payload:{
-					configs:[{deviceWidth:width,index:findTaskIndex(tutorialTaskNames[1])}]
-				}
-			})
+			// tutorialDispatch({
+			// 	type:'configureAnimationStyle',
+			// 	payload:{
+			// 		configs:[{deviceWidth:width,index:findTaskIndex(tutorialTaskNames[1])}]
+			// 	}
+			// })
 			tutorialDispatch({type:'taskCompleted'})
     }  
   }
 	
   useEffect(()=>{
     if(isReorderingList)
-      reorderingAnimation.start()
+      startReorderAnimation();
     else
-      reorderingAnimation.reset()
-    return ()=>reorderingAnimation.reset()
+      stopAnimation();
+    return stopAnimation
 
   },[isReorderingList]);
 		
 	return (
-		<Animated.View style={ {paddingHorizontal:2,overflow:'visible',transform:[ { translateX } ]} }>
+		<Animated.View style={ reorderAnimationStyle }>
 			<Swipeable 
 				leftActivationDistance={swipeActivationDistance}
-        rightActivationDistance={1}
+        rightActivationDistance={iconSize}
 				onLeftActionActivate={()=>setWillDelete(true)}
 				onLeftActionDeactivate={()=>setWillDelete(false)}
 				onLeftActionRelease={onLeftSwipe}
@@ -217,19 +227,13 @@ export default function expense ({ value, index, onFocus, openModal,
             size={iconSize/2}
             color={ swipeArrowColor }
             prompt={swipeArrowMessage}
-            reverseArrow={useReverseArrows }
-            isAnimated={swipeIsActive || (tutorialIsActive && isPrompting)}
-						onRender={(tutorialIsActive && isPrompting) ? 
-							// Im not sure if this is needed but the tutorialMode
-							// doesnt appear to skip any tasks with this present
-							()=>tutorialDispatch({
-								type:'taskCompleted',
-							}) : null
-						}
+            reverseArrow={ useReverseArrows }
+						totalArrows={(.8*width)/(iconSize*.5)}
+						
           />
         }
         <View style={ parentContainerStyle }>
-          <View style={[styles.indices,{backgroundColor:indexColor,width:iconSize}]}>
+          <View style={[styles.indices,{backgroundColor:indexColor,width:iconSize+(styles.parentContainer.paddingVertical*1.8),marginTop:-2}]}>
             <Text style={[styles.indexText]}>{index+1}</Text>
           </View>
           <View style={[styles.nameContainer,{borderBottomColor:darkenColor(deleteColor)}]}>
@@ -275,18 +279,15 @@ const styles = StyleSheet.create({
 		flexWrap:'wrap',
 		alignItems:'center',
 		justifyContent:'space-between',
-		marginBottom:5,
-		paddingRight:10,
-		paddingLeft:1,
-		overflow:'visible',
-		paddingVertical:2,
-		// borderColor:'white',
-		// borderWidth:1,
+		overflow:'hidden',
 		borderRadius:50,
-		// backgroundColor:ColorScheme.otherPrimaries[7]
+		paddingVertical:2,
+		marginVertical:2,
+		paddingRight:'5%',
 	},
 	indices:{
 		margin:0,
+		marginLeft:1,
 		justifyContent:'center',
 		alignItems:'center',
 		alignSelf:'flex-start',

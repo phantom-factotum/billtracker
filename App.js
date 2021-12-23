@@ -47,7 +47,7 @@ import { getCachedData, saveAppData, appDataExists } from './hooks/handleAppData
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator()
 // created to open app without using saved data
-const ignoreSavedData = true;
+const ignoreSavedData = false;
 
 const App = () => {
   // context providers
@@ -77,7 +77,8 @@ const App = () => {
     expensesData.listItemRefs = [];
     expensesData.isFocused = '';
     const {uid,...newUser} = user;
-    setUser(newUser)
+		tutorialData.dispatch({type:'setIndex',payload:{index:0}})
+    setUser(newUser);
   }
   const userData = {...user,setUser,logout,isSigningOut, setIsSigningOut}
   const loadData = async ()=>{
@@ -95,6 +96,14 @@ const App = () => {
         if(data.userData)
           // showTutorial should be only active if new user
           setUser({...user,...data.userData});
+				if(data.tutorialData){
+					tutorialData.dispatch({
+						type:'setIndex',
+						payload:{
+							index:data.tutorialData.index
+						}
+					})
+				}
         return resolve();
       }
       return;
@@ -113,7 +122,10 @@ const App = () => {
     saveAppData({
       userData:user,
       expensesData,
-      calculationsData
+      calculationsData,
+			tutorialData:{
+				index:tutorialData.currentIndex
+			}
     })
     // saveData()
   },
@@ -128,7 +140,7 @@ const App = () => {
 		//user has gone into settings and turn off tutorial mode
 		else if(!user.showTutorial && !tutorialData.completed){
 			console.log('tutorial mode disabled by settings')
-			tutorialData.dispatch({type:'removeAll'})
+			// tutorialData.dispatch({type:'removeAll'})
 			setUser({...user,showTutorial:false})
 		}
 	},[user.showTutorial,tutorialData])

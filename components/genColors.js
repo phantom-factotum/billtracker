@@ -100,7 +100,7 @@ export const genColorsWithScheme=len=>{
 		let color = getRandomColor()
 		let scheme = getColorSchemes(color)
 		colors = removeSimilarColors(colors.concat(scheme), threshold)
-		iterations++
+		attempts++
 	}
 	// trim colors to desired length and convert to hex
 	colors = colors.slice(0,len).map(c=>c.toString())

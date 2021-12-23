@@ -8,96 +8,89 @@ import React, {
 import { 
 	View,
 	StyleSheet,
-	Animated,
+	// Animated,
 	Text,
 	useWindowDimensions
 } from 'react-native';
-
+import Animated,{
+	withDelay,
+	withTiming,
+	withSequence,
+	withRepeat,
+	useSharedValue,
+	useAnimatedStyle,
+	cancelAnimation,
+	interpolate,
+	withSpring
+} from 'react-native-reanimated';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { useIsFocused } from "@react-navigation/native";
 
 const AnimatedIcon = Animated.createAnimatedComponent(MaterialCommunityIcons)
 
-export default function SwipeArrows ({ size, color, prompt,onRender,isAnimated=true,reverseArrow=false }){
-  const {width, height} = useWindowDimensions();
+export default function SwipeArrows ({ size=40, color, prompt,totalArrows=10,
+	onRender,reverseArrow=false 
+}){
+	const animationVal = useSharedValue(-2);
   const isFocused = useIsFocused();
-	const animationValues = useRef([]).current;
-	const duration = 100;
   const fontSize = size*.8;
-	const useNativeDriver = false;
 	const message = prompt || 'Keep swiping to delete'
+	const duration = 2000;
+	totalArrows = Math.floor(totalArrows)
 	
-  let totalArrows = Math.floor((width*.8)/size) -2
-	for(let i = 0; i<totalArrows;i++){
-    animationValues[i] = new Animated.Value(0)
+	const startAnimation = ()=>{
+		animationVal.value = withRepeat(
+			withSequence(
+				// withTiming(0,{duration}),
+				withTiming(totalArrows+1,{duration}),
+				withTiming(-1,{duration:10})
+			),
+			-1,
+			false
+		)
 	}
-  let animations = animationValues.map((anim,i)=>
-		Animated.sequence([
-			Animated.timing(anim,{
-				toValue:1,
-				duration,
-				// delay:(index+1)*duration,
-				useNativeDriver
-			}),
-			// Animated.delay(duration*.7),
-			Animated.timing(anim,{
-				toValue:0,
-				duration,
-				// delay:(index+1)*duration,
-				useNativeDriver
-			}),
-		])
+	const stopAnimation = ()=>{
+		cancelAnimation(animationVal)
+	}
+	const genOutputRange = (index,targetValue)=>{
+		'worklet';
+		return [0,targetValue,0,0]
+	}
+	const arrowStyles = Array(totalArrows).fill(null).map((nada,index)=>
+		useAnimatedStyle(()=>{
+			// animationValue will cover every arrow
+			// arrows should animating when approaching or leaving their index
+			let inputRange = [index-1,index,index+1, totalArrows+1]
+			let outputRange = [0,1,0,0]
+			//if arrows are reversed the last items should animate first
+			let val = reverseArrow ? 
+				totalArrows - animationVal.value - 1 :
+				animationVal.value
+			return {
+				// color:interpolate(animationVal.value,inputRange,['#fff',color,'#fff','#fff']),
+				opacity:interpolate(val,inputRange,outputRange),
+			}
+		})
 	)
-  
-  if(reverseArrow)
-    animations = animations.reverse();
-  const loopAnimations = Animated.loop(
-    Animated.stagger(duration,animations,{useNativeDriver})
-  )
-  if(isAnimated)
-    loopAnimations.start()
-  else
-    loopAnimations.reset()
 	useEffect(()=>{
 		onRender && onRender();
-		return ()=>{
-      loopAnimations.reset()
-		}
+		startAnimation();
+		// return stopAnimation
 	},[])
 	return (
 		<View style={[styles.parentContainer,{height:size+fontSize}]}>
-			<Text style={{fontSize,textAlign:'center',left:reverseArrow? width*.07:-width*.07}}>{message}</Text>
+			<Text style={{fontSize,textAlign:'center',left:reverseArrow? '-7%':'7%'}}>{message} {totalArrows}</Text>
 			<View style={styles.arrowContainer}>
-				{animationValues.map((anim,i)=>(
-					<SwipeArrow
-						key={'swipe-arrow-'+i}
-						size={size}
-						totalArrows={totalArrows}
-						animationValue={anim}
-						useNativeDriver={useNativeDriver}
-						index={i}
+				{arrowStyles.map(style=>(
+					<AnimatedIcon
+						name={reverseArrow? "chevron-left":"chevron-right" }
+						size={size} 
+						style={style}
 						color={color}
-						reverseArrow={reverseArrow}
 					/>
-				))
-			}
+				))}
 			</View>
 		</View>
-	)
-}
-const SwipeArrow = ({color,index,totalArrows,duration,size, animationValue, reverseArrow,NativeDriver=false})=>{
-	let opacity = animationValue.interpolate({
-		inputRange:[0,1],
-    // outputRange:[0,1],
-		outputRange:reverseArrow?[index*.1/totalArrows, 1] :[((totalArrows-index)*.1/totalArrows),1]
-	})
-	return (
-		<AnimatedIcon 
-			name={reverseArrow? "chevron-left":"chevron-right" }
-			size={size} 
-			style={{ opacity,color }}
-			color={color}
-		/>
 	)
 }
 const styles = StyleSheet.create({
@@ -111,10 +104,11 @@ const styles = StyleSheet.create({
 	},
 	arrowContainer:{
 		flexDirection:'row',
-		alignSelf:'center',
-    alignItems:'center',
-		// width:'70%',
-		overflow:'hidden',
+		width:'100%',
+		// alignSelf:'center',
+    // alignItems:'center',
+		// // width:'70%',
+		// overflow:'hidden',
 		justifyContent:'center',
 	},
 	messageContainer:{

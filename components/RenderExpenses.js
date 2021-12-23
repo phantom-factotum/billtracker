@@ -15,7 +15,6 @@ import {
 	FlatList,
 	Button,
 	Platform,
-	Animated,
 	useWindowDimensions,
 	TouchableOpacity
 } from 'react-native';
@@ -44,7 +43,6 @@ export default function RenderExpenses(){
 	const [ selectedIndex, setSelectedIndex ] = useState(0);
 
 	const draxListRef = useRef({}).current;
-	const isDraggableAnim = useRef(new Animated.Value(0)).current;
 	const {expenses, dispatch, isFocused, listItemRefs } = useExpenseContext().context;
 	// const { user:{showTutorial} } = useUserContext().context;
 	const headerHeight = useHeaderHeight()
